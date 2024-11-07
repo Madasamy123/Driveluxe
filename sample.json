@@ -1,0 +1,99 @@
+[
+    {
+        "name": "Tata Tiago",
+        "mileage": "23 km/l",
+        "price": "₹5,50,000",
+        "cc": 1199,
+        "fuel_type": "Petrol",
+        "transmission": "Manual",
+        "gear_type": "5-speed",
+        "seating_capacity": 5,
+        "description": "A compact hatchback known for its stylish design and efficient performance."
+    },
+    {
+        "name": "Mahindra Thar",
+        "mileage": "23 km/l",
+        "price": "₹5,50,000",
+        "cc": 1199,
+        "fuel_type": "Petrol",
+        "transmission": "Manual",
+        "gear_type": "5-speed",
+        "seating_capacity": 5,
+        "description": "A compact hatchback known for its stylish design and efficient performace."
+      
+    },
+    {
+        "name": "Renault Duster",
+        "mileage": "23 km/l",
+        "price": "₹5,50,000",
+        "cc": 1199,
+        "fuel_type": "Petrol",
+        "transmission": "Manual",
+        "gear_type": "5-speed",
+        "seating_capacity": 5,
+        "description": "A compact hatchback known for its stylish design and efficient performancd."
+    },
+    {
+        "name": "Tata Safari",
+        "mileage": "23 km/l",
+        "price": "₹5,50,000",
+        "cc": 1199,
+        "fuel_type": "Petrol",
+        "transmission": "Manual",
+        "gear_type": "5-speed",
+        "seating_capacity": 5,
+        "description": "A compact hatchback known for its stylish design and efficient performace."
+    },
+    {
+      
+        "name": "Toyota Innova Crysta",
+        "mileage": "23 km/l",
+        "price": "₹5,50,000",
+        "cc": 1199,
+        "fuel_type": "Petrol",
+        "transmission": "Manual",
+        "gear_type": "5-speed",
+        "seating_capacity": 5,
+        "description": "A compact hatchback known for its stylish design and efficient performace."
+    },
+    {
+       
+        "name":  "Diecast BMW X5 ",
+        "mileage": "23 km/l",
+        "price": "₹5,50,000",
+        "cc": 1199,
+        "fuel_type": "Petrol",
+        "transmission": "Manual",
+        "gear_type": "5-speed",
+        "seating_capacity": 5,
+        "description": "A compact hatchback known for its stylish design and efficient performace."
+        
+    },
+    {
+      
+        "name":  "hyundai venue N line ",
+        "mileage": "23 km/l",
+        "price": "₹5,50,000",
+        "cc": 1199,
+        "fuel_type": "Petrol",
+        "transmission": "Manual",
+        "gear_type": "5-speed",
+        "seating_capacity": 5,
+        "description": "A compact hatchback known for its stylish design and efficient performace."
+       
+    },
+    {
+
+       
+        "name":"Kia Seltos",
+        "mileage": "23 km/l",
+        "price": "₹5,50,000",
+        "cc": 1199,
+        "fuel_type": "Petrol",
+        "transmission": "Manual",
+        "gear_type": "5-speed",
+        "seating_capacity": 5,
+        "description": "A compact hatchback known for its stylish design and efficient performace."
+       
+    }
+]

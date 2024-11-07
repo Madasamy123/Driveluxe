@@ -1,0 +1,89 @@
+[
+    {
+        "Tata": {
+            "Tata Tigor": {
+                "Engine": "1199cc",
+                "Power": "72.41-84.48 bhp",
+                "Torque": "95Nm-113Nm",
+                "Transmission": "Automatic/Manual",
+                "Mileage": "19.28-19.6 kmpl",
+                "Fuel": "CNG/Petrol",
+                "Price": "Rs 6-9.40 Lakh*"
+                
+            },
+            "Tata Punch": {
+                "Engine": "1199cc",
+                "Power": "72-87 bhp",
+                "Torque": "103Nm - 115Nm",
+                "Transmission": "Manual/Automatic",
+                "Mileage": "18.8 - 20.09 kmpl",
+                "Fuel": "CNG/Petrol",
+                "Price": "Rs 6.13-10.15 Lakh*"
+            },
+            "Tata Nexon": {
+                "Engine": "1199cc - 1497 cc",
+                "Power": "99 - 118.27 bhp",
+                "Torque": "170 Nm - 260 Nm",
+                "Seating Capacity": "5",
+                "Mileage": "17.44-19.50 kmpl",
+                "Fuel": "Petrol, diesel and CNG",
+                "Price": "Rs 9 - 15.50 Lakh*"
+            },
+            "Tata Altroz": {
+                "Engine": "1199 cc - 1497 cc",
+                "Power": "72.49 - 88.76 bhp",
+                "Torque": "103 Nm - 200 Nm",
+                "Transmission": "Manual/Automatic",
+                "Mileage": "23.64 kmpl",
+                "Fuel": "Petrol/CNG/Diesel",
+                "Price": "Rs 6.65 - 11.35 Lakh*"
+            }
+        }
+    },
+    {
+        "Mahindra": {
+            "Mahindra Thar": {
+                "Engine": "1197-1497cc",
+                "Fuel": "Petrol,diesel",
+                "Transmission": "Manual,Automatic,AMT",
+                "Mileage": "20.1kmpl",
+                "Seating Capacity": "6",
+                "Price": "9.99Lakh"
+            },
+            "Mahindra XUV 3XO": {
+                "Engine": "1197cc & 1497cc",
+                "Mileage": "18.06 to 21.2 kmpl",
+                "Fuel Type": "Petrol, Diesel",
+                "Transmission": "Manual & Automatic",
+                "Seating Capacity": "5",
+                "Price": "Rs.7.89 Lakh onwards"
+            },
+            "Mahindra Bolero Neo+": {
+                "Engine": "2184cc",
+                "Power": "118.35",
+                "Transmission": "Manual",
+                "Drive Type": "RWD",
+                "Fuel": "Diesel",
+                "No.of Airbags": "2",
+                "Mileage": "16.5kmpl",
+                "Price": "11.39 Lakh*"
+            },
+            "Mahindra XUV700": {
+                "Engine": "1999cc - 2198cc",
+                "Power": "152 - 197 bhp",
+                "Torque": "360 Nm - 450 Nm",
+                "Seating Capacity": "5,6,7",
+                "Drive Type": "FWD/AWD",
+                "Mileage": "17kmpl",
+                "Price": "13.99 - 26.04 Lakh*"
+            }
+        }
+    },
+    {
+        "Maruti Suzuki":{
+            "Maruti Suzuki Brezza":{
+                
+            }
+        }
+    }
+]
