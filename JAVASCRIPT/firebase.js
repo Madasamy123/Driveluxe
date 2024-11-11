@@ -32,12 +32,29 @@ document.getElementById("signup").addEventListener("click", async (e) => {
   const userName = document.getElementById("reg-username").value;
   const email = document.getElementById("reg-email").value;
   const password = document.getElementById("reg-pswd").value;
+  const errormsgSign=document.getElementById("errormsgSign");
 
   // Basic validation to ensure fields are filled
   if (!userName || !email || !password) {
-    console.error("Please fill out all fields.");
+    errormsgSign.textContent="Please fill out all fields.";
     return;
   }
+
+  const nameRegex = /^[A-Z][a-z]*$/; // Ensures the first letter is capitalized, others lowercase
+  if (!nameRegex.test(userName)) {
+    errormsgSign.textContent = "Name should start with a capital letter, followed by lowercase letters.";
+    return;
+  }
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+  if (!emailRegex.test(email)) {
+    errormsgSign.textContent = "Email must contain numbers and end with '@gmail.com'.";
+    return;
+  }
+  if (password.length < 8) {
+    errormsgSign.textContent = "Password must be at least 8 characters long.";
+    return;
+  }
+
 
   try {
     // Register user with email and password
@@ -55,7 +72,14 @@ document.getElementById("signup").addEventListener("click", async (e) => {
 
     // Redirect to home page after successful registration
     window.location.href = "index.html";
+    errormsgSign.textContent="Account created Successfully"
   } catch (error) {
+    // Display Firebase error message
+    if (error.code === "auth/email-already-in-use") {
+      errormsgSign.textContent = "This email is already in use. Please try another one.";
+    } else {
+      errormsgSign.textContent = `Error during registration: ${error.message}`;
+    }
     console.error("Error during registration:", error.message);
   }
 });
@@ -65,10 +89,22 @@ document.getElementById("login").addEventListener("click", async (e) => {
   e.preventDefault(); // Prevent form from refreshing
   const email = document.getElementById("loginEmail").value;
   const password = document.getElementById("login-pswd").value;
+  const errormsgLogin=document.getElementById("errormsgLogin")
 
   // Check if fields are filled out
   if (!email || !password) {
-    console.error("Please fill out all fields.");
+    errormsgLogin.textContent="Please fill out all fields.";
+    return;
+  }
+
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+  if (!emailRegex.test(email)) {
+    errormsgLogin.textContent = "Email must contain numbers and end with '@gmail.com'.";
+    return;
+  }
+
+  if (password.length < 8) {
+    errormsgLogin.textContent = "Password must be at least 8 characters long.";
     return;
   }
 
@@ -81,6 +117,12 @@ document.getElementById("login").addEventListener("click", async (e) => {
     // Redirect to home page after successful login
     window.location.href = "index.html";
   } catch (error) {
+    if (error.code === "auth/invalid-credential") {
+      errormsgLogin.textContent = "Email not found. Please check your email or sign up.";
+    }  else {
+      errormsgLogin.textContent = `Login error: ${error.message}`;
+    }
+
     console.error("Error during login:", error.message);
   }
 });

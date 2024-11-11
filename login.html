@@ -27,9 +27,10 @@
 
             <div class="signup">
                 <form class="form">
-                    <label for="lab" aria-hidden="true">Sign up</label>
+                    <label for="lab" aria-hidden="true" id="signup_head">Sign up</label>
+                    <p id="errormsgSign"></p>
                     <input type="text" name="txt" placeholder="User name" id="reg-username" required>
-                    <span id="usernameError"></span>
+                   
                     <input type="email" name="email" placeholder="Email" id="reg-email" required>
                     <input type="password" name="password" placeholder="Password" id="reg-pswd" required>
                     <button id="signup">Sign up</button>
@@ -43,6 +44,7 @@
                     <input type="email" name="email" placeholder="Email" id="loginEmail" required>
                     <input type="password" name="password" placeholder="Password" id="login-pswd" required>
                     <button id="login">Login</button>
+                    <p id="errormsgLogin"></p>
                 </form>
             </div>
 
