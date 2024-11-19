@@ -1,0 +1,80 @@
+*{
+    padding: 0%;
+    margin: 0px;
+}
+.carmodel_header h3{
+    font-size: 30px;
+    text-align: start;
+    padding: 20px;
+}
+
+.model_types{
+    text-align: center;
+}
+
+.model_types ul{
+   
+   display: flex;
+   list-style: none;
+  justify-content: center;
+  font-size: 20px;
+  
+}
+.model_types a{
+    text-decoration: none;
+    margin: 30px;
+  
+   
+}
+
+.car_img h5{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.car_img img{
+    height: 30%;
+    width: 40%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+ position: relative;
+  
+}
+
+.mode_head{
+    position: relative;
+}
+.arrow_icon{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 28%;
+    width: 100%;
+}
+
+.fa-solid{
+    margin: 150px;
+    font-size: 30px;
+}
+
+
+.carPoint_head{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.carPoint_head div{
+    box-sizing: border-box;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 3px 3px 3px black;
+
+}
+
+.carPoint_head p{
+    margin: 15px;
+}

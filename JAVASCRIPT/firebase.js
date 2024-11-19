@@ -33,6 +33,16 @@ document.getElementById("signup").addEventListener("click", async (e) => {
   const email = document.getElementById("reg-email").value;
   const password = document.getElementById("reg-pswd").value;
   const errormsgSign=document.getElementById("errormsgSign");
+  const errorusername = document.getElementById("errorusername");
+  const erroremail = document.getElementById("erroremail");
+  const errorpassword = document.getElementById("errorpassword");
+
+  // Clear previous error messages
+  errormsgSign.textContent = '';
+  errorusername.textContent = '';
+  erroremail.textContent = '';
+  errorpassword.textContent = '';
+
 
   // Basic validation to ensure fields are filled
   if (!userName || !email || !password) {
@@ -40,20 +50,29 @@ document.getElementById("signup").addEventListener("click", async (e) => {
     return;
   }
 
-  const nameRegex = /^[A-Z][a-z]*$/; // Ensures the first letter is capitalized, others lowercase
+  const nameRegex = /^[A-Z][a-z]{0,29}$/; // Ensures the first letter is capitalized, others lowercase
   if (!nameRegex.test(userName)) {
-    errormsgSign.textContent = "Name should start with a capital letter, followed by lowercase letters.";
+    errorusername.textContent = "Name should start capital letter, followed by lowercase";
     return;
   }
   const emailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
   if (!emailRegex.test(email)) {
-    errormsgSign.textContent = "Email must contain numbers and end with '@gmail.com'.";
+    erroremail.textContent = "Email must end with '@gmail.com'.";
     return;
   }
-  if (password.length < 8) {
-    errormsgSign.textContent = "Password must be at least 8 characters long.";
+
+
+  // Password validation: At least 8 characters, with letters, numbers, and special characters
+  const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+  if (!passwordRegex.test(password)) {
+    errorpassword.textContent = "Password must be at least 8 characters";
     return;
   }
+
+  // if (password.length < 8) {
+  //   errormsgSign.textContent = "Password must be at least 8 characters long.";
+  //   return;
+  // }
 
 
   try {
@@ -83,6 +102,63 @@ document.getElementById("signup").addEventListener("click", async (e) => {
     console.error("Error during registration:", error.message);
   }
 });
+
+
+
+// show password sign up
+
+document.addEventListener("DOMContentLoaded", () => {
+  const eyeIcon = document.getElementById("showpswd");
+  const passwordInput = document.getElementById("reg-pswd");
+  eyeIcon.addEventListener("click", () => {
+      if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+          eyeIcon.classList.remove("fa-eye");
+          eyeIcon.classList.add("fa-eye-slash")
+      } else {
+          passwordInput.type = "password";
+          eyeIcon.classList.remove("fa-eye-slash");
+          eyeIcon.classList.add("fa-eye");
+      }
+  });
+});
+
+
+//show password login 
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const eyeIcon = document.getElementById("showpswdlogin");
+  const passwordInput = document.getElementById("login-pswd");
+  eyeIcon.addEventListener("click", () => {
+      if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+          eyeIcon.classList.remove("fa-eye");
+          eyeIcon.classList.add("fa-eye-slash")
+      } else {
+          passwordInput.type = "password";
+          eyeIcon.classList.remove("fa-eye-slash");
+          eyeIcon.classList.add("fa-eye");
+      }
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Login functionality
 document.getElementById("login").addEventListener("click", async (e) => {
