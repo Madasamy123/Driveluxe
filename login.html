@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login page</title>
     <link rel="stylesheet" href="./CSS/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type="module" src="./JAVASCRIPT/firebase.js"></script>
+
 </head>
 
 <body>
@@ -30,19 +32,31 @@
                     <label for="lab" aria-hidden="true" id="signup_head">Sign up</label>
                     <p id="errormsgSign"></p>
                     <input type="text" name="txt" placeholder="User name" id="reg-username" required>
-                   
+                    <p id="errorusername"></p>
                     <input type="email" name="email" placeholder="Email" id="reg-email" required>
-                    <input type="password" name="password" placeholder="Password" id="reg-pswd" required>
+                    <p id="erroremail"></p>
+                    <span class="form-pass">
+                        <input type="password" name="password" placeholder="Password" id="reg-pswd" required>
+                        <i class="fa-solid fa-eye" id="showpswd"></i>
+                    </span>
+                    <p id="errorpassword"></p>
                     <button id="signup">Sign up</button>
                     <p class="sign_para">Already have an account?</p>
                 </form>
             </div>
 
+
+
             <div class="login">
                 <form class="form">
                     <label for="lab" aria-hidden="true">Login</label>
                     <input type="email" name="email" placeholder="Email" id="loginEmail" required>
-                    <input type="password" name="password" placeholder="Password" id="login-pswd" required>
+                    <span class="form-pass">
+                        <input type="password" name="password" placeholder="Password" id="login-pswd" required>
+                   
+                        <i class="fa-solid fa-eye" id="showpswdlogin"></i>
+                    </span>
+                   
                     <button id="login">Login</button>
                     <p id="errormsgLogin"></p>
                 </form>

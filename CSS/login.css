@@ -74,7 +74,7 @@ label{
 }
 input{
     width: 60%;
-    height: 20px;
+    height: 10px;
     background: #e0dede;
     justify-content: center;
     display: flex;
@@ -83,7 +83,7 @@ input{
     border: none;
     outline: none;
     border-radius:5px ;
-    
+    margin-right: 60px;
 }
 button{
     width: 60%;
@@ -137,8 +137,37 @@ transform:scale(.6) ;
     margin-top: 30px;
 }
 
+.form-pass{
+    width: 65%;
+    height: 30px;
+    background-color: #e0dede;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 60px;
+    border-radius: 7px;
+} 
+.fa-eye{
+    margin-right: 10px;
+}
+#errorusername{
+    color: red;
+    font-size: 13px;
+    text-align: center;
+}
 
+#erroremail{
+    color: red;
+    font-size: 13px;
+    text-align: center;
 
+}
+
+#errorpassword{
+    color: red;
+    font-size: 13px;
+    text-align: center;
+}
 
 
 

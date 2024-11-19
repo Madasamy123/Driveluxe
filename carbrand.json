@@ -1,0 +1,30 @@
+[
+    {
+        "ID": "TATA",
+        "IMG": "./Assests/images/car_models/tata_logo.png"
+    },
+    {
+        "ID": "MAHINDRA",
+        "IMG": "./Assests/images/car_models/mahindra_logo.png"
+    },
+    {
+        "ID": "SUZUKI",
+        "IMG": "./Assests/images/car_models/suzuki_logo.png"
+    },
+    {
+        "ID": "TOYOTA",
+        "IMG": "./Assests/images/car_models/toyota_logo.jpg"
+    },
+    {
+        "ID": "AUDI",
+        "IMG": "./Assests/images/car_models/audi_logo.png"
+    },
+    {
+        "ID": "RENAULT",
+        "IMG": "./Assests/images/car_models/renault_logo.jpg"
+    },
+    {
+        "ID": "HONDA",
+        "IMG": "./Assests/images/car_models/honda_logo.png"
+    }
+]
