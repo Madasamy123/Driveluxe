@@ -1,0 +1,215 @@
+[ 
+    {
+        "Mud_Flap": {
+            "img": "./Assests/images/Accessories/car_acces_Mud Flap.jpg",
+            "name": "Mud Flap",
+            "price": {
+                "Tata": 1700,
+                "Mahindra": 1850,
+                "Suzuki": 1690,
+                "Toyota": 1780,
+                "Audi": 1200,
+                "Renault": 1850,
+                "Honda": 1750
+            },
+            "description": "Protect your car from dirt and road debris. Ensures a cleaner and more polished look."
+        },
+        "Allow_wheel": {
+            "img": "./Assests/images/Accessories/car_access_alloywheels.jpg",
+            "name": "Alloy Wheel",
+            "price": {
+                "Tata": 6500,
+                "Mahindra": 8500,
+                "Suzuki": 7300,
+                "Toyota": 6900,
+                "Audi": 12000,
+                "Renault": 9300,
+                "Honda": 8200
+            },
+            "description": "Enhance your car’s style with durable alloy wheels. Adds a sleek and modern finish."
+        },
+        "Body_Styling_kit": {
+            "img": "./Assests/images/Accessories/car_access_Body Styling kit.jpg",
+            "name": "Body Styling Kit",
+            "price": {
+                "Tata": 5600,
+                "Mahindra": 7300,
+                "Suzuki": 7200,
+                "Toyota": 9300,
+                "Audi": 15400,
+                "Renault": 8100,
+                "Honda": 9350
+            },
+            "description": "Upgrade your car's aesthetics with a premium styling kit. Perfect for a sporty and elegant appearance."
+        },
+        "Body_cover": {
+            "img": "./Assests/images/Accessories/car_access_bodycover.jpg",
+            "name": "Body Cover",
+            "price": {
+                "Tata": 1800,
+                "Mahindra": 1700,
+                "Suzuki": 1640,
+                "Toyota": 1999,
+                "Audi": 2500,
+                "Renault": 2100,
+                "Honda": 1740
+            },
+            "description": "Protect your car from dust, rain, and UV rays. Designed for a snug and secure fit."
+        },
+        "Car_charger": {
+            "img": "./Assests/images/Accessories/car_access_carcharger.jpg",
+            "name": "Car Charger",
+            "price": {
+                "Tata": 750,
+                "Mahindra": 690,
+                "Suzuki": 820,
+                "Toyota": 700,
+                "Audi": 1300,
+                "Renault": 1100,
+                "Honda": 1200
+            },
+            "description": "Charge your devices on the go with this compact charger. Compatible with all major gadgets."
+        },
+        "carpet_mat": {
+            "img": "./Assests/images/Accessories/car_access_carpetmat.jpg",
+            "name": "Carpet Mat",
+            "price": {
+                "Tata": 730,
+                "Mahindra": 690,
+                "Suzuki": 900,
+                "Toyota": 800,
+                "Audi": 1300,
+                "Renault": 1100,
+                "Honda": 950
+            },
+            "description": "Durable mats to keep your car interior clean and tidy. Designed for maximum comfort and fit."
+        },
+        "Door_visor": {
+            "img": "./Assests/images/Accessories/car_access_Door Visor.jpg",
+            "name": "Door Visor",
+            "price": {
+                "Tata": 1200,
+                "Mahindra": 1400,
+                "Suzuki": 1300,
+                "Toyota": 1499,
+                "Audi": 1999,
+                "Renault": 1650,
+                "Honda": 1500
+            },
+            "description": "Shield your car from rain and sunlight while driving. Adds a sleek design element to your doors."
+        },
+        "Front_parking_sensor": {
+            "img": "./Assests/images/Accessories/car_access_frontParkingsensors.jpg",
+            "name": "Front Parking Sensor",
+            "price": {
+                "Tata": 4500,
+                "Mahindra": 5500,
+                "Suzuki": 5300,
+                "Toyota": 6500,
+                "Audi": 9999,
+                "Renault": 8100,
+                "Honda": 7100
+            },
+            "description": "Navigate tight spaces easily with accurate parking sensors. Ensures safety and convenience."
+        },
+        "radio": {
+            "img": "./Assests/images/Accessories/car_access_radio.jpg",
+            "name": "Radio",
+            "price": {
+                "Tata": 1999,
+                "Mahindra": 2500,
+                "Suzuki": 3000,
+                "Toyota": 3999,
+                "Audi": 6950,
+                "Renault": 4500,
+                "Honda": 3999
+            },
+            "description": "Enjoy crisp sound and clear channels with this advanced radio system. Perfect for road trips."
+        },
+        "rear_upperspoiler": {
+            "img": "./Assests/images/Accessories/car_access_rearUpperSpoiler.jpg",
+            "name": "Rear Upper Spoiler",
+            "price": {
+                "Tata": 5999,
+                "Mahindra": 7000,
+                "Suzuki": 6500,
+                "Toyota": 7800,
+                "Audi": 12000,
+                "Renault": 9999,
+                "Honda": 6999
+            },
+            "description": "Boost aerodynamics and style with this rear spoiler. Gives your car a sporty edge."
+        },
+        "reverse_camera": {
+            "img": "./Assests/images/Accessories/car_access_reversecamera.jpg",
+            "name": "Reverse Camera",
+            "price": {
+                "Tata": 1200,
+                "Mahindra": 1500,
+                "Suzuki": 1150,
+                "Toyota": 1400,
+                "Audi": 3999,
+                "Renault": 999,
+                "Honda": 1900
+            },
+            "description": "Park safely with a clear view of the rear. Designed for precision and ease of use."
+        },
+        "seat": {
+            "img": "./Assests/images/Accessories/car_access_seat.jpg",
+            "name": "Seat",
+            "price": {
+                "Tata": 6500,
+                "Mahindra": 8300,
+                "Suzuki": 7000,
+                "Toyota": 9999,
+                "Audi": 14000,
+                "Renault": 10000,
+                "Honda": 8400
+            },
+            "description": "Premium seat covers for comfort and durability. Keeps your car looking fresh and stylish."
+        },
+        "speaker": {
+            "img": "./Assests/images/Accessories/car_access_speaker.jpg",
+            "name": "Speaker",
+            "price": {
+                "Tata": 3699,
+                "Mahindra": 5800,
+                "Suzuki": 6700,
+                "Toyota": 7999,
+                "Audi": 11999,
+                "Renault": 6999,
+                "Honda": 6300
+            },
+            "description": "Immerse yourself in high-quality sound with these powerful speakers. Ideal for music lovers."
+        },
+        "tail_lamp": {
+            "img": "./Assests/images/Accessories/car_access_tailLamp.jpg",
+            "name": "Tail Lamp",
+            "price": {
+                "Tata": 1300,
+                "Mahindra": 1500,
+                "Suzuki": 1200,
+                "Toyota": 1600,
+                "Audi": 4999,
+                "Renault": 2960,
+                "Honda": 2500
+            },
+            "description": "Bright and stylish tail lamps for enhanced visibility. Designed for safety and aesthetics."
+        },
+        "Television": {
+            "img": "./Assests/images/Accessories/car_access_tv.png",
+            "name": "Smart Television",
+            "price": {
+                "Tata": 5899,
+                "Mahindra": 6700,
+                "Suzuki": 6000,
+                "Toyota": 7999,
+                "Audi": 18000,
+                "Renault": 10000,
+                "Honda": 8500
+            },
+            "description": "Turn your car into an entertainment hub with this smart TV. Compact and feature-rich."
+        }
+    
+}
+]

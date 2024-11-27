@@ -16,7 +16,7 @@
                     "img3":"./Assests/images/Tata_car/tata_altroz_body_image3.jpg",
                     "img4":"./Assests/images/Tata_car/tata_altroz_body_image4.jpg",
                     "img5":"./Assests/images/Tata_car/tata_altroz_body_image5.jpg",
-
+                    
                     "description":"Tata Altroz is a premium hatchback known for its stylish design, spacious interior, and strong safety features. With both petrol and diesel engine options, it offers good performance and fuel efficiency, ideal for city and highway drives. Rated 5 stars in safety by Global NCAP, it stands out in its segment with advanced safety features. Competing with models like the Maruti Baleno and Hyundai i20, Altroz is a popular choice among Indian buyers looking for a balanced, feature-rich, and safe hatchback."
                 },
                 "Tiago": {
@@ -210,7 +210,7 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
-                    "img1": "The Mahindra KUV100 is a compact, quirky crossover with a bold design, aimed at buyers seeking a small SUV-like vehicle. With its SUV styling cues like roof rails, wide grille, and plastic cladding, it stands out in the urban hatchback category.",
+                    "img1": "./Assests/images/Mahindra_car/mahindra-verito-car.jpg",
                     "img2":"./Assests/images/Tata_car/tata_altroz_body_image2.jpg",
                     "img3":"./Assests/images/Tata_car/tata_tiago_body_image3.jpg",
                     "img4":"./Assests/images/Tata_car/tata_tigor_body_image4.jpeg",

@@ -1,0 +1,47 @@
+[
+  {
+    "index": 0,
+    "img": "./Assests/images/upcoming_cars/honda_wr-v.png",
+    "car_name": "HONDA WR-V",
+    "type": "Petrol & Diesel",
+    "price": "Rs.27.00-32.00 Lakhs",
+    "launch": "Coming Soon",
+    "launch date": "22 January 2025"
+  },
+  {
+    "index": 1,
+    "img": "./Assests/images/upcoming_cars/Audi_Audi_TFSI_quattro_S-tronic.png",
+    "car_name": "AUDI TFSI QUATTRO",
+    "type": "Petrol",
+    "price": "Rs.50.00-70.00 Lakhs",
+    "launch": "Coming Soon",
+    "launch date": "31 August 2025 (Tentative)"
+  },
+  {
+    "index": 2,
+    "img": "./Assests/images/upcoming_cars/hyundai_palisade.png",
+    "car_name": "HYUNDAI PALISADE",
+    "type": "Petrol & Diesel",
+    "price": "Rs.19.00-24.00 Lakhs",
+    "launch": "Coming Soon",
+    "launch date": "14 January 2025"
+  },
+  {
+    "index": 3,
+    "img": "./Assests/images/upcoming_cars/renault_dagia.jpg",
+    "car_name": "RENAULT DAGIA",
+    "type": "Diesel",
+    "price": "Rs.22.00-33.00 Lakhs",
+    "launch": "Coming Soon",
+    "launch date": "14 February 2025 (Tentative)"
+  },
+  {
+    "index": 4,
+    "img": "./Assests/images/upcoming_cars/suzuki_invicto.png",
+    "car_name": "SUZUKI INVICTO",
+    "type": "Petrol & Diesel",
+    "price": "Rs.25.00-35.00 Lakhs",
+    "launch": "Coming Soon",
+    "launch date": "8 July 2025 (Tentative)"
+  }
+]
