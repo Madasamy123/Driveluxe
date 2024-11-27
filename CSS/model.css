@@ -10,6 +10,7 @@
 
 .model_types{
     text-align: center;
+    margin: 50px;
 }
 
 .model_types ul{
@@ -36,14 +37,15 @@
 .car_img img{
     height: 30%;
     width: 40%;
-    display: block;
+    
+    display: flex;
   margin-left: auto;
   margin-right: auto;
  position: relative;
   
 }
 
-.mode_head{
+.model_head{
     position: relative;
 }
 .arrow_icon{

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/upcomingcar.js"></script>
 </head>
 
 <body>
@@ -46,24 +47,26 @@
     <!-- car model -->
 
     <div class="main">
-        <div id="car-container"></div>
+        <div id="car-container">
+            
+        </div>
         <!-- car adversement -->
 
 
-        <div class="advrtment"> 
+        <div class="advrtment">
             <div class="on_icon">
                 <img src="./Assests/images/mahindracar_adversement.jpg" alt="Advertisement 1">
                 <img src="./Assests/images/toyoto adversement img.jpg" alt="Advertisement 2">
                 <img src="./Assests/images/We-Buy-Cars-Honda-Only.V2.jpg" alt="Advertisement 3">
-               
+
             </div>
         </div>
-     
-
-            <!-- car Accessories -->
 
 
-      
+        <!-- car Accessories -->
+
+
+
 
         <div class="car_access">
             <h3>Car Accessories</h3>
@@ -77,7 +80,8 @@
                     <p>MRP:&#8377; 4500</p>
                 </a>
 
-                <a href=""><img src="./Assests/images/Accessories/car_access_Body Styling kit.jpg" alt="">Body Styling Kit <br>
+                <a href=""><img src="./Assests/images/Accessories/car_access_Body Styling kit.jpg" alt="">Body Styling
+                    Kit <br>
                     <p>MRP:&#8377; 2500</p>
                 </a>
 
@@ -97,7 +101,8 @@
                     <p>MRP:&#8377; 2600</p>
                 </a>
 
-                <a href=""><img src="./Assests/images/Accessories/car_access_frontParkingsensors.jpg" alt="">Front Parking Sensors
+                <a href=""><img src="./Assests/images/Accessories/car_access_frontParkingsensors.jpg" alt="">Front
+                    Parking Sensors
                     <br>
                     <p>MRP:&#8377; 3700</p>
                 </a>
@@ -106,11 +111,13 @@
                     <p>MRP:&#8377; 4000</p>
                 </a>
 
-                <a href=""><img src="./Assests/images/Accessories/car_access_rearUpperSpoiler.jpg" alt="">Rear Upper Spoiler <br>
+                <a href=""><img src="./Assests/images/Accessories/car_access_rearUpperSpoiler.jpg" alt="">Rear Upper
+                    Spoiler <br>
                     <p>MRP:&#8377; 2600</p>
                 </a>
 
-                <a href=""><img src="./Assests/images/Accessories/car_access_reversecamera.jpg" alt="">Reverse Camera <br>
+                <a href=""><img src="./Assests/images/Accessories/car_access_reversecamera.jpg" alt="">Reverse Camera
+                    <br>
                     <p>MRP:&#8377; 5600</p>
                 </a>
 
@@ -141,357 +148,361 @@
 
             <h3 class="upcoming">Upcoming Cars</h3>
 
-            <div class="upcomingcars">
-                <img src="./Assests/images/upcoming111.png" alt="">
+            <div id="slideshow-container">
+               <div class="slide_icon">
+                <i class="fa-solid fa-circle-chevron-left" id="prev-btn" onclick="updateCarIndex(-1)"></i>
+                <i class="fa-solid fa-circle-chevron-right" id="next-btn" onclick="updateCarIndex(1)"></i>
 
-                <div class="upcoming_cars1">
-
-                    <i class="fa-solid fa-circle-arrow-left"></i>
-
-                    <i class="fa-solid fa-circle-arrow-right"></i>
-
-                </div>
+               </div>
+              
+                <!-- <div class="carousel"> -->
+                   
+                    <div id="upcoming_car">
 
 
-            </div>
-            <div class="upcoming_text">
-                <div class="upcoming_border">
-                    <h2>Toyota Urban Cruiser Hyryder</h2>
-                    <p>Petrol & Diesel</p>
-                    <h4>Starting from Rs.49,90,000</h4>
-                </div>
-                <div class="upcoming_border">
-                    <h3>Coming Soon</h3>
-                    <p>Launch in 2025 Febraury</p>
-                </div>
+                    </div>
+                   
+                <!-- </div> -->
+
+
+
+
+
+
 
             </div>
 
+
+
+
+            <!-- top_model car -->
+
+
+            <div class="top_head">
+                <h3>Top Selling Cars</h3>
+
+                <div class="topcar_images">
+                    <a href=""><img src="./Assests/images/topcar_model123.webp" alt="">
+                        <p>Name : Tata Harrier</p>
+                        <p>Price: Rs.17.84 Laks</p>
+                        <div class="topcar_i">
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <i class="fa-solid fa-share"></i>
+                        </div>
+                    </a>
+                    <a href=""><img src="./Assests/images/topmodels2.webp" alt="">
+                        <p>Name : Maruti Suzuki</p>
+                        <p>Price: Rs.14.65 Laks</p>
+                        <div class="topcar_i">
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <i class="fa-solid fa-share"></i>
+
+                        </div>
+
+
+                    </a>
+                    <a href=""><img src="./Assests/images/topmodels3.jpg" alt="">
+                        <p>Name : Hyundai Grand 10 NIOS </p>
+                        <p>Price: Rs.11.20 Laks</p>
+                        <div class="topcar_i">
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <i class="fa-solid fa-share"></i>
+                        </div>
+
+
+                    </a>
+                    <a href=""><img src="./Assests/images/topmodels4.jpg" alt="">
+                        <p>Name : Hyundai Exter</p>
+                        <p>Price: Rs.18.12 Laks</p>
+                        <div class="topcar_i">
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <i class="fa-solid fa-share"></i>
+                        </div>
+
+
+                    </a>
+                    <a href=""><img src="./Assests/images/topmodels5.png" alt="">
+                        <p>Name : Toyoto Innova crysta</p>
+                        <p>Price: Rs.15.45 Laks</p>
+                        <div class="topcar_i">
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <i class="fa-solid fa-share"></i>
+                        </div>
+
+
+                    </a>
+                    <a href=""><img src="./Assests/images/topmodel6.webp" alt="">
+                        <p>Name : Audi G-tron</p>
+                        <p>Price: Rs.65.35 Laks</p>
+                        <div class="topcar_i">
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <i class="fa-solid fa-share"></i>
+                        </div>
+
+
+                    </a>
+                    <a href=""><img src="./Assests/images/topmodel7.jpg" alt="">
+                        <p>Name : BMW 3- Glance</p>
+                        <p>Price: Rs.56.97 Laks</p>
+                        <div class="topcar_i">
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <i class="fa-solid fa-share"></i>
+                        </div>
+
+
+                    </a>
+                    <a href=""><img src="./Assests/images/topmodel8.webp" alt="">
+                        <p>Name : Renault Nisson</p>
+                        <p>Price: Rs.15.95 Laks</p>
+                        <div class="topcar_i">
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <i class="fa-solid fa-share"></i>
+                        </div>
+
+
+                    </a>
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+            <div class="offer_title">
+                <h3>OFFER ZONE</h3>
+            </div>
+            <div class="offer_zone">
+
+
+                <div class="offer_head">
+                    <div class="offer_name">
+                        <h3>DRIVELUXE MOTORS</h3>
+                        <p>Connecting Aspirations</p>
+                    </div>
+                    <div class="offer_dialogue">
+                        <p>Drive Your</p>
+                        <p>Dream Car</p>
+                    </div>
+
+                </div>
+
+
+                <div class="offer_center">
+                    <div class="offer_first">
+                        <div class="offer_first1">
+                            <h1>festival</h1>
+                            <h1 style="margin-left: 50px;">of cars</h1>
+
+                        </div>
+
+
+                        <div>
+                            <img src="./Assests/images/offer-removebg-preview.png" alt="">
+
+                        </div>
+                        <div class="offer_first2">
+                            <h3 style="margin-top: 20px;">BOOK</h3>
+                            <h3>NOW</h3>
+                            <P>GET </P>
+                            <p>HOLIDAY</p>
+                            <p>VOUCHER</p>
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="fixed_amount">
+                    <div class="offer_price">
+                        <p>Now Starts at</p>
+                        <h3>&#8377; 15.49 Lakh*</h3>
+
+                    </div>
+                    <div class="offer_last">
+                        <P>LIMITE STOCKS AVAILABLE</P>
+                    </div>
+                </div>
+
+
+                <div class="offer_table">
+                    <div class="offer_tablefirst">
+                        <p>Benefits up to</p>
+                        <h3>&#8377; 1 80 000</h3>
+                    </div>
+                    <div class="offer_tablefirst">
+                        <p>ZERO</p>
+                        <P>DOWN PAYMENT</P>
+                    </div>
+                    <div class="offer_tablefirst">
+                        <p>100% ONROAD</p>
+                        <P>FUNDING</P>
+                    </div>
+                    <div class="offer_tablefirst">
+                        <p>BEST EXCHANGE</p>
+                        <p>OFFERS ON OLD CAR</p>
+                    </div>
+                    <div class="offer_tablefirst">
+                        <p>MAX LOAN TENURE</p>
+                        <P>UPTO 8 YEARS</P>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+        <!-- footer -->
+
+        <div class="footer">
+
+            <div class="footer_first">
+                <div class="footer_head">
+                    <h3>Driveluxe cars</h3>
+                    <a href="">
+                        <p>Tata cars</p>
+                    </a>
+                    <a href="">
+                        <p>Hyundai cars</p>
+                    </a>
+                    <a href="">
+                        <p>Mahindra Cars</p>
+                    </a>
+                    <a href="">
+                        <p>Toyoto cars</p>
+                    </a>
+                    <a href="">
+                        <p>Suzuki cars</p>
+                    </a>
+                    <a href="">
+                        <p>Kia cars</p>
+                    </a>
+                    <a href="">
+                        <p>Audi cars</p>
+                    </a>
+                </div>
+                <div class="footer_head">
+                    <h3>Click to buy</h3>
+                    <a href="">
+                        <p>OverView</p>
+                    </a>
+                    <a href="">
+                        <p>Test Drive</p>
+                    </a>
+                    <a href="">
+                        <p>Prices</p>
+                    </a>
+                    <a href="">
+                        <p>Online Booking</p>
+                    </a>
+                </div>
+                <div class="footer_head">
+                    <h3>Support</h3>
+                    <a href="">
+                        <p>Driveluxe Team</p>
+                    </a>
+                    <a href="">
+                        <p>Terms & conditions</p>
+                    </a>
+                    <a href="">
+                        <p>Services</p>
+                    </a>
+                </div>
+                <div class="footer_head">
+                    <h3>Contact Us</h3>
+                    <a href="">
+                        <p>Driveluxe@gmail.com</p>
+                    </a>
+                    <a href="">
+                        <p>+91 9827493982</p>
+                    </a>
+                </div>
+            </div>
+            <div class="footer_last">
+                <p>Copyrights &copy; Driveluxe Motors. All Rights Reserved </p>
+            </div>
         </div>
 
 
 
+        <script type="module" src="./detailcar.js">
 
-        <!-- top_model car -->
+        </script>
 
+        <script>
 
-        <div class="top_head">
-            <h3>Top Selling Cars</h3>
+            function navigateToCarPage(carId) {
+                window.location.href = `./car_modelspage.html?carId=${carId}`;
+            }
 
-            <div class="topcar_images">
-                <a href=""><img src="./Assests/images/topcar_model123.webp" alt="">
-                    <p>Name : Tata Harrier</p>
-                    <p>Price: Rs.17.84 Laks</p>
-                    <div class="topcar_i">
-                        <i class="fa-regular fa-thumbs-up"></i>
-                        <i class="fa-solid fa-share"></i>
-                    </div>
-                </a>
-                <a href=""><img src="./Assests/images/topmodels2.webp" alt="">
-                    <p>Name : Maruti Suzuki</p>
-                    <p>Price: Rs.14.65 Laks</p>
-                    <div class="topcar_i">
-                        <i class="fa-regular fa-thumbs-up"></i>
-                        <i class="fa-solid fa-share"></i>
 
-                    </div>
+            fetch('./carbrand.json')
+                .then(response => response.json())
+                .then(data => {
+                    const container = document.getElementById('car-container');
+                    data.forEach(car => {
+                        const carDiv = document.createElement('div');
+                        carDiv.className = 'car-head';
 
+                        const anchor = document.createElement('a');
 
-                </a>
-                <a href=""><img src="./Assests/images/topmodels3.jpg" alt="">
-                    <p>Name : Hyundai Grand 10 NIOS </p>
-                    <p>Price: Rs.11.20 Laks</p>
-                    <div class="topcar_i">
-                        <i class="fa-regular fa-thumbs-up"></i>
-                        <i class="fa-solid fa-share"></i>
-                    </div>
+                        const img = document.createElement('img');
+                        img.src = car.IMG;
+                        img.alt = car.ID;
 
+                        img.onclick = () => navigateToCarPage(car.ID);
 
-                </a>
-                <a href=""><img src="./Assests/images/topmodels4.jpg" alt="">
-                    <p>Name : Hyundai Exter</p>
-                    <p>Price: Rs.18.12 Laks</p>
-                    <div class="topcar_i">
-                        <i class="fa-regular fa-thumbs-up"></i>
-                        <i class="fa-solid fa-share"></i>
-                    </div>
 
+                        anchor.appendChild(img);
+                        carDiv.appendChild(anchor);
+                        container.appendChild(carDiv);
+                    });
+                })
+                .catch(error => console.error('Error loading JSON:', error));
 
-                </a>
-                <a href=""><img src="./Assests/images/topmodels5.png" alt="">
-                    <p>Name : Toyoto Innova crysta</p>
-                    <p>Price: Rs.15.45 Laks</p>
-                    <div class="topcar_i">
-                        <i class="fa-regular fa-thumbs-up"></i>
-                        <i class="fa-solid fa-share"></i>
-                    </div>
 
-
-                </a>
-                <a href=""><img src="./Assests/images/topmodel6.webp" alt="">
-                    <p>Name : Audi G-tron</p>
-                    <p>Price: Rs.65.35 Laks</p>
-                    <div class="topcar_i">
-                        <i class="fa-regular fa-thumbs-up"></i>
-                        <i class="fa-solid fa-share"></i>
-                    </div>
-
-
-                </a>
-                <a href=""><img src="./Assests/images/topmodel7.jpg" alt="">
-                    <p>Name : BMW 3- Glance</p>
-                    <p>Price: Rs.56.97 Laks</p>
-                    <div class="topcar_i">
-                        <i class="fa-regular fa-thumbs-up"></i>
-                        <i class="fa-solid fa-share"></i>
-                    </div>
-
-
-                </a>
-                <a href=""><img src="./Assests/images/topmodel8.webp" alt="">
-                    <p>Name : Renault Nisson</p>
-                    <p>Price: Rs.15.95 Laks</p>
-                    <div class="topcar_i">
-                        <i class="fa-regular fa-thumbs-up"></i>
-                        <i class="fa-solid fa-share"></i>
-                    </div>
-
-
-                </a>
-
-            </div>
-
-
-
-        </div>
-
-
-
-
-
-        <div class="offer_title">
-            <h3>OFFER ZONE</h3>
-        </div>
-        <div class="offer_zone">
-
-
-            <div class="offer_head">
-                <div class="offer_name">
-                    <h3>DRIVELUXE MOTORS</h3>
-                    <p>Connecting Aspirations</p>
-                </div>
-                <div class="offer_dialogue">
-                    <p>Drive Your</p>
-                    <p>Dream Car</p>
-                </div>
-
-            </div>
-
-
-            <div class="offer_center">
-                <div class="offer_first">
-                    <div class="offer_first1">
-                        <h1>festival</h1>
-                        <h1 style="margin-left: 50px;">of cars</h1>
-
-                    </div>
-
-
-                    <div>
-                        <img src="./Assests/images/offer-removebg-preview.png" alt="">
-
-                    </div>
-                    <div class="offer_first2">
-                        <h3 style="margin-top: 20px;">BOOK</h3>
-                        <h3>NOW</h3>
-                        <P>GET </P>
-                        <p>HOLIDAY</p>
-                        <p>VOUCHER</p>
-                    </div>
-
-
-
-                </div>
-
-
-            </div>
-
-
-            <div class="fixed_amount">
-                <div class="offer_price">
-                    <p>Now Starts at</p>
-                    <h3>&#8377; 15.49 Lakh*</h3>
-
-                </div>
-                <div class="offer_last">
-                    <P>LIMITE STOCKS AVAILABLE</P>
-                </div>
-            </div>
-
-
-            <div class="offer_table">
-                <div class="offer_tablefirst">
-                    <p>Benefits up to</p>
-                    <h3>&#8377; 1 80 000</h3>
-                </div>
-                <div class="offer_tablefirst">
-                    <p>ZERO</p>
-                    <P>DOWN PAYMENT</P>
-                </div>
-                <div class="offer_tablefirst">
-                    <p>100% ONROAD</p>
-                    <P>FUNDING</P>
-                </div>
-                <div class="offer_tablefirst">
-                    <p>BEST EXCHANGE</p>
-                    <p>OFFERS ON OLD CAR</p>
-                </div>
-                <div class="offer_tablefirst">
-                    <p>MAX LOAN TENURE</p>
-                    <P>UPTO 8 YEARS</P>
-                </div>
-
-            </div>
-
-
-
-        </div>
-
-
-
-
-
-    </div>
-
-    <!-- footer -->
-
-    <div class="footer">
-
-        <div class="footer_first">
-            <div class="footer_head">
-                <h3>Driveluxe cars</h3>
-                <a href="">
-                    <p>Tata cars</p>
-                </a>
-                <a href="">
-                    <p>Hyundai cars</p>
-                </a>
-                <a href="">
-                    <p>Mahindra Cars</p>
-                </a>
-                <a href="">
-                    <p>Toyoto cars</p>
-                </a>
-                <a href="">
-                    <p>Suzuki cars</p>
-                </a>
-                <a href="">
-                    <p>Kia cars</p>
-                </a>
-                <a href="">
-                    <p>Audi cars</p>
-                </a>
-            </div>
-            <div class="footer_head">
-                <h3>Click to buy</h3>
-                <a href="">
-                    <p>OverView</p>
-                </a>
-                <a href="">
-                    <p>Test Drive</p>
-                </a>
-                <a href="">
-                    <p>Prices</p>
-                </a>
-                <a href="">
-                    <p>Online Booking</p>
-                </a>
-            </div>
-            <div class="footer_head">
-                <h3>Support</h3>
-                <a href="">
-                    <p>Driveluxe Team</p>
-                </a>
-                <a href="">
-                    <p>Terms & conditions</p>
-                </a>
-                <a href="">
-                    <p>Services</p>
-                </a>
-            </div>
-            <div class="footer_head">
-                <h3>Contact Us</h3>
-                <a href="">
-                    <p>Driveluxe@gmail.com</p>
-                </a>
-                <a href="">
-                    <p>+91 9827493982</p>
-                </a>
-            </div>
-        </div>
-        <div class="footer_last">
-            <p>Copyrights &copy; Driveluxe Motors. All Rights Reserved </p>
-        </div>
-    </div>
-
-
-
-    <script type="module" src="./detailcar.js">
-
-    </script>
-
-    <script>
-
-        function navigateToCarPage(carId) {
-            window.location.href = `./car_modelspage.html?carId=${carId}`;
-        }
-
-
-        fetch('./carbrand.json')
-            .then(response => response.json())
-            .then(data => {
-                const container = document.getElementById('car-container');
-                data.forEach(car => {
-                    const carDiv = document.createElement('div');
-                    carDiv.className = 'car-head';
-
-                    const anchor = document.createElement('a');
-
-                    const img = document.createElement('img');
-                    img.src = car.IMG;
-                    img.alt = car.ID;
-
-                    img.onclick = () => navigateToCarPage(car.ID);
-
-
-                    anchor.appendChild(img);
-                    carDiv.appendChild(anchor);
-                    container.appendChild(carDiv);
-                });
-            })
-            .catch(error => console.error('Error loading JSON:', error));
-
-
-// adversement add
+            // adversement add
 
             const slides = document.querySelector('.on_icon');
-let currentIndex = 0;
+            let currentIndex = 0;
 
-function showNextSlide() {
-    currentIndex++;
-    if (currentIndex >= 3) { // Adjust based on the number of images
-        currentIndex = 0;
-    }
-    const offset = currentIndex * -100; // Shift to the next image
-    slides.style.transform = `translateX(${offset}%)`;
-}
+            function showNextSlide() {
+                currentIndex++;
+                if (currentIndex >= 3) { // Adjust based on the number of images
+                    currentIndex = 0;
+                }
+                const offset = currentIndex * -100; // Shift to the next image
+                slides.style.transform = `translateX(${offset}%)`;
+            }
 
-setInterval(showNextSlide, 5000); // Slide every 3 seconds
-
-
+            setInterval(showNextSlide, 5000); // Slide every 3 seconds
 
 
-    </script>
+
+
+
+        </script>
+
+
+
+        <script src="upcomingcar.js" type="module"></script>
+
+
+
 
 </body>
 

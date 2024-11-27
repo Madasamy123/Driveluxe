@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Firebase JSON Upload</title>
-</head>
-<body>
-  <h1>Upload JSON to Firebase</h1>
-  <script type="module">
+
     // Import necessary functions from Firebase SDK
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
     import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
@@ -28,14 +19,14 @@
 
     // Load JSON and upload data
     async function loadJsonData() {
-      const response = await fetch('upcomingcar.json'); // Ensure 'upcomingcar.json' is accessible in the same directory
+      const response = await fetch('./accessories.json'); // Ensure 'sample.json' is accessible in the same directory
       const data = await response.json();
       await uploadToFirestore(data);
     }
 
     // Upload each item to Firestore
     async function uploadToFirestore(data) {
-      const collectionRef = collection(db, 'upcoming cars');
+      const collectionRef = collection(db, 'accessories');
       for (const item of data) {
         try {
           await addDoc(collectionRef, item);
@@ -48,6 +39,4 @@
 
     // Call the loadJsonData function to start the upload
     loadJsonData();
-  </script>
-</body>
-</html>
+  
