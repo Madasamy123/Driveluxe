@@ -1,42 +1,85 @@
+// Import necessary functions from Firebase SDK
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+import { getFirestore, collection, addDoc, getDocs, query, where } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
 
-    // Import necessary functions from Firebase SDK
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
-    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
-    
-    // Firebase configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyC0tw4_CFl84kb5i4DeuBkKf0gA7gS3mF4",
-      authDomain: "login-page1234.firebaseapp.com",
-      projectId: "login-page1234",
-      storageBucket: "login-page1234.appspot.com",
-      messagingSenderId: "471482088238",
-      appId: "1:471482088238:web:eb3db8a185185e54e118bf"
-    };
+// Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyC0tw4_CFl84kb5i4DeuBkKf0gA7gS3mF4",
+  authDomain: "login-page1234.firebaseapp.com",
+  projectId: "login-page1234",
+  storageBucket: "login-page1234.appspot.com",
+  messagingSenderId: "471482088238",
+  appId: "1:471482088238:web:eb3db8a185185e54e118bf"
+};
 
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestore(app);
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 
-    // Load JSON and upload data
-    async function loadJsonData() {
-      const response = await fetch('./accessories.json'); // Ensure 'sample.json' is accessible in the same directory
-      const data = await response.json();
-      await uploadToFirestore(data);
+// Load JSON and upload data to Firestore
+async function loadJsonData() {
+  try {
+    const response = await fetch('accessories.json'); // Ensure JSON file is in the same folder
+    const data = await response.json();
+
+    // Flatten nested JSON structure
+    const flattenedData = Object.values(data[0]); // Convert nested objects to array
+    console.log("Flattened JSON Data Loaded:", flattenedData);
+
+    // Check if data already exists in Firestore
+    const accessoriesQuery = query(collection(db, 'accessories'));
+    const querySnapshot = await getDocs(accessoriesQuery);
+
+    // Only upload data if Firestore is empty
+    if (querySnapshot.empty) {
+      await uploadToFirestore(flattenedData);
     }
+  } catch (error) {
+    console.error("Error loading JSON data:", error);
+  }
+}
 
-    // Upload each item to Firestore
-    async function uploadToFirestore(data) {
-      const collectionRef = collection(db, 'accessories');
-      for (const item of data) {
-        try {
-          await addDoc(collectionRef, item);
-          console.log('Document added:', item);
-        } catch (error) {
-          console.error('Error adding document:', error);
-        }
-      }
+// Upload each item to Firestore
+async function uploadToFirestore(data) {
+  try {
+    const collectionRef = collection(db, 'accessories');
+    for (const item of data) {
+      await addDoc(collectionRef, item);
+      console.log('Document added:', item);
     }
+  } catch (error) {
+    console.error('Error adding document:', error);
+  }
+}
 
-    // Call the loadJsonData function to start the upload
-    loadJsonData();
-  
+// Fetch and display data from Firestore
+async function displayUsers() {
+  try {
+    const usersDiv = document.getElementById("access");
+    const querySnapshot = await getDocs(collection(db, "accessories"));
+    console.log("Fetched documents count:", querySnapshot.size);
+
+    querySnapshot.forEach((doc) => {
+      const access = doc.data();
+
+      // Create HTML elements for each accessory
+      const userElement = document.createElement("div");
+      userElement.innerHTML = `
+        <img src="${access.img}" alt="${access.name}" />
+        <p><strong>Name:</strong> ${access.name}</p>
+        <p><strong>Price:</strong> ${JSON.stringify(access.price)}</p>
+        <p><strong>Description:</strong> ${access.description}</p>
+        <hr>
+      `;
+      usersDiv.appendChild(userElement);
+    });
+  } catch (error) {
+    console.error("Error fetching documents:", error);
+  }
+}
+
+// Call functions to initialize
+(async function initialize() {
+  await loadJsonData(); // Load JSON and upload to Firestore
+  displayUsers(); // Display the uploaded data
+})();

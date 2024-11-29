@@ -1,7 +1,7 @@
 [ 
     {
         "Mud_Flap": {
-            "img": "./Assests/images/Accessories/car_acces_Mud Flap.jpg",
+            "img": "../Assests/images/Accessories/car_acces_Mud Flap.jpg",
             "name": "Mud Flap",
             "price": {
                 "Tata": 1700,
@@ -15,7 +15,7 @@
             "description": "Protect your car from dirt and road debris. Ensures a cleaner and more polished look."
         },
         "Allow_wheel": {
-            "img": "./Assests/images/Accessories/car_access_alloywheels.jpg",
+            "img": "../Assests/images/Accessories/car_access_alloywheels.jpg",
             "name": "Alloy Wheel",
             "price": {
                 "Tata": 6500,
@@ -29,7 +29,7 @@
             "description": "Enhance your car’s style with durable alloy wheels. Adds a sleek and modern finish."
         },
         "Body_Styling_kit": {
-            "img": "./Assests/images/Accessories/car_access_Body Styling kit.jpg",
+            "img": "../Assests/images/Accessories/car_access_Body Styling kit.jpg",
             "name": "Body Styling Kit",
             "price": {
                 "Tata": 5600,
@@ -43,7 +43,7 @@
             "description": "Upgrade your car's aesthetics with a premium styling kit. Perfect for a sporty and elegant appearance."
         },
         "Body_cover": {
-            "img": "./Assests/images/Accessories/car_access_bodycover.jpg",
+            "img": "../Assests/images/Accessories/car_access_bodycover.jpg",
             "name": "Body Cover",
             "price": {
                 "Tata": 1800,
@@ -57,7 +57,7 @@
             "description": "Protect your car from dust, rain, and UV rays. Designed for a snug and secure fit."
         },
         "Car_charger": {
-            "img": "./Assests/images/Accessories/car_access_carcharger.jpg",
+            "img": "../Assests/images/Accessories/car_access_carcharger.jpg",
             "name": "Car Charger",
             "price": {
                 "Tata": 750,
@@ -71,7 +71,7 @@
             "description": "Charge your devices on the go with this compact charger. Compatible with all major gadgets."
         },
         "carpet_mat": {
-            "img": "./Assests/images/Accessories/car_access_carpetmat.jpg",
+            "img": "../Assests/images/Accessories/car_access_carpetmat.jpg",
             "name": "Carpet Mat",
             "price": {
                 "Tata": 730,
@@ -85,7 +85,7 @@
             "description": "Durable mats to keep your car interior clean and tidy. Designed for maximum comfort and fit."
         },
         "Door_visor": {
-            "img": "./Assests/images/Accessories/car_access_Door Visor.jpg",
+            "img": "../Assests/images/Accessories/car_access_Door Visor.jpg",
             "name": "Door Visor",
             "price": {
                 "Tata": 1200,
@@ -99,7 +99,7 @@
             "description": "Shield your car from rain and sunlight while driving. Adds a sleek design element to your doors."
         },
         "Front_parking_sensor": {
-            "img": "./Assests/images/Accessories/car_access_frontParkingsensors.jpg",
+            "img": "../Assests/images/Accessories/car_access_frontParkingsensors.jpg",
             "name": "Front Parking Sensor",
             "price": {
                 "Tata": 4500,
@@ -113,7 +113,7 @@
             "description": "Navigate tight spaces easily with accurate parking sensors. Ensures safety and convenience."
         },
         "radio": {
-            "img": "./Assests/images/Accessories/car_access_radio.jpg",
+            "img": "../Assests/images/Accessories/car_access_radio.jpg",
             "name": "Radio",
             "price": {
                 "Tata": 1999,
@@ -127,7 +127,7 @@
             "description": "Enjoy crisp sound and clear channels with this advanced radio system. Perfect for road trips."
         },
         "rear_upperspoiler": {
-            "img": "./Assests/images/Accessories/car_access_rearUpperSpoiler.jpg",
+            "img": "../Assests/images/Accessories/car_access_rearUpperSpoiler.jpg",
             "name": "Rear Upper Spoiler",
             "price": {
                 "Tata": 5999,
@@ -141,7 +141,7 @@
             "description": "Boost aerodynamics and style with this rear spoiler. Gives your car a sporty edge."
         },
         "reverse_camera": {
-            "img": "./Assests/images/Accessories/car_access_reversecamera.jpg",
+            "img": "../Assests/images/Accessories/car_access_reversecamera.jpg",
             "name": "Reverse Camera",
             "price": {
                 "Tata": 1200,
@@ -155,7 +155,7 @@
             "description": "Park safely with a clear view of the rear. Designed for precision and ease of use."
         },
         "seat": {
-            "img": "./Assests/images/Accessories/car_access_seat.jpg",
+            "img": "../Assests/images/Accessories/car_access_seat.jpg",
             "name": "Seat",
             "price": {
                 "Tata": 6500,
@@ -169,7 +169,7 @@
             "description": "Premium seat covers for comfort and durability. Keeps your car looking fresh and stylish."
         },
         "speaker": {
-            "img": "./Assests/images/Accessories/car_access_speaker.jpg",
+            "img": "../Assests/images/Accessories/car_access_speaker.jpg",
             "name": "Speaker",
             "price": {
                 "Tata": 3699,
@@ -183,7 +183,7 @@
             "description": "Immerse yourself in high-quality sound with these powerful speakers. Ideal for music lovers."
         },
         "tail_lamp": {
-            "img": "./Assests/images/Accessories/car_access_tailLamp.jpg",
+            "img": "../Assests/images/Accessories/car_access_tailLamp.jpg",
             "name": "Tail Lamp",
             "price": {
                 "Tata": 1300,
@@ -197,7 +197,7 @@
             "description": "Bright and stylish tail lamps for enhanced visibility. Designed for safety and aesthetics."
         },
         "Television": {
-            "img": "./Assests/images/Accessories/car_access_tv.png",
+            "img": "../Assests/images/Accessories/car_access_tv.png",
             "name": "Smart Television",
             "price": {
                 "Tata": 5899,

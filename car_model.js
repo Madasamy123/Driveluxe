@@ -1,8 +1,7 @@
 
 const urlParams = new URLSearchParams(window.location.search);
 let carId = urlParams.get('carId') || 'TATA';
-// document.getElementById('car-id').textContent = `Car ID: ${carId}`;
-// document.getElementById('car_id').textContent = `${carId} CARS`;
+
 
 
 
@@ -32,6 +31,21 @@ window.updateCarModel = function (model) {
     fetchAllCarDetails();
 };
 
+
+let carChangeIndex = 0;
+let totalCarsLength = 2;
+let carIndexValue = 0;
+
+window.updateIndexCar = function (count) {
+    console.log(totalCarsLength);
+
+    carIndexValue = (carChangeIndex + count + totalCarsLength) % totalCarsLength;
+    fetchAllCarDetails();
+    totalCarsLength = 2;
+};
+
+
+
 async function fetchAllCarDetails() {
     try {
         const querySnapshot = await getDocs(collection(db, "cardetails"));
@@ -40,7 +54,6 @@ async function fetchAllCarDetails() {
         const uniqueCars = [];
         querySnapshot.forEach((doc) => {
             const data = doc.data();
-            console.log("Document data:", data);
 
             const car = JSON.stringify(data, null, 2);
             const jsonobj = JSON.parse(car)[carId];
@@ -48,14 +61,16 @@ async function fetchAllCarDetails() {
         });
 
         const flattenedData = flattenCarData(uniqueCars[0], selectedCarModel);
+        totalCarsLength = Object.keys(flattenedData).length;
         const container = document.getElementById("car-container");
         container.innerHTML = ""; // Clear container
 
         for (const carName in flattenedData) {
             const car = flattenedData[carName];
-            const carDiv = document.createElement("div");
-            carDiv.classList.add("car-detail");
-            carDiv.innerHTML = `
+            if (car.index === carIndexValue) {
+                const carDiv = document.createElement("div");
+                carDiv.classList.add("car-detail");
+                carDiv.innerHTML = `
                 <div class="car_img">
                     <h5 class="car-title">${car.Title}</h5>
                     <a href="#"><img src="${car.img1}" alt="${car.Title}"></a>
@@ -70,7 +85,8 @@ async function fetchAllCarDetails() {
                         <p><strong>Fuel Type:</strong> ${car["Fuel Type"]}</p>
                     </div>
                 </div>`;
-            container.appendChild(carDiv);
+                container.appendChild(carDiv);
+            }
         }
     } catch (error) {
         console.error("Error fetching car details:", error);
@@ -79,11 +95,32 @@ async function fetchAllCarDetails() {
 
 
 function flattenCarData(data, type) {
-    const flattenedData = {};
-    for (const carName in data[type]) {
-        flattenedData[carName] = data[type][carName];
+    if (type === 'All') {
+        const allCars = {};
+        let index = 0; // Start index at 0
+        for (const category in data) {
+            if (data.hasOwnProperty(category)) {
+                for (const [key, value] of Object.entries(data[category])) {
+                    // Add index to each object
+                    allCars[`${index}`] = { ...value, index };
+                    index++; // Increment index for each object
+                }
+            }
+        }
+        return allCars;
     }
-    return flattenedData;
+
+    const typeData = data[type];
+    const indexedData = {};
+    let index = 0;
+
+    // Add index to each object in the type category
+    for (const [key, value] of Object.entries(typeData)) {
+        indexedData[`${index}`] = { ...value, index };
+        index++;
+    }
+
+    return indexedData;
 }
 
 

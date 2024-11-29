@@ -2,6 +2,11 @@
     padding: 0%;
     margin: 0px;
 }
+
+
+
+
+
 .carmodel_header h3{
     font-size: 30px;
     text-align: start;
@@ -48,18 +53,6 @@
 .model_head{
     position: relative;
 }
-.arrow_icon{
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    top: 28%;
-    width: 100%;
-}
-
-.fa-solid{
-    margin: 150px;
-    font-size: 30px;
-}
 
 
 .carPoint_head{
@@ -79,4 +72,79 @@
 
 .carPoint_head p{
     margin: 15px;
+}
+
+
+
+.head h4{
+    text-align: center;
+    font-size: 30px;
+    margin: 40px;
+}
+
+.head_image img{
+    height: 500px;
+    width: 600px;
+}
+
+.head_para p{
+    font-size: 20px;
+    line-height: 40px;
+    width: 700px;
+    font-weight: bolder;
+
+}
+
+.detail_head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.second_head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+}
+
+.second_image img{
+   
+    height: 130px;
+    width: 130px;
+}
+
+.head_para button{
+    /* margin-right: 50px;
+    margin-top: 100px; */
+    height: 40px;
+    width: 100px;
+    margin: 100px 100px 100px 100px;
+}
+
+
+#car-container{
+    display: flex;
+    position: relative;
+}
+
+
+
+.car-detail{
+    width: 100%;
+}
+
+
+.shownxt_car{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 28%;
+    width: 100%;
+}
+
+.fa-solid{
+    margin: 150px;
+    font-size: 40px;
+    z-index: 9999999;
 }
