@@ -1,0 +1,23 @@
+#access{
+    display: flex;
+    overflow: scroll;
+    height: 300px;
+  
+    
+}
+#access img{
+    height: 200px;
+    width: 200px;
+    box-sizing: border-box;
+    box-shadow: 1px 3px 3px 3px black;
+   
+}
+#access p {
+    width: 400px;
+   
+}
+
+
+/* #access img::-webkit-scrollbar{
+    display: none;
+} */

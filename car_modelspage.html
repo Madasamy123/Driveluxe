@@ -20,14 +20,28 @@
             <li><a href="#" onclick="updateCarModel('Sedan')">Sedan</a></li>
             <li><a href="#" onclick="updateCarModel('Suv')">Suv</a></li>
             <li><a href="#" onclick="updateCarModel('Electric Cars')">Electric</a></li>
-            <li><a href="#" onclick="updateCarModel()">All</a></li>
+            <li><a href="#" onclick="updateCarModel('All')">All</a></li>
             
 
         </ul>
     </div>
 
     <!-- Car Container -->
-    <div id="car-container"></div>
+   
+           <div class="slider">
+
+            <div class="shownxt_car">
+            
+
+                <i class="fa-solid fa-circle-chevron-left" id="leftCar" onclick="updateIndexCar(-1)"></i>
+                <i class="fa-solid fa-circle-chevron-right" id="rightCar" onclick="updateIndexCar(1)"></i>
+   
+               </div>
+               <div id="car-container">
+   
+                </div>
+           </div>
+        
 
     <!-- JavaScript File -->
     <script type="module" src="./car_model.js"></script>

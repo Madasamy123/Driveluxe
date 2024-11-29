@@ -55,18 +55,7 @@ async function uploadToFirestore(data) {
   }
 }
 
-// let carIndexValue = 0;
-// window.updateCarIndex = function (count) {
-//   if (count > 4) { carIndexValue = 0 }
-//   else if (count < 0) { carIndexValue = 4 }
-//   else {
-//     carIndexValue += count;
-//   }
 
-//   console.log("Car index updated to:", carIndexValue);
-//   displayCarDetails();
-
-// };
 
 let carIndexValue = 0;
 
@@ -104,7 +93,7 @@ async function displayCarDetails() {
          <div id="upcoming_text2">
          <p>Launch Date: ${car["launch date"]}</p>
          </div>
-        </div?
+        </div>
       `;
         container.appendChild(carDiv);
       }
