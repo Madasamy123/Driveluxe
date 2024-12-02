@@ -6,15 +6,30 @@
     
 }
 #access img{
-    height: 200px;
-    width: 200px;
-    box-sizing: border-box;
-    box-shadow: 1px 3px 3px 3px black;
+    height: 120px;
+    width: 150px;
+    margin: 15px;
+    /* box-sizing: border-box;
+    box-shadow: 1px 3px 3px 3px black; */
    
 }
 #access p {
     width: 400px;
    
+}
+
+
+.showaccessories{
+    box-sizing: border-box;
+    box-shadow: 1px 3px 3px 3px black;
+    width: 230px;
+    margin: 20px;
+}
+
+.showaccessories p{
+    font-size: 20px;
+    font-weight: 900;
+
 }
 
 
