@@ -64,12 +64,12 @@ async function displayUsers() {
 
       // Create HTML elements for each accessory
       const userElement = document.createElement("div");
+      userElement.classList.add("accessCss")
       userElement.innerHTML = `
+        <div class="showaccessories">
         <img src="${access.img}" alt="${access.name}" />
-        <p><strong>Name:</strong> ${access.name}</p>
-        <p><strong>Price:</strong> ${JSON.stringify(access.price)}</p>
-        <p><strong>Description:</strong> ${access.description}</p>
-        <hr>
+        <p> ${access.name}</p>
+      </div>      
       `;
       usersDiv.appendChild(userElement);
     });
