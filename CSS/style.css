@@ -78,6 +78,25 @@
     height: 550px;
 }
 
+.advrtment {
+  width: 100%;
+  overflow: hidden;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+.on_icon {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.on_icon img {
+  width: 100%; 
+  height: auto; 
+  max-height: 60%; 
+  object-fit: cover; 
+}
+
 
 
 
@@ -189,24 +208,7 @@ height: auto;
 }
 
 
-.advrtment {
-    width: 100%;
-    overflow: hidden;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-}
 
-.on_icon {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.on_icon img {
-    width: 100%; /* Adjust width relative to container */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 60%; /* Restrict the height */
-    object-fit: cover; /* Ensure images fit nicely */
-}
 
 
 

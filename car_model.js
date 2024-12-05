@@ -6,7 +6,8 @@ let carId = urlParams.get('carId') || 'TATA';
 
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
-import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+import { getFirestore, collection, getDocs,addDoc } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+
 
 // Firebase Config - Replace with your Firebase config
 const firebaseConfig = {
@@ -21,6 +22,37 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+
+
+
+// Load JSON and upload data
+async function loadJsonData() {
+  const response = await fetch('./JSON/detailCars.json');   
+const data = await response.json();
+  await uploadToFirestore(data);
+}
+
+// Upload each item to Firestore
+async function uploadToFirestore(data) {
+  const collectionRef = collection(db, 'Cardetails');
+  for (const item of data) {
+    try {
+      await addDoc(collectionRef, item);
+      console.log('Document added:', item);
+    } catch (error) {
+      console.error('Error adding document:', error);
+    }
+  }
+}
+
+// Call the loadJsonData function to start the upload
+loadJsonData();
+
+
+
+
+
+
 
 
 
@@ -44,11 +76,20 @@ window.updateIndexCar = function (count) {
     totalCarsLength = 2;
 };
 
+function navigateToCarDetailPage(car) {
+    console.log('#############  => ', car);
+    
+    // Serialize the object and encode it before passing it as a URL parameter
+    const carJson = encodeURIComponent(JSON.stringify(car));
+    window.location.href = `./carExplain.html?car=${carJson}`;
+}
+
+
 
 
 async function fetchAllCarDetails() {
     try {
-        const querySnapshot = await getDocs(collection(db, "cardetails"));
+        const querySnapshot = await getDocs(collection(db, "Cardetails"));
 
 
         const uniqueCars = [];
@@ -70,10 +111,11 @@ async function fetchAllCarDetails() {
             if (car.index === carIndexValue) {
                 const carDiv = document.createElement("div");
                 carDiv.classList.add("car-detail");
+                carDiv.onclick = () => navigateToCarDetailPage(car);
                 carDiv.innerHTML = `
                 <div class="car_img">
                     <h5 class="car-title">${car.Title}</h5>
-                    <a href="#"><img src="${car.img1}" alt="${car.Title}"></a>
+                    <a href="#"><img src="${car.img1}" alt="${car.Title}" ></a>
                 </div>
                 <div class="carPoint_head">
                     <div>
