@@ -166,23 +166,7 @@
     {
         "MAHINDRA": {
             "Hatchback": {
-                "Verito Vibe": {
-                    "Title": "MAHINDRA VERITO VIBE",
-                    "Price": "Rs.6.50 Lakh onwards",
-                    "Mileage": "19.17 to 26.2 kmpl",
-                    "Engine": "1199cc & 1497cc",
-                    "Safety": "5 Star(Global NCAP)",
-                    "Fuel Type": "Petrol,CNG & Diesel",
-                    "Transimission": "Manual & Automatic",
-                    "Seating Capacity": "5 Seater",
-                    "img1": "./Assests/images/Mahindra_car/mahindra-verito-car.jpg",
-                    "img2":"./Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"./Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"./Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"./Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Mahindra Verito Vibe was a compact, sub-4-meter hatchback, based on the Verito sedan, with a focus on affordability and practicality. It was equipped with a 1.5-liter diesel engine that produced 64.1 bhp, delivering a fuel-efficient performance with a mileage of around 20-21 kmpl​"
 
-                },
                 "Mahindra KUV100": {
                     "Title": "MAHINDRA KUV100",
                     "Price": "Rs.6.50 Lakh onwards",
@@ -201,7 +185,7 @@
                 }
             },
             "Sedan": {
-                "Mahindra Verito vibe": {
+                "Verito Vibe": {
                     "Title": "MAHINDRA VERITO VIBE",
                     "Price": "Rs.6.50 Lakh onwards",
                     "Mileage": "19.17 to 26.2 kmpl",
@@ -215,8 +199,10 @@
                     "img3":"./Assests/images/Tata_car/tata_tiago_body_image3.jpg",
                     "img4":"./Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
                     "img5":"./Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The car featured a clean and functional design, with details like a fixed rear windscreen, smoked headlamps, and alloy wheels. However, it did not receive a positive market response, leading to the suspension of its production in 2016. Despite this, it was appreciated for its spacious cabin, decent road stability, and solid engine performance.​"
-             }
+                    "description":"The Mahindra Verito Vibe was a compact, sub-4-meter hatchback, based on the Verito sedan, with a focus on affordability and practicality. It was equipped with a 1.5-liter diesel engine that produced 64.1 bhp, delivering a fuel-efficient performance with a mileage of around 20-21 kmpl​"
+
+                }
+ 
             },
             "Suv": {
                 "Mahindra Thar": {

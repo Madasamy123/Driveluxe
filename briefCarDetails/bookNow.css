@@ -1,0 +1,27 @@
+body{
+    background-color: antiquewhite;
+    background: url(/Assests/images/booknow_background.png);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+   background-size: cover;
+}
+.border{
+    
+    box-sizing: border-box;
+    width: 20%;
+    height: 70%;
+    background-color: whitesmoke;
+
+    margin-left: 600px;
+    margin-top: 200px;
+ 
+    /* justify-content: center;
+    align-items: center; */
+   
+}
+/* .head{
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+} */
