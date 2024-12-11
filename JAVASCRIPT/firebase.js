@@ -32,7 +32,7 @@ document.getElementById("signup").addEventListener("click", async (e) => {
   const userName = document.getElementById("reg-username").value;
   const email = document.getElementById("reg-email").value;
   const password = document.getElementById("reg-pswd").value;
-  const errormsgSign=document.getElementById("errormsgSign");
+  const errormsgSign = document.getElementById("errormsgSign");
   const errorusername = document.getElementById("errorusername");
   const erroremail = document.getElementById("erroremail");
   const errorpassword = document.getElementById("errorpassword");
@@ -46,7 +46,7 @@ document.getElementById("signup").addEventListener("click", async (e) => {
 
   // Basic validation to ensure fields are filled
   if (!userName || !email || !password) {
-    errormsgSign.textContent="Please fill out all fields.";
+    errormsgSign.textContent = "Please fill out all fields.";
     return;
   }
 
@@ -83,15 +83,17 @@ document.getElementById("signup").addEventListener("click", async (e) => {
 
     // Save user data to Firestore
     await setDoc(doc(db, "users", user.uid), {
-      userName: userName,
+      userName:userName,
       email: user.email,
       createdAt: new Date()
     });
     console.log("User data saved to Firestore");
+    const signInUser = { userName: userName, email: email }
+    localStorage.setItem('DriveLuxeUserDetails', JSON.stringify(signInUser));
 
     // Redirect to home page after successful registration
     window.location.href = "index.html";
-    errormsgSign.textContent="Account created Successfully"
+    errormsgSign.textContent = "Account created Successfully"
   } catch (error) {
     // Display Firebase error message
     if (error.code === "auth/email-already-in-use") {
@@ -111,15 +113,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const eyeIcon = document.getElementById("showpswd");
   const passwordInput = document.getElementById("reg-pswd");
   eyeIcon.addEventListener("click", () => {
-      if (passwordInput.type === "password") {
-          passwordInput.type = "text";
-          eyeIcon.classList.remove("fa-eye");
-          eyeIcon.classList.add("fa-eye-slash")
-      } else {
-          passwordInput.type = "password";
-          eyeIcon.classList.remove("fa-eye-slash");
-          eyeIcon.classList.add("fa-eye");
-      }
+    if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+      eyeIcon.classList.remove("fa-eye");
+      eyeIcon.classList.add("fa-eye-slash")
+    } else {
+      passwordInput.type = "password";
+      eyeIcon.classList.remove("fa-eye-slash");
+      eyeIcon.classList.add("fa-eye");
+    }
   });
 });
 
@@ -132,15 +134,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const eyeIcon = document.getElementById("showpswdlogin");
   const passwordInput = document.getElementById("login-pswd");
   eyeIcon.addEventListener("click", () => {
-      if (passwordInput.type === "password") {
-          passwordInput.type = "text";
-          eyeIcon.classList.remove("fa-eye");
-          eyeIcon.classList.add("fa-eye-slash")
-      } else {
-          passwordInput.type = "password";
-          eyeIcon.classList.remove("fa-eye-slash");
-          eyeIcon.classList.add("fa-eye");
-      }
+    if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+      eyeIcon.classList.remove("fa-eye");
+      eyeIcon.classList.add("fa-eye-slash")
+    } else {
+      passwordInput.type = "password";
+      eyeIcon.classList.remove("fa-eye-slash");
+      eyeIcon.classList.add("fa-eye");
+    }
   });
 });
 
@@ -165,11 +167,11 @@ document.getElementById("login").addEventListener("click", async (e) => {
   e.preventDefault(); // Prevent form from refreshing
   const email = document.getElementById("loginEmail").value;
   const password = document.getElementById("login-pswd").value;
-  const errormsgLogin=document.getElementById("errormsgLogin")
+  const errormsgLogin = document.getElementById("errormsgLogin")
 
   // Check if fields are filled out
   if (!email || !password) {
-    errormsgLogin.textContent="Please fill out all fields.";
+    errormsgLogin.textContent = "Please fill out all fields.";
     return;
   }
 
@@ -187,56 +189,20 @@ document.getElementById("login").addEventListener("click", async (e) => {
   try {
     // Sign in user with email and password
     const userCredential = await signInWithEmailAndPassword(auth, email, password);
+    console.log("Logged in as userCredential :", userCredential);
     const user = userCredential.user;
-    console.log("Logged in as:", user.email);
-
+    console.log("Logged in as user :", user);
+    const signInUser = {email: user.email }
+    localStorage.setItem('DriveLuxeUserDetails', JSON.stringify(signInUser));
     // Redirect to home page after successful login
     window.location.href = "index.html";
   } catch (error) {
     if (error.code === "auth/invalid-credential") {
       errormsgLogin.textContent = "Email not found. Please check your email or sign up.";
-    }  else {
+    } else {
       errormsgLogin.textContent = `Login error: ${error.message}`;
     }
 
     console.error("Error during login:", error.message);
   }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // //Logout functionality
-// // document.getElementById("logout").addEventListener("click", (e) => {
-// //   e.preventDefault(); // Prevent any default actions
-// //   signOut(auth).then(() => {
-// //     console.log("Sign-out successful.");
-// //     alert("Sign-out successful.");
-// //     document.getElementById("logout") // Hide logout button
-// //   }).catch((error) => {
-// //     console.error("An error occurred during sign-out: ", error);
-// //   });
-// // });
-
-
-
-
-
-
-

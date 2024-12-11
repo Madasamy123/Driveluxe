@@ -6,23 +6,312 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Details</title>
     <link rel="stylesheet" href="./CSS/carExplain.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div class="container">
         <!-- <header class="head"> -->
-            <!-- Header content -->
+        <!-- Header content -->
         <!-- </header> -->
+        <div class="explain">
+            <div class="explain_back">
+                <a href="./car_modelspage.html"><i class="fa-solid fa-arrow-left" style="font-size: 30px;"></i></a>
+            </div>
+            <div class="explain_index">
+                <a href="./index.html"><img src="./Assests/images/Logo_image.png" style=" height: 100px;" alt=""></a>
+            </div>
+
+
+        </div>
+
+
 
         <section id="car-detail-section">
+
             <!-- Car Cards will be dynamically added here -->
         </section>
+        <div id="overlay" class="overlay"></div>
+        <div id="popup1" class="popup">
+            <div>
+                <h3>BOOK YOUR CAR</h3>
+
+                <i class="fa-solid fa-x close-popup" id="x_icon"></i>
+            </div>
+
+
+            <div class="flex">
+                <div class="first">
+
+                    <label for="cname">Customer Name:</label><br>
+                    <input type="text" id="cname"><br>
+
+                    <label for="caddress"> Current Address:</label><br>
+                    <input type="text" id="caddress"><br>
+
+                    <label for="paddres"> Permanent Address:</label><br>
+                    <input type="text" id="paddres"><br>
+
+                    <label for="email">Enter your Email:</label><br>
+                    <input type="text" id="email"><br>
+
+
+                </div>
+                <div class="second">
+
+                    <label for="phoneno1">Phone No:1</label><br>
+                    <input type="text" id="phoneno1"><br>
+
+                    <label for="phoneno2">Phone No:2</label><br>
+                    <input type="text" id="phoneno2"><br>
+
+                    <label for="adhar">Upload your Adhar:</label><br>
+                    <input type="file" id="adhar"><br>
+
+                    <!-- <label for="deliverydata">Delivery Date:</label>
+                    <input type="date" id="deliverydata"><br> -->
+
+                </div>
+            </div>
+
+            <button id="addbook">Confirm</button>
+
+        </div>
+        <!--   -->
+        <div id="popup2" class="popup">
+
+            <i class="fa-solid fa-x close-popup" id="x_icon"></i>
+            <h3>Test Drive</h3>
+
+
+            <div class="flex">
+                <div class="first">
+                    <label for="tdname">Customer Name:</label><br>
+                    <input type="text" id="tdname"><br>
+
+                    <label for="tdaddress">Address:</label><br>
+                    <input type="text" id="tdaddress"><br>
+
+                    <label for="tdcity">City:</label><br>
+                    <input type="text" id="tdcity"><br>
+
+                    <label for="tdemail">Enter your Email:</label><br>
+                    <input type="text" id="tdemail"><br>
+
+                    <label for="tdphone1">Mobile No 1:</label><br>
+                    <input type="text" id="tdphone1"><br>
+                </div>
+
+                <div class="second">
+                    <label for="tdphone2">Mobile No 2:</label><br>
+                    <input type="text" id="tdphone2"><br>
+
+                    <label for="tdadhar">Upload your Aadhaar:</label><br>
+                    <input type="file" id="tdadhar"><br>
+
+                    <label for="tdlicense">Upload License:</label><br>
+                    <input type="file" id="tdlicense"><br>
+
+                    <label for="tddate">Test Drive Date:</label><br>
+                    <input type="date" id="tddate"><br>
+                </div>
+            </div>
+            <div>
+
+                <button id="testDriveSubmit">Submit</button>
+
+
+            </div>
+
+        </div>
+
+
+
+
     </div>
 
+
+
+
+    <!-- <script src="./carExpliain.js"></script> -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+
+
+        // Firebase Config - Replace with your Firebase config
+        const firebaseConfig = {
+            apiKey: "AIzaSyC0tw4_CFl84kb5i4DeuBkKf0gA7gS3mF4",
+            authDomain: "login-page1234.firebaseapp.com",
+            projectId: "login-page1234",
+            storageBucket: "login-page1234.appspot.com",
+            messagingSenderId: "471482088238",
+            appId: "1:471482088238:web:eb3db8a185185e54e118bf"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        //// customer booking............................................
+
+        // Add event listener for "Confirm" button
+        document.getElementById("addbook").addEventListener("click", async () => {
+            // Retrieve input values
+            const customerName = document.getElementById("cname").value;
+            const currentAddress = document.getElementById("caddress").value;
+            const permanentAddress = document.getElementById("paddres").value;
+            const email = document.getElementById("email").value;
+            const phone1 = document.getElementById("phoneno1").value;
+            const phone2 = document.getElementById("phoneno2").value;
+            const adharFile = document.getElementById("adhar").files[0];
+
+            if (!customerName || !currentAddress || !email || !adharFile) {
+                alert("Please fill in all required fields!");
+                return;
+            }
+
+            // Convert Aadhaar file to Base64
+            const convertToBase64 = (file) => new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => resolve(reader.result);
+                reader.onerror = reject;
+                reader.readAsDataURL(file);
+            });
+
+            let adharBase64 = "";
+            try {
+                adharBase64 = await convertToBase64(adharFile);
+            } catch (error) {
+                alert("Error reading Aadhaar file!");
+                return;
+            }
+
+            // Save data to Firestore
+            try {
+                await addDoc(collection(db, "customerbook"), {
+                    customerName,
+                    currentAddress,
+                    permanentAddress,
+                    email,
+                    phone1,
+                    phone2,
+                    adharBase64
+                });
+                // alert("You have booked a car. Our organization will contact you soon.");
+                CongratsPage();
+                //    window.location.href="congratulations.html"
+                // Clear form fields
+                document.querySelectorAll("input").forEach((input) => (input.value = ""));
+            } catch (error) {
+                alert("Failed to save data: " + error.message);
+            }
+        });
+
+        // This function should only be called when the user explicitly clicks the 'Confirm' button
+        document.getElementById("addbook").addEventListener("click", () => {
+            closePopup();  // Close the popup when the Confirm button is clicked
+        });
+
+
+        // TestDrive submit
+        document.getElementById("testDriveSubmit").addEventListener("click", async () => {
+            // Retrieve input values
+            const name = document.getElementById("tdname").value;
+            const address = document.getElementById("tdaddress").value;
+            const city = document.getElementById("tdcity").value;
+            const email = document.getElementById("tdemail").value;
+            const phone1 = document.getElementById("tdphone1").value;
+            const phone2 = document.getElementById("tdphone2").value;
+            const adharFile = document.getElementById("tdadhar").files[0];
+            const licenseFile = document.getElementById("tdlicense").files[0];
+            const testDriveDate = document.getElementById("tddate").value;
+
+            if (!name || !address || !city || !email || !phone1 || !testDriveDate || !adharFile || !licenseFile) {
+                alert("Please fill all the fields and upload the required documents.");
+                return;
+            }
+
+            const convertToBase64 = (file) => {
+                return new Promise((resolve, reject) => {
+                    const reader = new FileReader();
+                    reader.onload = () => resolve(reader.result);
+                    reader.onerror = reject;
+                    reader.readAsDataURL(file);
+                });
+            };
+
+            try {
+                const adharBase64 = await convertToBase64(adharFile);
+                const licenseBase64 = await convertToBase64(licenseFile);
+
+                await addDoc(collection(db, "testDriveBook"), {
+                    name,
+                    address,
+                    city,
+                    email,
+                    phone1,
+                    phone2,
+                    adharBase64,
+                    licenseBase64,
+                    testDriveDate,
+                });
+
+                alert("Test Drive booking saved successfully!");
+                document.getElementById("tdname").value = "";
+                document.getElementById("tdaddress").value = "";
+                document.getElementById("tdcity").value = "";
+                document.getElementById("tdemail").value = "";
+                document.getElementById("tdphone1").value = "";
+                document.getElementById("tdphone2").value = "";
+                document.getElementById("tdadhar").value = "";
+                document.getElementById("tdlicense").value = "";
+                document.getElementById("tddate").value = "";
+
+                // // Close the popup after successful submission
+                // closePopup();
+            } catch (error) {
+                console.error("Error saving test drive booking:", error);
+                alert("An error occurred while saving the booking. Please try again.");
+            }
+        });
+
+        document.getElementById("testDriveSubmit").addEventListener("click", () => {
+            closePopup();  // Close the popup when the Confirm button is clicked
+        });
+
+
+
+        // Function to close popup
+        function closePopup() {
+            document.querySelectorAll(".popup").forEach((popup) => {
+                popup.style.display = "none";
+            });
+            document.getElementById("overlay").style.display = "none";
+        }
+
+
+
+
+
+        //
+
+        const today = new Date().toISOString().split('T')[0];
+
+        // Set the min attribute of the date input to today
+        document.getElementById("tddate").setAttribute("min", today);
+
+
+
+
+
+    </script>
     <!-- Include JavaScript -->
-    <script type="module" src="./carExpliain.js"></script>
+    <script type="module" src="./carExpliain.js">
+    </script>
+    <script src="./carExpliain.js"></script>
 </body>
 
 </html>
-
-

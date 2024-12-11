@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f4f6;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .message {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            width: 60%;
+        }
+
+        .message h1 {
+            color: #4CAF50;
+        }
+
+        .message p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .message button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+
+        .message button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="message">
+        <h1>Congratulations!</h1>
+        <img id="carImage" style="height: 400px; width: 600px;" alt="Car Image">
+        <p>Your car booking is confirmed!</p>
+        <button onclick="goBack()">Go Back to Home</button>
+    </div>
+
+    <script>
+        // Retrieve the 'car' query parameter from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const carImg = urlParams.get('car');
+
+        // Find the image element and set its 'src' attribute
+        const carImageElement = document.getElementById('carImage');
+        if (carImg) {
+            carImageElement.src = carImg; // Set the image source dynamically
+        } else {
+            carImageElement.alt = "No car image available"; // Fallback if no image is provided
+        }
+
+        function goBack() {
+            window.location.href = "/index.html"; // Replace with your homepage
+        }
+
+        // try {
+        //     await addDoc(collection(db, "customerbook"), {
+        //         customerName,
+        //         currentAddress,
+        //         permanentAddress,
+        //         email,
+        //         phone1,
+        //         phone2,
+        //         adharBase64
+        //     });
+        //     alert("Data saved successfully!");
+        //     // window.location.href = "congratulations.html"; // Redirect to the new page
+        // } catch (error) {
+        //     alert("Failed to save data: " + error.message);
+        // }
+
+    </script>
+</body>
+
+</html>
