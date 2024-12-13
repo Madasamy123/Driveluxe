@@ -50,11 +50,43 @@ function displayAccessoryDetails(accessory) {
   const detailsDiv = document.getElementById("accessory-details");
 
   detailsDiv.innerHTML = `
+    <div class="access_main">
     <div>
-      <img src="${accessory.img}" alt="${accessory.name}">
-      <h3>${accessory.name}</h3>
-      <p>${accessory.description}</p>
-      <p>Price: $${accessory.price}</p>
+    <img src="${accessory.img}" alt="${accessory.name}">
+    </div>
+    <div class="access_details">
+     <h3><strong>${accessory.name }</strong> </h3>
+
+       <div class="drop_flex">
+      <p><strong>Price:</strong> ${accessory.price }</p>
+      <div class="dropdown">
+      <button class="dropdown_btn">Dropdown</button>
+      <div class="dropdown_list">
+       <a href="#">Tata</a>
+       <a href="#">Mahindra</a>
+       <a href="#">Suzuki</a>
+       <a href="#">Renault</a>
+       <a href="#">Honda</a>
+       <a href="#">Audi</a>
+       <a href="#">Toyota</a>
+      </div>
+
+      
+      </div>
+      </div>
+      <p><strong>description: </strong>${accessory.description}</p>
+      <p><strong>features:</strong>${accessory.features}</p>
+      <p><strong>guidance:</strong>${accessory.guidance}</p>
+      <p><strong>warranty_and_return:</strong>${accessory.warranty_and_return}</p>
+      <label for="">Quantity: </label>
+    <input type="number">
+    <div class="access_btn">
+      <button>Add Cart</button>
+      <button>Order Now</button>
+     
+    </div>
+
+    </div>
     </div>
   `;
 }

@@ -40,7 +40,8 @@ body {
     margin-bottom: 20px;
     height: 60%;
 }
-.car-images img{
+
+.car-images img {
     width: 90%;
     height: 60%;
 
@@ -85,7 +86,7 @@ body {
 }
 
 .car-info strong {
-    font-weight:900;
+    font-weight: 900;
     color: #333;
 }
 
@@ -94,7 +95,7 @@ body {
     justify-content: space-between;
 } */
 
-button{
+button {
     height: 40px;
     width: 120px;
     margin-right: 100px;
@@ -103,31 +104,32 @@ button{
     margin-top: 50px;
 }
 
-#test_drive{
-    background-color:black;
+#test_drive {
+    background-color: black;
     color: white;
 }
 
 
-#thumbnailContainer{
+#thumbnailContainer {
     margin-top: 40px;
 }
 
-#thumbnailContainer img{
-   height: 100px;
-   width: 100px;
+#thumbnailContainer img {
+    height: 100px;
+    width: 100px;
 }
 
 #car-image-main img {
-   height: 50%;
-   width: 50%;
+    height: 50%;
+    width: 50%;
 }
 
 
 /* booknow and testdrive popup */
 
 .popup {
-    display: none; /* Initially hide the popup */
+    display: none;
+    /* Initially hide the popup */
     position: fixed;
     top: 50%;
     left: 50%;
@@ -137,10 +139,10 @@ button{
     border: 2px solid #a39d9d;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
-  
-    width:50% ;
-    height: 60%; 
-} 
+
+    width: 50%;
+    height: 60%;
+}
 
 /* Popup background overlay */
 .overlay {
@@ -153,55 +155,61 @@ button{
     background: rgba(0, 0, 0, 0.5);
     /* background: url(/Assests/images/kia\ adversement.jpg); */
     background-position: center;
-   background-repeat: no-repeat;
-  background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: 999;
 }
 
-.popup h3{
+.popup h3 {
     text-align: center;
     font-size: 30px;
     font-weight: 900;
     margin: 20px;
 }
-.flex{
+
+.flex {
     display: flex;
     justify-content: space-around;
 }
 
-.popup button{
+.popup button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 300px;
+    justify-self: center;
 }
-.first{
+
+.first {
     line-height: 30px;
 }
-.second{
+
+.second {
     line-height: 35px;
 }
 
-.explain{
+.explain {
     display: flex;
     justify-content: space-between;
     height: 0px;
     position: relative;
 }
-.explain_index img{
+
+.explain_index img {
     height: 100px;
     width: 80px;
 }
 
-#x_icon{
-    margin-left: 700px;
-   
+#x_icon {
+    /* margin-left: 700px; */
+    float:inline-end;
+    margin: 10px;
+
 }
 
-input{
+input {
     background-color: rgb(174, 173, 173);
 }
 
-label{
+label {
     font-weight: 700;
 }

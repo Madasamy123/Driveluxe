@@ -6,7 +6,7 @@ let carId = urlParams.get('carId') || 'TATA';
 
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
-import { getFirestore, collection, getDocs,addDoc } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+import { getFirestore, collection, getDocs, addDoc } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
 
 
 // Firebase Config - Replace with your Firebase config
@@ -25,38 +25,37 @@ const db = getFirestore(app);
 
 
 
-// Load JSON and upload data
-async function loadJsonData() {
-  const response = await fetch('./JSON/detailCars.json');   
-const data = await response.json();
-  await uploadToFirestore(data);
-}
 
-// Upload each item to Firestore
-async function uploadToFirestore(data) {
-  const collectionRef = collection(db, 'Cardetails');
-  for (const item of data) {
-    try {
-      await addDoc(collectionRef, item);
-      console.log('Document added:', item);
-    } catch (error) {
-      console.error('Error adding document:', error);
-    }
-  }
-}
 
 // Call the loadJsonData function to start the upload
-loadJsonData();
+const querySnapshot = await getDocs(collection(db, "Cardetails"));
+if (querySnapshot.empty) {
+    // Load JSON and upload data
+    async function loadJsonData() {
+        const response = await fetch('./JSON/detailCars.json');
+        const data = await response.json();
+        await uploadToFirestore(data);
+    }
 
+    // Upload each item to Firestore
+    async function uploadToFirestore(data) {
+        const collectionRef = collection(db, 'Cardetails');
+        for (const item of data) {
+            try {
+                await addDoc(collectionRef, item);
+                console.log('Document added:', item);
+            } catch (error) {
+                console.error('Error adding document:', error);
+            }
+        }
+    }
+    loadJsonData();
 
+}
 
+fetchAllCarDetails();
 
-
-
-
-
-
-let selectedCarModel = "Hatchback";
+let selectedCarModel = "Suv";
 
 window.updateCarModel = function (model) {
     selectedCarModel = model;
@@ -78,7 +77,7 @@ window.updateIndexCar = function (count) {
 
 function navigateToCarDetailPage(car) {
     console.log('#############  => ', car);
-    
+
     // Serialize the object and encode it before passing it as a URL parameter
     const carJson = encodeURIComponent(JSON.stringify(car));
     window.location.href = `./carExplain.html?car=${carJson}`;
