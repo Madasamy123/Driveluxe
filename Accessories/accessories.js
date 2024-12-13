@@ -19,7 +19,7 @@ const db = getFirestore(app);
 // Load JSON and upload data to Firestore
 async function loadJsonData() {
   try {
-    const response = await fetch('accessories.json'); // Ensure JSON file is in the same folder
+    const response = await fetch('/accessories.json'); // Ensure JSON file is in the same folder
     const data = await response.json();
 
     // Flatten nested JSON structure
@@ -61,15 +61,16 @@ async function displayUsers() {
 
     querySnapshot.forEach((doc) => {
       const access = doc.data();
+      const accessId = doc.id; // Get Firestore document ID
 
       // Create HTML elements for each accessory
       const userElement = document.createElement("div");
-      userElement.classList.add("accessCss")
+      userElement.classList.add("accessCss");
       userElement.innerHTML = `
         <div class="showaccessories">
-        <img src="${access.img}" alt="${access.name}" />
-        <p> ${access.name}</p>
-      </div>      
+          <img src="${access.img}" alt="${access.name}" onclick="redirectToDetails('${accessId}')" />
+          <p>${access.name}</p>
+        </div>
       `;
       usersDiv.appendChild(userElement);
     });
@@ -78,7 +79,12 @@ async function displayUsers() {
   }
 }
 
-// Call functions to initialize
+// Make the redirectToDetails function globally accessible
+window.redirectToDetails = function(accessId) {
+  window.location.href = `/accessory-details.html?accessId=${accessId}`;
+};
+
+// Initialize the page
 (async function initialize() {
   await loadJsonData(); // Load JSON and upload to Firestore
   displayUsers(); // Display the uploaded data
