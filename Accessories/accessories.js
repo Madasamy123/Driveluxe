@@ -68,7 +68,7 @@ async function displayUsers() {
       userElement.classList.add("accessCss");
       userElement.innerHTML = `
         <div class="showaccessories">
-          <img src="${access.img}" alt="${access.name}" onclick="redirectToDetails('${accessId}')" />
+          <img src="${access.img}" id="below_accessImg" alt="${access.name}" onclick="redirectToDetails('${accessId}')" />
           <p>${access.name}</p>
         </div>
       `;
