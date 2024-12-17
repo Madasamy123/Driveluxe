@@ -15,13 +15,16 @@
 }
 #access p {
     width: 400px;
+    margin-left: 20px;
    
 }
 
 
 .showaccessories{
     box-sizing: border-box;
-    box-shadow: 1px 3px 3px 3px black;
+    /* box-shadow: 1px 3px 3px 3px black; */
+    border: 3px solid black;
+    border-radius: 10px;
     width: 230px;
     margin: 20px;
 }
@@ -76,6 +79,7 @@
     display: inline-block;
     margin-top: 18px;
     margin-left: 10px;
+    height: 40px;
   }
   .dropdown-content a:hover {background-color: #ddd;}
 
@@ -102,3 +106,100 @@
   .drop_flex{
     display: flex;
   }
+
+  ::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+  }
+
+
+  /* ..................detailaccessories ordernow popupu.................. */
+
+
+  /* Popup background */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1000; /* Ensure the popup is above all other content */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Popup content */
+  .popup-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    max-width: 90%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    place-self: center;
+  }
+  
+  /* Close button for the popup */
+  #closePopupButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  /* Confirm order button */
+  #confirmOrderButton {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  #confirmOrderButton:hover {
+    background-color: #218838;
+  }
+  
+   /* Form inputs */
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  } 
+  
+  /* Styling for the popup header */
+  .popup-content h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Add spacing between labels and inputs */
+  label {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Apply margin to all form elements */
+  .popup-content input {
+    margin-bottom: 10px;
+  }
+  
+
+  
