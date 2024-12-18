@@ -1,6 +1,6 @@
 // Import necessary functions from Firebase SDK
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
-import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+import { getFirestore, doc, getDoc, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
 
 // Firebase configuration
 const firebaseConfig = {
@@ -16,6 +16,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
+// Fetch accessory details based on ID
 // Fetch accessory details based on ID
 async function fetchAccessoryDetails() {
   const urlParams = new URLSearchParams(window.location.search);
@@ -41,6 +42,7 @@ async function fetchAccessoryDetails() {
   }
 }
 
+// Display accessory details in the HTML
 // Display accessory details in the HTML
 function displayAccessoryDetails(accessory) {
   const detailsDiv = document.getElementById("accessory-details");
@@ -85,61 +87,87 @@ function displayAccessoryDetails(accessory) {
     option.addEventListener("click", function (e) {
       e.preventDefault();
       const selectedBrand = this.dataset.brand;
-      document.getElementById("price").textContent =
-        accessory.price[selectedBrand];
+      // Mark the brand as selected
+      document.querySelectorAll(".brand-option").forEach(opt => opt.classList.remove('selected'));
+      this.classList.add('selected'); // Add selected class
+      document.getElementById("price").textContent = accessory.price[selectedBrand];
     });
   });
 
   // Event listener for "Add to Cart" button
   document.getElementById("addCartButton").onclick = function () {
-    addToCart(accessory);
+    addToCart(accessory); // Pass the accessory object when clicking "Add to Cart"
   };
 
   // Event listener for "Order Now" button
   document.getElementById("orderButton").onclick = function () {
-    showOrderPopup(accessory);
+    const selectedBrand = document.querySelector('.brand-option.selected')?.dataset.brand;
+    if (!selectedBrand) {
+      alert("Please select a brand first.");
+      return;
+    }
+    showOrderPopup(accessory, selectedBrand); // Pass selected brand to the popup
   };
 }
 
 
 // Function to show the order popup
-function showOrderPopup(accessory) {
+function showOrderPopup(accessory, selectedBrand) {
   const popup = document.getElementById("orderPopup");
   popup.style.display = "block"; // Show the popup
 
+  // Preselect the brand in the popup if passed
+  document.querySelectorAll(".brand-option").forEach(option => {
+    if (option.dataset.brand === selectedBrand) {
+      option.classList.add("selected"); // Mark the brand as selected in the popup
+    }
+  });
+
   // Add event listener for confirm order button
-  document.getElementById("confirmOrderButton").onclick = function () {
+  document.getElementById("confirmOrderButton").onclick = async function () {
     const name = document.getElementById("name").value;
     const phone = document.getElementById("phone").value;
+    const email = document.getElementById("email").value;
     const address = document.getElementById("address").value;
     const quantity = document.getElementById("popupQuantity").value;
 
-    // Check if all fields are filled
-    if (!name || !phone || !address || !quantity) {
-      alert("Please fill in all fields.");
+    // Check if all fields are filled and brand is selected
+    if (!name || !phone || !address || !quantity || !email || !selectedBrand) {
+      alert("Please fill in all fields and select a brand.");
       return;
     }
 
-    // Create the order object and save it to localStorage
+    // Create the order object and save it to Firestore
     const orderDetails = {
       name: name,
       phone: phone,
+      email: email,
       address: address,
       accessoryName: accessory.name,
+      selectedBrand: selectedBrand, // Include selected brand in the order
       quantity: quantity,
+      timestamp: new Date(), // Add timestamp for the order
     };
 
-    localStorage.setItem("orderDetails", JSON.stringify(orderDetails));
+    try {
+      // Save the order details to Firestore
+      const ordersCollection = collection(db, "orders");
+      await addDoc(ordersCollection, orderDetails);
 
-    // Clear the popup fields after saving the order details
-    document.getElementById("name").value = "";
-    document.getElementById("phone").value = "";
-    document.getElementById("address").value = "";
-    document.getElementById("popupQuantity").value = 1; // Reset quantity to 1
+      // Clear the popup fields after saving the order details
+      document.getElementById("name").value = "";
+      document.getElementById("phone").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("address").value = "";
+      document.getElementById("popupQuantity").value = 1; // Reset quantity to 1
 
-    // Close the popup after saving
-    closePopup();
-    alert("Order saved successfully!");
+      // Close the popup after saving
+      closePopup();
+      alert("Order saved successfully to Firestore!");
+    } catch (error) {
+      console.error("Error saving order to Firestore:", error);
+      alert("An error occurred while saving the order. Please try again.");
+    }
   };
 
   // Add event listener for close button
@@ -154,26 +182,12 @@ function closePopup() {
   popup.style.display = "none"; // Hide the popup
 }
 
-
-
-
-
-
-
 // Initialize the details page
 fetchAccessoryDetails();
 
-// Event listener for "Add to Cart" button
-document.getElementById("addCartButton").onclick = function () {
-  addToCart(accessory);
-};
 
-// Event listener for "Order Now" button
-document.getElementById("orderButton").onclick = function () {
-  showOrderPopup(accessory);
-};
-
-
+// Function to add item to the cart
+// Function to add item to the cart
 function addToCart(accessory) {
   // Get existing cart items from localStorage
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -201,10 +215,6 @@ function addToCart(accessory) {
   const addCartButton = document.getElementById("addCartButton");
   addCartButton.textContent = "Go to Cart";
 
-  // Show quantity added in the button
-  const totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
-  addCartButton.textContent = `Go to Cart `;
-
   // Change button action to redirect to the cart page
   addCartButton.onclick = function () {
     window.location.href = "/cart.html"; // Redirect to cart page
@@ -212,6 +222,3 @@ function addToCart(accessory) {
 
   alert(`${accessory.name} has been added to your cart!`);
 }
-
-
-
