@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Orders</title>
+  <link rel="stylesheet" href="/css/orders.css">
+  <script type="module" src="/javascript/order.js"></script>
+</head>
+<body>
+  <div class="orders-container">
+    <h1>My Orders</h1>
+    
+    <!-- Order Type Selection -->
+    <div class="order-type">
+      <label>
+        <input type="radio" name="orderType" value="cars" checked> Booked Cars
+      </label>
+      <label>
+        <input type="radio" name="orderType" value="accessories"> Accessories
+      </label>
+    </div>
+    
+    <!-- Display Orders -->
+    <div id="ordersList" class="orders-list">
+      <!-- Orders will be displayed here -->
+    </div>
+
+    <!-- Logout Button -->
+    <button id="logout">Logout</button>
+  </div>
+</body>
+</html>

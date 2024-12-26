@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Listings</title>
+  <style>
+    .car-item {
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+    #search-bar {
+      padding: 10px;
+      margin: 20px 0;
+      width: 100%;
+      max-width: 300px;
+    }
+    img {
+      height: 50%;
+      width: 50%;
+    }
+    .no-results {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Search bar to filter cars -->
+  <input type="text" id="search-bar" placeholder="Search for cars..." />
+
+  <div id="car-list"></div>
+
+  <script>
+    let carsData = [];
+
+    // Function to fetch the car data from the JSON file and display it
+    async function fetchCarsData() {
+      try {
+        const response = await fetch('/json/detailCars.json'); // JSON file path
+        carsData = await response.json();
+        displayCars(carsData); // Display all cars initially
+      } catch (error) {
+        console.error("Error fetching car data:", error);
+      }
+    }
+
+    // Function to display all cars (initial view)
+    function displayCars(data) {
+      const carListContainer = document.getElementById('car-list');
+      carListContainer.innerHTML = ''; // Clear the list before displaying
+
+      data.forEach(brandData => {
+        for (let brand in brandData) {
+          for (let category in brandData[brand]) {
+            for (let car in brandData[brand][category]) {
+              const carData = brandData[brand][category][car];
+
+              // Create a div for the car
+              const carElement = document.createElement('div');
+              carElement.classList.add('car-item');
+
+              // Car title
+              const carTitle = document.createElement('h4');
+              carTitle.textContent = `Car: ${carData.Title}`;
+              carElement.appendChild(carTitle);
+
+              // Car image
+              const carImage = document.createElement('img');
+              carImage.src = carData.img1;
+              carImage.alt = carData.Title;
+              carElement.appendChild(carImage);
+
+              // Car details
+              const carDetails = document.createElement('p');
+              carDetails.textContent = `Price: ${carData.Price}, Mileage: ${carData.Mileage}, Engine: ${carData.Engine}`;
+              carElement.appendChild(carDetails);
+
+              // Car description
+              const carDescription = document.createElement('p');
+              carDescription.textContent = carData.description;
+              carElement.appendChild(carDescription);
+
+              // Append car element to the container
+              carListContainer.appendChild(carElement);
+            }
+          }
+        }
+      });
+    }
+
+    // Function to filter cars based on the search query
+    function filterCars(query) {
+      const carListContainer = document.getElementById('car-list');
+      carListContainer.innerHTML = ''; // Clear the list before displaying results
+      let visibleCars = 0;
+
+      // Loop through all data and filter cars
+      carsData.forEach(brandData => {
+        for (let brand in brandData) {
+          for (let category in brandData[brand]) {
+            for (let car in brandData[brand][category]) {
+              const carData = brandData[brand][category][car];
+              const carTitle = carData.Title.toLowerCase();
+
+              // Check if car matches the search query
+              if (carTitle.includes(query.toLowerCase())) {
+                visibleCars++;
+
+                // Create a div for the car
+                const carElement = document.createElement('div');
+                carElement.classList.add('car-item');
+
+                // Car title
+                const carTitleElement = document.createElement('h4');
+                carTitleElement.textContent = `Car: ${carData.Title}`;
+                carElement.appendChild(carTitleElement);
+
+                // Car image
+                const carImage = document.createElement('img');
+                carImage.src = carData.img1;
+                carImage.alt = carData.Title;
+                carElement.appendChild(carImage);
+
+                // Car details
+                const carDetails = document.createElement('p');
+                carDetails.textContent = `Price: ${carData.Price}, Mileage: ${carData.Mileage}, Engine: ${carData.Engine}`;
+                carElement.appendChild(carDetails);
+
+                // Car description
+                const carDescription = document.createElement('p');
+                carDescription.textContent = carData.description;
+                carElement.appendChild(carDescription);
+
+                // Append car details to the container
+                carListContainer.appendChild(carElement);
+              }
+            }
+          }
+        }
+      });
+
+      // If no cars match, show "No cars found" message
+      if (visibleCars === 0) {
+        carListContainer.innerHTML = '<p class="no-results">No cars found matching your search.</p>';
+      }
+    }
+
+    // Add event listener to the search bar
+    document.getElementById('search-bar').addEventListener('input', (event) => {
+      filterCars(event.target.value); // Filter cars as the user types
+    });
+
+    // Fetch and display car data on page load
+    fetchCarsData();
+  </script>
+</body>
+</html>

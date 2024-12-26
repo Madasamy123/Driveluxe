@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Details</title>
-    <link rel="stylesheet" href="./CSS/carExplain.css">
+    <link rel="stylesheet" href="/css/carExplain.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,10 +18,10 @@
         <!-- </header> -->
         <div class="explain">
             <div class="explain_back">
-                <a href="./car_modelspage.html"><i class="fa-solid fa-arrow-left" style="font-size: 30px;"></i></a>
+                <a href="/pages/car_modelspage.html"><i class="fa-solid fa-arrow-left" style="font-size: 30px;"></i></a>
             </div>
             <div class="explain_index">
-                <a href="./index.html"><img src="./Assests/images/Logo_image.png" style=" height: 100px;" alt=""></a>
+                <a href="/index.html"><img src="/Assests/images/Logo_image.png" style=" height: 100px;" alt=""></a>
             </div>
 
 
@@ -197,7 +197,12 @@
                     email,
                     phone1,
                     phone2,
-                    adharBase64
+                    adharBase64,
+                    title: car.Title,
+                    price: car.Price,
+                   
+                   
+                    timestamp: new Date(),
                 });
                 // alert("You have booked a car. Our organization will contact you soon.");
                 CongratsPage();
@@ -308,9 +313,9 @@
 
     </script>
     <!-- Include JavaScript -->
-    <script type="module" src="./carExpliain.js">
+    <script type="module" src="/javascript/carExpliain.js">
     </script>
-    <script src="./carExpliain.js"></script>
+    <script src="/javascript/carExpliain.js"></script>
 </body>
 
 </html>

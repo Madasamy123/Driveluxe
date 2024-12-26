@@ -32,7 +32,7 @@ const querySnapshot = await getDocs(collection(db, "Cardetails"));
 if (querySnapshot.empty) {
     // Load JSON and upload data
     async function loadJsonData() {
-        const response = await fetch('./JSON/detailCars.json');
+        const response = await fetch('/json/detailCars.json');
         const data = await response.json();
         await uploadToFirestore(data);
     }
@@ -80,7 +80,7 @@ function navigateToCarDetailPage(car) {
 
     // Serialize the object and encode it before passing it as a URL parameter
     const carJson = encodeURIComponent(JSON.stringify(car));
-    window.location.href = `./carExplain.html?car=${carJson}`;
+    window.location.href = `/pages/carExplain.html?car=${carJson}`;
 }
 
 

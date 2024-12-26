@@ -217,7 +217,7 @@ function addToCart(accessory) {
 
   // Change button action to redirect to the cart page
   addCartButton.onclick = function () {
-    window.location.href = "/cart.html"; // Redirect to cart page
+    window.location.href = "/pages/cart.html"; // Redirect to cart page
   };
 
   alert(`${accessory.name} has been added to your cart!`);

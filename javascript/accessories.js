@@ -19,7 +19,7 @@ const db = getFirestore(app);
 // Load JSON and upload data to Firestore
 async function loadJsonData() {
   try {
-    const response = await fetch('/accessories.json'); // Ensure JSON file is in the same folder
+    const response = await fetch('/json/accessories.json'); // Ensure JSON file is in the same folder
     const data = await response.json();
 
     // Flatten nested JSON structure
@@ -55,6 +55,9 @@ async function uploadToFirestore(data) {
 // Fetch and display data from Firestore
 async function displayUsers() {
   try {
+
+    // const urlParams = new URLSearchParams(window.location.search);
+    // const accessId = urlParams.get("accessId");
     const usersDiv = document.getElementById("access");
     const querySnapshot = await getDocs(collection(db, "accessories"));
     console.log("Fetched documents count:", querySnapshot.size);
@@ -80,8 +83,8 @@ async function displayUsers() {
 }
 
 // Make the redirectToDetails function globally accessible
-window.redirectToDetails = function(accessId) {
-  window.location.href = `/accessory-details.html?accessId=${accessId}`;
+window.redirectToDetails = function (accessId) {
+  window.location.href = `/pages/accessory-details.html?accessId=${accessId}`;
 };
 
 // Initialize the page
