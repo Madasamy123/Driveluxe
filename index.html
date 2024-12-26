@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="./Accessories/accessories.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/accessories.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,31 +19,60 @@
     <div class="header">
         <div class="image1">
             <img src="./Assests/images/Logo_image.png" alt="">
-
         </div>
 
         <div class="nav">
-            <a href="./index.html">HOME</a>
+            <a href="/index.html">HOME</a>
             <a href="">TOP CARS</a>
-            <a href="">FIND CAR</a>
-            <a href="">SERVICE</a>
+            <a href="./pages/findcar.html">FIND CARS</a>
+            <a href="/pages/service.html">SERVICE</a>
             <a href="">CONTACT US</a>
         </div>
         <!-- navbar_icon -->
         <div class="icons">
-
-            <div>
-                <a href="./login.html"><i class="fa-solid fa-circle-user"> Login</i></a>
-            </div>
-            <div>
-                <a href=""><i class="fa-solid fa-cart-shopping"> My orders</i></a>
-            </div>
-            <div>
-                <a href=""><i class="fa-solid fa-bars"></i></a>
+            <div id="user-info">
+                <a href="/pages/login.html">
+                    <i class="fa-solid fa-circle-user"> <span id="welcome-message">Login</span></i>
+                   
+                </a>
             </div>
 
+            <div class="cart_head">
+                <a href="/PAGES/order.html"><i class="fa-solid fa-cart-shopping"><span> My Cart</span></i></a>
+            </div>
+            <div>
+                <a href="#" onclick="openPopup()"><i class="fa-solid fa-bars"></i></a>
+            </div>
         </div>
+
     </div>
+
+ 
+
+  <!-- Trigger Button -->
+<div>
+    <a href="#" onclick="openPopup()"><i class="fa-solid fa-bars"></i></a>
+</div>
+
+<!-- Popup Modal -->
+<div id="home_popup" class="home_popup">
+    <div class="homePopup_content">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <ul>
+        <li><i class="fa-solid fa-user"></i><a href="/pages/profile.html">Profile</a></li>
+        <li><i class="fa-solid fa-thumbs-up"></i><a href="#liked-cars">Liked Cars</a></li>
+        <div id="logout-link" style="display: none;">
+         <li><i class="fa-solid fa-sign-out-alt"></i><a href="#"></a>Logout</a></li>
+        </div>
+      </ul>
+    </div>
+  </div>
+  
+
+          
+
+
+
 
     <!-- car model -->
 
@@ -59,6 +88,7 @@
                 <img src="./Assests/images/mahindracar_adversement.jpg" alt="Advertisement 1">
                 <img src="./Assests/images/toyoto adversement img.jpg" alt="Advertisement 2">
                 <img src="./Assests/images/We-Buy-Cars-Honda-Only.V2.jpg" alt="Advertisement 3">
+                <!-- <img src="./Assests/images/Compass.jpeg" alt="Advertisement 3"> -->
 
             </div>
         </div>
@@ -71,10 +101,12 @@
 
         <div class="car_access">
             <h3>Car Accessories</h3>
-            <div id="access"></div>
+            <div id="access">
+                
+            </div>
            
         </div>
-          <script src="./Accessories/accessories.js" type="module"></script>
+          <script src="/javascript/accessories.js" type="module"></script>
 
         <!-- Upcoming cars -->
 
@@ -204,7 +236,11 @@
             <div class="offer_title">
                 <h3>OFFER ZONE</h3>
             </div>
-            <div class="offer_zone">
+
+            <img src="./Assests/images/offffeerrrrpage.jpg" alt="" style="width: 100%;">
+
+            
+             <!-- <div class="offer_zone">
 
 
                 <div class="offer_head">
@@ -287,8 +323,8 @@
 
 
 
-            </div>
-
+            </div>  -->
+ 
 
 
 
@@ -298,73 +334,74 @@
         <!-- footer -->
 
         <div class="footer">
-
             <div class="footer_first">
                 <div class="footer_head">
-                    <h3>Driveluxe cars</h3>
-                    <a href="">
-                        <p>Tata cars</p>
+                    <h3>Driveluxe Cars</h3>
+                    <a href="/pages/car_modelspage.html?carId=TATA">
+                        <p>Tata Cars</p>
                     </a>
-                    <a href="">
-                        <p>Hyundai cars</p>
-                    </a>
-                    <a href="">
+                    <a href="/pages/car_modelspage.html?carId=MAHINDRA">
                         <p>Mahindra Cars</p>
                     </a>
-                    <a href="">
-                        <p>Toyoto cars</p>
+                    <a href="/pages/car_modelspage.html?carId=SUZUKI">
+                        <p>Suzuki Cars</p>
                     </a>
-                    <a href="">
-                        <p>Suzuki cars</p>
+                    <a href="/pages/car_modelspage.html?carId=TOYOTA">
+                        <p>Toyota Cars</p>
                     </a>
-                    <a href="">
-                        <p>Kia cars</p>
+                    <a href="/pages/car_modelspage.html?carId=AUDI">
+                        <p>Audi Cars</p>
                     </a>
-                    <a href="">
-                        <p>Audi cars</p>
+                    <a href="/pages/car_modelspage.html?carId=RENAULT">
+                        <p>Renault Cars</p>
                     </a>
-                </div>
-                <div class="footer_head">
-                    <h3>Click to buy</h3>
-                    <a href="">
-                        <p>OverView</p>
-                    </a>
-                    <a href="">
-                        <p>Test Drive</p>
-                    </a>
-                    <a href="">
-                        <p>Prices</p>
-                    </a>
-                    <a href="">
-                        <p>Online Booking</p>
+                    <a href="/pages/car_modelspage.html?carId=HONDA">
+                        <p>Honda Cars</p>
                     </a>
                 </div>
                 <div class="footer_head">
                     <h3>Support</h3>
-                    <a href="">
+                    <a href="/pages/driveluxe.html">
                         <p>Driveluxe Team</p>
                     </a>
-                    <a href="">
-                        <p>Terms & conditions</p>
+                    <a href="/pages/terms&condition.html">
+                        <p>Terms & Conditions</p>
                     </a>
-                    <a href="">
+                    <a href="/pages/service.html">
                         <p>Services</p>
                     </a>
                 </div>
                 <div class="footer_head">
                     <h3>Contact Us</h3>
-                    <a href="">
-                        <p>Driveluxe@gmail.com</p>
-                    </a>
-                    <a href="">
-                        <p>+91 9827493982</p>
-                    </a>
+                    
+                 
+                      <div class="footer_head2">
+                        <div class="footerOne">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+91 9827493982</p>
+
+                        </div>
+                        <div class="footerOne">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>Driveluxe@gmail.com</p>
+
+                        </div>
+                        <div class="footerOne">
+                            <i class="fa-brands fa-instagram"></i>
+                            <p>Driveluxe_Cars</p>
+
+                        </div>
+                      </div>
+                   
+                  
+        
                 </div>
             </div>
             <div class="footer_last">
                 <p>Copyrights &copy; Driveluxe Motors. All Rights Reserved </p>
             </div>
         </div>
+        
 
 
 
@@ -375,11 +412,11 @@
         <script>
 
             function navigateToCarPage(carId) {
-                window.location.href = `./car_modelspage.html?carId=${carId}`;
+                window.location.href = `./pages/car_modelspage.html?carId=${carId}`;
             }
 
 
-            fetch('./carbrand.json')
+            fetch('./json/carbrand.json')
                 .then(response => response.json())
                 .then(data => {
                     const container = document.getElementById('car-container');
@@ -422,13 +459,47 @@
 
 
 
+            document.addEventListener("DOMContentLoaded", () => {
+  const userDetails = localStorage.getItem("DriveLuxeUserDetails");
+  const welcomeMessage = document.getElementById("welcome-message");
+  const logoutLink = document.getElementById("logout-link");
+
+  if (userDetails) {
+    const user = JSON.parse(userDetails);
+    // Display the user's name if available, otherwise fallback to email
+    welcomeMessage.textContent = user.userName || user.email;
+    logoutLink.style.display = "block";
+  } else {
+    welcomeMessage.textContent = "Login";
+    logoutLink.style.display = "none";
+  }
+
+  // Logout functionality
+  logoutLink.addEventListener("click", () => {
+    localStorage.removeItem("DriveLuxeUserDetails");
+    window.location.reload();
+  });
+});
+
+
+
+// ............ home popup.......................
+
+function openPopup() {
+    document.getElementById('home_popup').style.display = 'flex'; // Show popup
+}
+
+function closePopup() {
+    document.getElementById('home_popup').style.display = 'none'; // Hide popup
+}
+
 
 
         </script>
 
 
 
-        <script src="upcomingcar.js" type="module"></script>
+        <script src="/javascript/upcomingcar.js" type="module"></script>
       
 
 

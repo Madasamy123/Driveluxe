@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  ul li {
+    padding: 8px 0;
+    font-size: 1.1em;
+  }
+  
+  ul li strong {
+    font-weight: bold;
+  }
+  
+  .team-info, .team-vision, .team-roles, .key-features {
+    margin-bottom: 30px;
+  }
+  
+  .team-roles .role {
+    margin-bottom: 20px;
+  }
+  
+  .team-roles h3 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+  }
+  
+  .role p {
+    font-size: 1.1em;
+    color: #555;
+  }
+  
+  .key-features ul li {
+    padding: 10px 0;
+    font-size: 1.1em;
+    color: #333;
+  }
+  

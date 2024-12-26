@@ -23,7 +23,7 @@ const db = getFirestore(app);
 // Function to upload JSON data to Firestore only if it doesn't already exist
 async function loadJsonData() {
   try {
-    const response = await fetch('./upcomingcar.json'); // Ensure the file path is correct
+    const response = await fetch('/json/upcomingcar.json'); // Ensure the file path is correct
     if (!response.ok) throw new Error('Failed to load JSON file');
     const data = await response.json();
 

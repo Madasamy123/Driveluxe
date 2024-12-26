@@ -1,0 +1,60 @@
+/* Terms and Conditions Page Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+ul {
+    margin: 10px 0;
+    padding: 0 20px;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #343a40;
+    color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

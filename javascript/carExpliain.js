@@ -111,14 +111,21 @@ function handleCarAction(actionType) {
     } else {
         // If user is not logged in, redirect to login page
         alert("Please log in to proceed.");
-        window.location.href = "login.html"; // Redirect to login page
+        window.location.href = "/pages/login.html"; // Redirect to login page
     }
 }
 
 function CongratsPage() {
-    window.location.href = `./congratulations.html?car=${car.img1}`;
+    window.location.href = `/pages/congratulations.html?car=${car.img1}`;
 
 }
+
+
+
+
+
+
+
 
 // Updated showPopup function to handle both actions
 function showPopup(popupNumber) {

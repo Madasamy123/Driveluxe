@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="/css/profile.css">
+  <script type="module" src="/javascript/profile.js"></script>
+</head>
+<body>
+  <div class="profile-container">
+    <h1>Welcome to Your Profile</h1>
+    <div class="profile-info">
+      <p><strong>Name:</strong> <span id="profileName"></span></p>
+      <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+      <p>
+        <strong>Address:</strong>
+        <input type="text" id="profileAddress" placeholder="Enter your address">
+      </p>
+      <p>
+        <strong>Phone Number:</strong>
+        <input type="text" id="profilePhone" placeholder="Enter your phone number">
+      </p>
+    </div>
+    <button id="saveChanges">Save Changes</button>
+    <button id="logout">Logout</button>
+  </div>
+</body>
+</html>

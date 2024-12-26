@@ -91,9 +91,16 @@ document.getElementById("signup").addEventListener("click", async (e) => {
     const signInUser = { userName: userName, email: email }
     localStorage.setItem('DriveLuxeUserDetails', JSON.stringify(signInUser));
 
+
+      // Clear input fields
+      document.getElementById("reg-username").value = '';
+      document.getElementById("reg-email").value = '';
+      document.getElementById("reg-pswd").value = '';
+
     // Redirect to home page after successful registration
-    window.location.href = "index.html";
-    errormsgSign.textContent = "Account created Successfully"
+    // window.location.href = "index.html";
+    alert("Please login here")
+    // errormsgSign.textContent = "Account created Successfully"
   } catch (error) {
     // Display Firebase error message
     if (error.code === "auth/email-already-in-use") {
@@ -147,8 +154,15 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+// ..........
 
 
+
+
+
+
+
+// ..................
 
 
 
@@ -163,13 +177,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // Login functionality
+import { getDoc } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+
 document.getElementById("login").addEventListener("click", async (e) => {
-  e.preventDefault(); // Prevent form from refreshing
+  e.preventDefault(); // Prevent form refresh
   const email = document.getElementById("loginEmail").value;
   const password = document.getElementById("login-pswd").value;
-  const errormsgLogin = document.getElementById("errormsgLogin")
+  const errormsgLogin = document.getElementById("errormsgLogin");
 
-  // Check if fields are filled out
+  // Basic validations
   if (!email || !password) {
     errormsgLogin.textContent = "Please fill out all fields.";
     return;
@@ -177,7 +193,7 @@ document.getElementById("login").addEventListener("click", async (e) => {
 
   const emailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
   if (!emailRegex.test(email)) {
-    errormsgLogin.textContent = "Email must contain numbers and end with '@gmail.com'.";
+    errormsgLogin.textContent = "Email must end with '@gmail.com'.";
     return;
   }
 
@@ -187,22 +203,36 @@ document.getElementById("login").addEventListener("click", async (e) => {
   }
 
   try {
-    // Sign in user with email and password
+    // Log in the user
     const userCredential = await signInWithEmailAndPassword(auth, email, password);
-    console.log("Logged in as userCredential :", userCredential);
     const user = userCredential.user;
-    console.log("Logged in as user :", user);
-    const signInUser = {email: user.email }
-    localStorage.setItem('DriveLuxeUserDetails', JSON.stringify(signInUser));
-    // Redirect to home page after successful login
-    window.location.href = "index.html";
+
+    // Fetch the user's name from Firestore
+    const userDoc = await getDoc(doc(db, "users", user.uid));
+    if (userDoc.exists()) {
+      const userData = userDoc.data();
+      const signInUser = {
+        userName: userData.userName, // Retrieve the name from Firestore
+        email: user.email,
+      };
+
+      // Save to localStorage
+      localStorage.setItem("DriveLuxeUserDetails", JSON.stringify(signInUser));
+
+      // Redirect to the home page
+      window.location.href = "/index.html";
+    } else {
+      console.error("No such user document!");
+      errormsgLogin.textContent = "User details not found. Please try again.";
+    }
   } catch (error) {
-    if (error.code === "auth/invalid-credential") {
-      errormsgLogin.textContent = "Email not found. Please check your email or sign up.";
+    if (error.code === "auth/user-not-found") {
+      errormsgLogin.textContent = "Email not found. Please sign up.";
     } else {
       errormsgLogin.textContent = `Login error: ${error.message}`;
     }
-
     console.error("Error during login:", error.message);
   }
 });
+
+
