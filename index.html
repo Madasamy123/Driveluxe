@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="/upcomingcar.js"></script>
+    <!-- <script src="/upcomingcar.js"></script> -->
 </head>
 
 <body>
 
-    <!--  car navbar -->
+    <!-----------------------------------------  header -------------------------------------------->
     <div class="header">
         <div class="image1">
             <img src="./Assests/images/Logo_image.png" alt="">
@@ -23,10 +23,10 @@
 
         <div class="nav">
             <a href="/index.html">HOME</a>
-            <a href="">TOP CARS</a>
+            <a href="#top_head">TOP CARS</a>
             <a href="./pages/findcar.html">FIND CARS</a>
             <a href="/pages/service.html">SERVICE</a>
-            <a href="">CONTACT US</a>
+            <a href="#footer">CONTACT US</a>
         </div>
         <!-- navbar_icon -->
         <div class="icons">
@@ -60,7 +60,7 @@
       <span class="close-btn" onclick="closePopup()">&times;</span>
       <ul>
         <li><i class="fa-solid fa-user"></i><a href="/pages/profile.html">Profile</a></li>
-        <li><i class="fa-solid fa-thumbs-up"></i><a href="#liked-cars">Liked Cars</a></li>
+        <li><i class="fa-solid fa-thumbs-up"></i><a href="/pages/liked_cars.html">Liked Cars</a></li>
         <div id="logout-link" style="display: none;">
          <li><i class="fa-solid fa-sign-out-alt"></i><a href="#"></a>Logout</a></li>
         </div>
@@ -74,13 +74,14 @@
 
 
 
-    <!-- car model -->
+
+    <!------------------------------------------ car model ------------------------------------>
 
     <div class="main">
         <div id="car-container">
             
-        </div>
-        <!-- car adversement -->
+    </div>
+    <!----------------------------------- car adversement ------------------------------------>
 
 
         <div class="advrtment">
@@ -88,15 +89,13 @@
                 <img src="./Assests/images/mahindracar_adversement.jpg" alt="Advertisement 1">
                 <img src="./Assests/images/toyoto adversement img.jpg" alt="Advertisement 2">
                 <img src="./Assests/images/We-Buy-Cars-Honda-Only.V2.jpg" alt="Advertisement 3">
-                <!-- <img src="./Assests/images/Compass.jpeg" alt="Advertisement 3"> -->
+               
 
             </div>
         </div>
 
 
-        <!-- car Accessories -->
-
-
+        <!---------------------------- car Accessories ------------------------------------------>
 
 
         <div class="car_access">
@@ -108,7 +107,7 @@
         </div>
           <script src="/javascript/accessories.js" type="module"></script>
 
-        <!-- Upcoming cars -->
+        <!--------------------------------- Upcoming cars ------------------------------------->
 
 
         <div class="upcoming_head">
@@ -122,218 +121,113 @@
 
                </div>
               
-                <!-- <div class="carousel"> -->
+            
                    
                     <div id="upcoming_car">
 
 
                     </div>
                    
-                <!-- </div> -->
+             
 
             </div>
 
+        </div>
 
 
 
-            <!-- top_model car -->
+<!-- --------------------------------top selleing cars-------------------------------------------- -->
+           
 
 
-            <div class="top_head">
-                <h3>Top Selling Cars</h3>
+ 
+<div id="top_head">
+    <h3>Top Selling Cars</h3>
+    <section id="car-detail-section">
+      
+       
+       <!-- Car Cards will be dynamically added here -->
+   </section>
 
-                <div class="topcar_images">
-                    <a href=""><img src="./Assests/images/topcar_model123.webp" alt="">
-                        <p>Name : Tata Harrier</p>
-                        <p>Price: Rs.17.84 Laks</p>
-                        <div class="topcar_i">
-                            <i class="fa-regular fa-thumbs-up"></i>
-                            <i class="fa-solid fa-share"></i>
-                        </div>
-                    </a>
-                    <a href=""><img src="./Assests/images/topmodels2.webp" alt="">
-                        <p>Name : Maruti Suzuki</p>
-                        <p>Price: Rs.14.65 Laks</p>
-                        <div class="topcar_i">
-                            <i class="fa-regular fa-thumbs-up"></i>
-                            <i class="fa-solid fa-share"></i>
-
-                        </div>
+</div>
 
 
-                    </a>
-                    <a href=""><img src="./Assests/images/topmodels3.jpg" alt="">
-                        <p>Name : Hyundai Grand 10 NIOS </p>
-                        <p>Price: Rs.11.20 Laks</p>
-                        <div class="topcar_i">
-                            <i class="fa-regular fa-thumbs-up"></i>
-                            <i class="fa-solid fa-share"></i>
-                        </div>
-
-
-                    </a>
-                    <a href=""><img src="./Assests/images/topmodels4.jpg" alt="">
-                        <p>Name : Hyundai Exter</p>
-                        <p>Price: Rs.18.12 Laks</p>
-                        <div class="topcar_i">
-                            <i class="fa-regular fa-thumbs-up"></i>
-                            <i class="fa-solid fa-share"></i>
-                        </div>
-
-
-                    </a>
-                    <a href=""><img src="./Assests/images/topmodels5.png" alt="">
-                        <p>Name : Toyoto Innova crysta</p>
-                        <p>Price: Rs.15.45 Laks</p>
-                        <div class="topcar_i">
-                            <i class="fa-regular fa-thumbs-up"></i>
-                            <i class="fa-solid fa-share"></i>
-                        </div>
-
-
-                    </a>
-                    <a href=""><img src="./Assests/images/topmodel6.webp" alt="">
-                        <p>Name : Audi G-tron</p>
-                        <p>Price: Rs.65.35 Laks</p>
-                        <div class="topcar_i">
-                            <i class="fa-regular fa-thumbs-up"></i>
-                            <i class="fa-solid fa-share"></i>
-                        </div>
-
-
-                    </a>
-                    <a href=""><img src="./Assests/images/topmodel7.jpg" alt="">
-                        <p>Name : BMW 3- Glance</p>
-                        <p>Price: Rs.56.97 Laks</p>
-                        <div class="topcar_i">
-                            <i class="fa-regular fa-thumbs-up"></i>
-                            <i class="fa-solid fa-share"></i>
-                        </div>
-
-
-                    </a>
-                    <a href=""><img src="./Assests/images/topmodel8.webp" alt="">
-                        <p>Name : Renault Nisson</p>
-                        <p>Price: Rs.15.95 Laks</p>
-                        <div class="topcar_i">
-                            <i class="fa-regular fa-thumbs-up"></i>
-                            <i class="fa-solid fa-share"></i>
-                        </div>
-
-
-                    </a>
-
-                </div>
-
-
-
-            </div>
-
-
-
+<!-- -------------------------------------offers page---------------------------------------- -->
 
 
             <div class="offer_title">
                 <h3>OFFER ZONE</h3>
             </div>
-
-            <img src="./Assests/images/offffeerrrrpage.jpg" alt="" style="width: 100%;">
-
-            
-             <!-- <div class="offer_zone">
-
-
-                <div class="offer_head">
-                    <div class="offer_name">
-                        <h3>DRIVELUXE MOTORS</h3>
-                        <p>Connecting Aspirations</p>
-                    </div>
-                    <div class="offer_dialogue">
-                        <p>Drive Your</p>
-                        <p>Dream Car</p>
-                    </div>
-
+        
+            <div class="offer-container">
+                <!-- Header Section -->
+                <div class="offer-header">
+                    <h1>Exclusive Pongal Car Offers</h1>
+                    <p>Drive Your Dream Car This Festive Season</p>
                 </div>
-
-
-                <div class="offer_center">
-                    <div class="offer_first">
-                        <div class="offer_first1">
-                            <h1>festival</h1>
-                            <h1 style="margin-left: 50px;">of cars</h1>
-
-                        </div>
-
-
-                        <div>
-                            <img src="./Assests/images/offer-removebg-preview.png" alt="">
-
-                        </div>
-                        <div class="offer_first2">
-                            <h3 style="margin-top: 20px;">BOOK</h3>
-                            <h3>NOW</h3>
-                            <P>GET </P>
-                            <p>HOLIDAY</p>
-                            <p>VOUCHER</p>
-                        </div>
-
-
-
+        
+                <!-- Content Section -->
+                <div class="offer-content">
+                    <div class="offer-image">
+                        <img src="/Assests/images/Audi/AudiQ8Sportbacke-tronEv_image1.jpg" alt="Car Offer">
                     </div>
-
-
-                </div>
-
-
-                <div class="fixed_amount">
-                    <div class="offer_price">
-                        <p>Now Starts at</p>
-                        <h3>&#8377; 15.49 Lakh*</h3>
-
-                    </div>
-                    <div class="offer_last">
-                        <P>LIMITE STOCKS AVAILABLE</P>
+        
+                    <div class="offer-details">
+                        <h2>Special Festive Deals</h2>
+                        <p>Starting from <span class="highlight">₹15.49 Lakh*</span></p>
+                        <p><span class="highlight">Benefits up to ₹1,80,000</span></p>
+                        <p>Limited stocks available! Book now to avail:</p>
+                        <ul>
+                            <li>Zero Down Payment</li>
+                            <li>100% On-road Funding</li>
+                            <li>Best Exchange Offers</li>
+                            <li>Loan Tenure up to 8 Years</li>
+                        </ul>
+                     
                     </div>
                 </div>
-
-
-                <div class="offer_table">
-                    <div class="offer_tablefirst">
-                        <p>Benefits up to</p>
-                        <h3>&#8377; 1 80 000</h3>
+                    <!-- Call to Action -->
+                    <div class="cta">
+                        <a href="http://127.0.0.1:3000/pages/carExplain.html?car=%7B%22img2%22%3A%22..%2FAssests%2Fimages%2FTata_car%2Ftata_altroz_body_image2.jpg%22%2C%22img3%22%3A%22..%2FAssests%2Fimages%2FTata_car%2Ftata_tiago_body_image3.jpg%22%2C%22Driving%20Range%22%3A%22250%20to%20315%20km%22%2C%22Title%22%3A%22AUDI%20Q8%20SPORTBACK%20E-TRON%20EV%22%2C%22img1%22%3A%22..%2FAssests%2Fimages%2FAudi%2FAudiQ8Sportbacke-tronEv_image1.jpg%22%2C%22Transimission%22%3A%22Automatic%22%2C%22Fuel%26%20Performance%22%3A%2290kw%22%2C%22Seating%20Capacity%22%3A%225%20Seater%22%2C%22description%22%3A%22The%20Audi%20Q8%20Sportback%20e-tron%20is%20the%20sportier%2C%20coupe-style%20variant%20of%20Audi%27s%20flagship%20electric%20SUV%2C%20the%20Q8%20e-tron.%20It%20combines%20the%20performance%20and%20luxury%20of%20the%20Q8%20e-tron%20with%20a%20more%20dynamic%20and%20sleek%20design%2C%20featuring%20a%20sloping%20roofline%20and%20a%20more%20aggressive%2C%20athletic%20stance.%22%2C%22charging%20Time%22%3A%225H%207.2kw%22%2C%22Fuel%20Type%22%3A%22Electric%22%2C%22Battery%20Capacity%22%3A%2219.2%20to%2024kWh%22%2C%22img4%22%3A%22..%2FAssests%2Fimages%2FTata_car%2Ftata_tigor_body_image4.jpeg%22%2C%22img5%22%3A%22..%2FAssests%2Fimages%2FTata_car%2Ftata_punch_body_image5.jpg%22%2C%22Safety%22%3A%225%20Star(Global%20NCAP)%22%2C%22Price%22%3A%22Rs.6.50%20Lakh%20onwards%22%2C%22index%22%3A1%7D"><button>View Car</button></a>
                     </div>
-                    <div class="offer_tablefirst">
+        
+                <!-- Benefits Section -->
+                <div class="offer-benefits">
+                    <div class="benefit-card">
                         <p>ZERO</p>
-                        <P>DOWN PAYMENT</P>
+                        <h3>Down Payment</h3>
                     </div>
-                    <div class="offer_tablefirst">
-                        <p>100% ONROAD</p>
-                        <P>FUNDING</P>
+                    <div class="benefit-card">
+                        <p>BENEFITS UPTO</p>
+                        <h3>₹1,80,000</h3>
                     </div>
-                    <div class="offer_tablefirst">
-                        <p>BEST EXCHANGE</p>
-                        <p>OFFERS ON OLD CAR</p>
+                    <div class="benefit-card">
+                        <p>100% On-Road</p>
+                        <h3>Funding</h3>
                     </div>
-                    <div class="offer_tablefirst">
-                        <p>MAX LOAN TENURE</p>
-                        <P>UPTO 8 YEARS</P>
+                    <div class="benefit-card">
+                        <p>LOAN TENURE</p>
+                        <h3>Up to 8 Years</h3>
                     </div>
-
                 </div>
+        
+               
+            </div>
+        
 
 
 
-            </div>  -->
- 
+
+      
 
 
 
 
-        </div>
+        <!----------------------------------------- footer-------------------------------------------- -->
 
-        <!-- footer -->
 
-        <div class="footer">
+
+        <div id="footer">
             <div class="footer_first">
                 <div class="footer_head">
                     <h3>Driveluxe Cars</h3>
@@ -404,8 +298,11 @@
         
 
 
+        <!-- -------------------script---------------------------------- -->
 
-        <script type="module" src="./detailcar.js">
+        
+
+        <!-- <script type="module" src="./detailcar.js"> -->
 
         </script>
 
@@ -500,6 +397,7 @@ function closePopup() {
 
 
         <script src="/javascript/upcomingcar.js" type="module"></script>
+        <script src="/javascript/topcar.js" type="module"></script>
       
 
 
