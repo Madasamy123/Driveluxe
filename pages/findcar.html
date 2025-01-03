@@ -5,25 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Car Listings</title>
   <style>
+
     .car-item {
-      margin-bottom: 20px;
+      display: flex; /* Use flexbox for layout */
+      align-items: center;
       border: 1px solid #ddd;
       padding: 10px;
+      margin-bottom: 20px;
+      
     }
+
+    .car-item img {
+      height: 50%;
+      width: 50%; /* Maintain aspect ratio */
+      margin-right: 20px; /* Add space between image and details */
+    }
+
+    .car-details {
+      display: flex;
+      flex-direction: column; /* Stack details vertically */
+      flex-wrap: wrap;
+    }
+
+    .car-details h4 {
+      margin: 0 0 10px 0; /* Reduce margin */
+    }
+
     #search-bar {
       padding: 10px;
       margin: 20px 0;
       width: 100%;
       max-width: 300px;
     }
-    img {
-      height: 50%;
-      width: 50%;
-    }
+
     .no-results {
       color: red;
       font-weight: bold;
     }
+
+    @media (max-width: 768px) {
+      .car-item {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align the content */
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -46,7 +72,7 @@
       }
     }
 
-    // Function to display all cars (initial view)
+    // Function to display all cars
     function displayCars(data) {
       const carListContainer = document.getElementById('car-list');
       carListContainer.innerHTML = ''; // Clear the list before displaying
@@ -61,26 +87,43 @@
               const carElement = document.createElement('div');
               carElement.classList.add('car-item');
 
-              // Car title
-              const carTitle = document.createElement('h4');
-              carTitle.textContent = `Car: ${carData.Title}`;
-              carElement.appendChild(carTitle);
-
               // Car image
               const carImage = document.createElement('img');
               carImage.src = carData.img1;
               carImage.alt = carData.Title;
               carElement.appendChild(carImage);
 
-              // Car details
-              const carDetails = document.createElement('p');
-              carDetails.textContent = `Price: ${carData.Price}, Mileage: ${carData.Mileage}, Engine: ${carData.Engine}`;
-              carElement.appendChild(carDetails);
+              // Car details container
+              const carDetailsContainer = document.createElement('div');
+              carDetailsContainer.classList.add('car-details');
+
+              // Car title
+              const carTitle = document.createElement('h4');
+              carTitle.textContent = `Car Name: ${carData.Title}`;
+              carDetailsContainer.appendChild(carTitle);
+
+              // Car price
+              const carPrice = document.createElement('p');
+              carPrice.textContent = `Price: ${carData.Price}`;
+              carDetailsContainer.appendChild(carPrice);
+
+              // Car mileage
+              const carMileage = document.createElement('p');
+              carMileage.textContent = `Mileage: ${carData.Mileage}`;
+              carDetailsContainer.appendChild(carMileage);
+
+              // Car engine
+              const carEngine = document.createElement('p');
+              carEngine.textContent = `Engine: ${carData.Engine}`;
+              carDetailsContainer.appendChild(carEngine);
 
               // Car description
               const carDescription = document.createElement('p');
               carDescription.textContent = carData.description;
-              carElement.appendChild(carDescription);
+              carDetailsContainer.appendChild(carDescription);
+
+              // Append details to car element
+              carElement.appendChild(carDetailsContainer);
 
               // Append car element to the container
               carListContainer.appendChild(carElement);
@@ -96,7 +139,6 @@
       carListContainer.innerHTML = ''; // Clear the list before displaying results
       let visibleCars = 0;
 
-      // Loop through all data and filter cars
       carsData.forEach(brandData => {
         for (let brand in brandData) {
           for (let category in brandData[brand]) {
@@ -104,36 +146,42 @@
               const carData = brandData[brand][category][car];
               const carTitle = carData.Title.toLowerCase();
 
-              // Check if car matches the search query
               if (carTitle.includes(query.toLowerCase())) {
                 visibleCars++;
 
-                // Create a div for the car
                 const carElement = document.createElement('div');
                 carElement.classList.add('car-item');
 
-                // Car title
-                const carTitleElement = document.createElement('h4');
-                carTitleElement.textContent = `Car: ${carData.Title}`;
-                carElement.appendChild(carTitleElement);
-
-                // Car image
                 const carImage = document.createElement('img');
                 carImage.src = carData.img1;
                 carImage.alt = carData.Title;
                 carElement.appendChild(carImage);
 
-                // Car details
-                const carDetails = document.createElement('p');
-                carDetails.textContent = `Price: ${carData.Price}, Mileage: ${carData.Mileage}, Engine: ${carData.Engine}`;
-                carElement.appendChild(carDetails);
+                const carDetailsContainer = document.createElement('div');
+                carDetailsContainer.classList.add('car-details');
 
-                // Car description
+                const carTitleElement = document.createElement('h4');
+                carTitleElement.textContent = `Car: ${carData.Title}`;
+                carDetailsContainer.appendChild(carTitleElement);
+
+                const carPrice = document.createElement('p');
+                carPrice.textContent = `Price: ${carData.Price}`;
+                carDetailsContainer.appendChild(carPrice);
+
+                const carMileage = document.createElement('p');
+                carMileage.textContent = `Mileage: ${carData.Mileage}`;
+                carDetailsContainer.appendChild(carMileage);
+
+                const carEngine = document.createElement('p');
+                carEngine.textContent = `Engine: ${carData.Engine}`;
+                carDetailsContainer.appendChild(carEngine);
+
                 const carDescription = document.createElement('p');
                 carDescription.textContent = carData.description;
-                carElement.appendChild(carDescription);
+                carDetailsContainer.appendChild(carDescription);
 
-                // Append car details to the container
+                carElement.appendChild(carDetailsContainer);
+
                 carListContainer.appendChild(carElement);
               }
             }
@@ -141,18 +189,15 @@
         }
       });
 
-      // If no cars match, show "No cars found" message
       if (visibleCars === 0) {
         carListContainer.innerHTML = '<p class="no-results">No cars found matching your search.</p>';
       }
     }
 
-    // Add event listener to the search bar
     document.getElementById('search-bar').addEventListener('input', (event) => {
-      filterCars(event.target.value); // Filter cars as the user types
+      filterCars(event.target.value);
     });
 
-    // Fetch and display car data on page load
     fetchCarsData();
   </script>
 </body>

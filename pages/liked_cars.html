@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liked Cars</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    /* Add the CSS styles directly or link to a CSS file */
+    .car-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px; /* Spacing between car cards */
+      padding: 20px;
+    }
+
+    .car-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 16px;
+      text-align: center;
+      background-color: #fff;
+      height: 300px;
+      width: 300px;
+    }
+
+    .car-card img {
+      max-width: 70%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .car-card h4 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .car-card p {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+
+    /* .car-card button {
+      padding: 10px 16px;
+      background-color: orangered;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .car-card button:hover {
+      background-color: #0c0e15;
+    } */
+
+    .liked_head{
+      place-self: center;
+
+    }
+
+    button{
+      margin-left: 20px;
+      background-color: #0c0e15;
+      color: white;
+    }
+
+    /* .like-icon.liked {
+    color: red !important; 
+    font-weight: bold;
+} */
+
+
+
+
+  </style>
+</head>
+<body>
+<header>
+    <h1>Your Liked Cars</h1>
+    <a href="/index.html"><button>Back to Home</button></a>
+  </header>
+  <section id="liked-car-section" class="car-section">
+    <!-- Liked car details will be displayed here -->
+  </section>
+  <script src="/javascript/likedcars.js"></script>
+</body>
+</html>
