@@ -97,6 +97,7 @@ function handleCarAction(actionType) {
     if (userDetails && userDetails.email) {
         // If user is logged in, store the car details and proceed
         const carDetails = {
+            image:car.img1,
             title: car.Title,
             price: car.Price,
             actionType: actionType,  // Book Now or Test Drive
@@ -115,10 +116,10 @@ function handleCarAction(actionType) {
     }
 }
 
-function CongratsPage() {
-    window.location.href = `/pages/congratulations.html?car=${car.img1}`;
+// function CongratsPage() {
+//     window.location.href = `/pages/congratulations.html?car=${car.img1}`;
 
-}
+// }
 
 
 

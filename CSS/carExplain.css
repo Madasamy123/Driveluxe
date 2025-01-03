@@ -46,7 +46,7 @@ body {
     height: 60%;
 
 
-}
+} 
 
 .car-image-thumbnails {
     display: flex;
@@ -99,9 +99,11 @@ button {
     height: 40px;
     width: 120px;
     margin-right: 100px;
-    background-color: green;
+    /* background-color: green; */
+    background-color: #4a148c;
     border-radius: 10px;
-    margin-top: 50px;
+    margin-top: 40px;
+    color: white;
 }
 
 #test_drive {
@@ -123,6 +125,11 @@ button {
     height: 50%;
     width: 50%;
 }
+ .fa-arrow-left{
+    padding: 20px;
+    /* margin-left: 10px; */
+    font-size: 30px;
+ }
 
 
 /* booknow and testdrive popup */
@@ -140,8 +147,8 @@ button {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 
-    width: 50%;
-    height: 60%;
+    width: 60%;
+    height: 70%;
 }
 
 /* Popup background overlay */
@@ -207,9 +214,15 @@ button {
 }
 
 input {
-    background-color: rgb(174, 173, 173);
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 label {
-    font-weight: 700;
+    font-weight:900;
+  
 }
