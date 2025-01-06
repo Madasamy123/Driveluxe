@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Car Listings</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
 
+
+
+
+.find_head{
+  display: flex;
+  justify-content: space-between;
+
+}
+.find_head i{
+font-size: 30px;
+margin-top: 10px;
+
+}
+
     .car-item {
-      display: flex; /* Use flexbox for layout */
+      display: flex;
+      /* Use flexbox for layout */
       align-items: center;
       border: 1px solid #ddd;
       padding: 10px;
       margin-bottom: 20px;
-      
+
     }
 
     .car-item img {
       height: 50%;
-      width: 50%; /* Maintain aspect ratio */
-      margin-right: 20px; /* Add space between image and details */
+      width: 50%;
+      /* Maintain aspect ratio */
+      margin-right: 20px;
+      /* Add space between image and details */
     }
 
     .car-details {
       display: flex;
-      flex-direction: column; /* Stack details vertically */
+      flex-direction: column;
+      /* Stack details vertically */
       flex-wrap: wrap;
     }
 
     .car-details h4 {
-      margin: 0 0 10px 0; /* Reduce margin */
+      margin: 0 0 10px 0;
+      /* Reduce margin */
     }
 
     #search-bar {
@@ -45,18 +68,31 @@
 
     @media (max-width: 768px) {
       .car-item {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center align the content */
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center align the content */
       }
     }
-
   </style>
 </head>
-<body>
-  <!-- Search bar to filter cars -->
-  <input type="text" id="search-bar" placeholder="Search for cars..." />
 
-  <div id="car-list"></div>
+<body>
+
+
+  <div>
+
+    <div class="find_head">
+
+      <a href="/index.html"><i class="fa-solid fa-arrow-left"></i></a>
+      <!-- Search bar to filter cars -->
+      <input type="text" id="search-bar" placeholder="Search for cars..." />
+
+    </div>
+
+
+    <div id="car-list"></div>
+  </div>
 
   <script>
     let carsData = [];
@@ -201,4 +237,5 @@
     fetchCarsData();
   </script>
 </body>
+
 </html>

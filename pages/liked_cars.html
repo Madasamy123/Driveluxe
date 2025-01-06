@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Liked Cars</title>
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     /* Add the CSS styles directly or link to a CSS file */
     .car-section {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px; /* Spacing between car cards */
+      gap: 20px;
+      /* Spacing between car cards */
       padding: 20px;
     }
 
@@ -54,35 +59,43 @@
       background-color: #0c0e15;
     } */
 
-    .liked_head{
+    .liked_head {
       place-self: center;
 
     }
 
-    button{
-      margin-left: 20px;
-      background-color: #0c0e15;
-      color: white;
+    header h1 {
+      place-self: center;
+
     }
+
 
     /* .like-icon.liked {
     color: red !important; 
     font-weight: bold;
 } */
 
-
-
-
+    .liked_icon {
+      font-size: 30px;
+      margin: 20px;
+    }
   </style>
 </head>
+
 <body>
-<header>
+  <header>
+    
+    <div class="liked_icon">
+      <a href="/index.html"><i class="fa-solid fa-arrow-left"></i></a>
+    </div>
+
     <h1>Your Liked Cars</h1>
-    <a href="/index.html"><button>Back to Home</button></a>
+
   </header>
   <section id="liked-car-section" class="car-section">
     <!-- Liked car details will be displayed here -->
   </section>
   <script src="/javascript/likedcars.js"></script>
 </body>
+
 </html>

@@ -27,7 +27,7 @@
         </section>
 
         <div id="overlay" class="overlay"></div>
-        
+
         <!-- Popup for Booking -->
         <div id="popup1" class="popup">
             <div>
@@ -57,8 +57,8 @@
                     <label for="phoneno2">Phone No:2</label><br>
                     <input type="text" id="phoneno2"><br>
 
-                    <label for="adhar">Upload your Adhar:</label><br>
-                    <input type="file" id="adhar"><br>
+                     <label for="adhar">Upload your Adhar:</label><br>
+                    <input type="file" id="adhar"><br> 
                 </div>
             </div>
 
@@ -111,7 +111,7 @@
 
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
-        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+        import { getFirestore, collection, addDoc, updateDoc, getDocs, doc } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
 
         const firebaseConfig = {
             apiKey: "AIzaSyC0tw4_CFl84kb5i4DeuBkKf0gA7gS3mF4",
@@ -136,7 +136,7 @@
             document.getElementById("tdemail").value = userDetails.email;
         } else {
             alert("Please log in to book a car or schedule a test drive.");
-            window.location.href = "/login.html";  // Redirect to login if not logged in
+            window.location.href = "/pages/login.html";  // Redirect to login if not logged in
         }
 
         // Add event listener for "Confirm" button (Booking)
@@ -150,7 +150,7 @@
             const adharFile = document.getElementById("adhar").files[0];
 
             const selectedCarName = car.Title; // Replace this with actual selected car name
-            const selectedCarPrice =  car.Price; // Replace this with actual selected car price
+            const selectedCarPrice = car.Price; // Replace this with actual selected car price
 
 
             if (!customerName || !currentAddress || !email || !adharFile) {
@@ -174,6 +174,43 @@
                 return;
             }
 
+            const querySnapshot = await getDocs(collection(db, "countBookingList"));
+
+            if (!querySnapshot.empty) {
+                const documentId = querySnapshot.docs[0].id;
+                console.log("First document ID:", documentId);
+
+                const storedValue = querySnapshot.docs[0]._document.data.value.mapValue.fields;
+                const count = Number(storedValue[car.id]?.integerValue) || 0
+
+                const docRef = doc(db, "countBookingList", documentId);
+
+
+                // Add a new field to the document
+                const addFieldToList = async () => {
+                    try {
+                        // The new field and value to add
+                        const newField = {
+                            [car.id]: count + 1
+                        };
+
+                        // Update the document
+                        await updateDoc(docRef, newField);
+                        console.log("Field added successfully!");
+                    } catch (error) {
+                        console.error("Error adding field: ", error);
+                    }
+                };
+
+                addFieldToList();
+
+            } else {
+                console.log("No documents found in the collection.");
+            }
+
+
+
+
             // Save data to Firestore
             try {
                 await addDoc(collection(db, "customerbook"), {
@@ -186,12 +223,12 @@
                     adharBase64,
                     carName: selectedCarName, // Include car name
                     carPrice: selectedCarPrice, // Include car price
-                    carImage:car.img1,
+                    carImage: car.img1,
                     timestamp: new Date(),
                 });
-                // alert("You have booked a car. Our organization will contact you soon.");
-                
-             window.location.href = `/pages/congratulations.html?car=${car.img1}`;
+                alert("You have booked a car. Our organization will contact you soon.");
+
+                window.location.href = `/pages/congratulations.html?car=${car.img1}`;
 
 
                 document.querySelectorAll("input").forEach((input) => (input.value = ""));
@@ -201,58 +238,58 @@
         });
 
 
-        
+
         document.getElementById("testDriveSubmit").addEventListener("click", async () => {
-    const name = document.getElementById("tdname").value;
-    const address = document.getElementById("tdaddress").value;
-    const city = document.getElementById("tdcity").value;
-    const email = document.getElementById("tdemail").value;
-    const phone1 = document.getElementById("tdphone1").value;
-    const phone2 = document.getElementById("tdphone2").value;
-    const adharFile = document.getElementById("tdadhar").files[0];
-    const licenseFile = document.getElementById("tdlicense").files[0];
-    const testDriveDate = document.getElementById("tddate").value;
+            const name = document.getElementById("tdname").value;
+            const address = document.getElementById("tdaddress").value;
+            const city = document.getElementById("tdcity").value;
+            const email = document.getElementById("tdemail").value;
+            const phone1 = document.getElementById("tdphone1").value;
+            const phone2 = document.getElementById("tdphone2").value;
+            const adharFile = document.getElementById("tdadhar").files[0];
+            const licenseFile = document.getElementById("tdlicense").files[0];
+            const testDriveDate = document.getElementById("tddate").value;
 
-    console.log({ name, address, city, email, phone1, phone2, adharFile, licenseFile, testDriveDate });
+            console.log({ name, address, city, email, phone1, phone2, adharFile, licenseFile, testDriveDate });
 
-    if (!name || !address || !city || !email || !phone1 || !testDriveDate || !adharFile || !licenseFile) {
-        alert("Please fill all the fields and upload the required documents.");
-        return;
-    }
+            if (!name || !address || !city || !email || !phone1 || !testDriveDate || !adharFile || !licenseFile) {
+                alert("Please fill all the fields and upload the required documents.");
+                return;
+            }
 
-    const convertToBase64 = (file) => new Promise((resolve, reject) => {
-        const reader = new FileReader();
-        reader.onload = () => resolve(reader.result);
-        reader.onerror = reject;
-        reader.readAsDataURL(file);
-    });
+            const convertToBase64 = (file) => new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => resolve(reader.result);
+                reader.onerror = reject;
+                reader.readAsDataURL(file);
+            });
 
-    try {
-        const adharBase64 = await convertToBase64(adharFile);
-        const licenseBase64 = await convertToBase64(licenseFile);
+            try {
+                const adharBase64 = await convertToBase64(adharFile);
+                const licenseBase64 = await convertToBase64(licenseFile);
 
-        await addDoc(collection(db, "testDriveBook"), {
-            name,
-            address,
-            city,
-            email,
-            phone1,
-            phone2,
-            adharBase64,
-            licenseBase64,
-            testDriveDate,
+                await addDoc(collection(db, "testDriveBook"), {
+                    name,
+                    address,
+                    city,
+                    email,
+                    phone1,
+                    phone2,
+                    adharBase64,
+                    licenseBase64,
+                    testDriveDate,
+                });
+
+                alert("Test Drive booking saved successfully!");
+                document.querySelectorAll("input").forEach(input => input.value = "");
+            } catch (error) {
+                console.error("Error saving test drive booking:", error);
+                alert("An error occurred while saving the booking.");
+            }
         });
 
-        alert("Test Drive booking saved successfully!");
-        document.querySelectorAll("input").forEach(input => input.value = "");
-    } catch (error) {
-        console.error("Error saving test drive booking:", error);
-        alert("An error occurred while saving the booking.");
-    }
-});
-
-const today = new Date().toISOString().split('T')[0];
-document.getElementById("tddate").setAttribute("min", today);
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById("tddate").setAttribute("min", today);
 
 
 

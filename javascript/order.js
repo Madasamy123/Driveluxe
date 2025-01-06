@@ -81,7 +81,7 @@ if (userDetails) {
           ordersHTML += `
             <div class="order-item">
               <h3>Accessory Order</h3>
-               <img src="${accessoryData.accesseryImage || 'default-car-image.jpg'}" alt="Car Image" style="width:200px;height:auto;"/>
+               <img src="${accessoryData.accessoryImage || 'default-car-image.jpg'}" alt="Car Image" style="width:200px;height:auto;"/>
               <p><strong>Accessory:</strong> ${accessoryData.accessoryName || "N/A"}</p>
               <p><strong>Brand:</strong> ${accessoryData.selectedBrand || "N/A"}</p>
               <p><strong>Quantity:</strong> ${accessoryData.quantity || 1}</p>

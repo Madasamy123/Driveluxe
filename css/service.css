@@ -13,7 +13,7 @@ body {
 
 /* Header */
 header {
-    background-color: #007bff;
+    background-color: #131a2d;
     color: white;
     text-align: center;
     padding: 20px 10px;
@@ -37,7 +37,7 @@ header p {
 .service-options h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #007bff;
+    color:#131a2d;
 }
 
 .services-container {
@@ -56,7 +56,7 @@ header p {
 
 .service-box i {
     font-size: 2rem;
-    color: #007bff;
+    color: #131a2d;
     margin-bottom: 15px;
 }
 
@@ -74,7 +74,7 @@ header p {
 .faq-section h2 {
     font-size: 2rem;
     text-align: center;
-    color: #007bff;
+    color:#131a2d;
     margin-bottom: 20px;
 }
 
