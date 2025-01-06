@@ -11,14 +11,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
-
+                    "BookingCount": 0,
+                    "id": "THAZ01",
                     "img1": "../Assests/images/Tata_car/tata_hatchback_altroz1.webp",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_altroz_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_altroz_body_image4.jpg",
-                    "img5":"../Assests/images/Tata_car/tata_altroz_body_image5.jpg",
-                    
-                    "description":"Tata Altroz is a premium hatchback known for its stylish design, spacious interior, and strong safety features. With both petrol and diesel engine options, it offers good performance and fuel efficiency, ideal for city and highway drives. Rated 5 stars in safety by Global NCAP, it stands out in its segment with advanced safety features. Competing with models like the Maruti Baleno and Hyundai i20, Altroz is a popular choice among Indian buyers looking for a balanced, feature-rich, and safe hatchback."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_altroz_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_altroz_body_image4.jpg",
+                    "img5": "../Assests/images/Tata_car/tata_altroz_body_image5.jpg",
+                    "description": "Tata Altroz is a premium hatchback known for its stylish design, spacious interior, and strong safety features. With both petrol and diesel engine options, it offers good performance and fuel efficiency, ideal for city and highway drives. Rated 5 stars in safety by Global NCAP, it stands out in its segment with advanced safety features. Competing with models like the Maruti Baleno and Hyundai i20, Altroz is a popular choice among Indian buyers looking for a balanced, feature-rich, and safe hatchback."
                 },
                 "Tiago": {
                     "Title": "TATA TIAGO",
@@ -29,12 +29,14 @@
                     "Fuel Type": "Petrol,CNG ",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "THTO02",
                     "img1": "../Assests/images/Tata_car/tata_tiago_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_tiago_body_image2.webp",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tiago_body_image4.webp",
-                    "img5":"../Assests/images/Tata_car/tata_tiago_body_image5.webp",
-                    "description":"Tata Tiago is a compact, budget-friendly hatchback with stylish looks, a comfortable interior, and reliable performance. Known for its fuel efficiency and ease of driving in city traffic, it also has a 4-star safety rating from Global NCAP, making it a safe choice in its segment. With features like a touchscreen infotainment system and good build quality, Tiago is a popular option among small families and first-time buyers looking for an affordable yet stylish and safe car."
+                    "img2": "../Assests/images/Tata_car/tata_tiago_body_image2.webp",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tiago_body_image4.webp",
+                    "img5": "../Assests/images/Tata_car/tata_tiago_body_image5.webp",
+                    "description": "Tata Tiago is a compact, budget-friendly hatchback with stylish looks, a comfortable interior, and reliable performance. Known for its fuel efficiency and ease of driving in city traffic, it also has a 4-star safety rating from Global NCAP, making it a safe choice in its segment. With features like a touchscreen infotainment system and good build quality, Tiago is a popular option among small families and first-time buyers looking for an affordable yet stylish and safe car."
                 }
             },
             "Sedan": {
@@ -47,14 +49,15 @@
                     "Fuel Type": "Petrol & CNG ",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "TSTR01",
                     "img1": "../Assests/images/Tata_car/tata_tigor_image1.webp",
-                    "img2":"../Assests/images/Tata_car/tata_tigor_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tigor_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_tigor_body_image5.jpg",
-                    "description":"The Tata Tiago NRG is a rugged, crossover-inspired version of the Tata Tiago, designed for those looking for a hatchback with a sporty and adventurous edge."
+                    "img2": "../Assests/images/Tata_car/tata_tigor_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tigor_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_tigor_body_image5.jpg",
+                    "description": "The Tata Tiago NRG is a rugged, crossover-inspired version of the Tata Tiago, designed for those looking for a hatchback with a sporty and adventurous edge."
                 }
-               
             },
             "Suv": {
                 "Punch": {
@@ -66,12 +69,14 @@
                     "Fuel Type": "Petrol & CNG ",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "TSPH01",
                     "img1": "../Assests/images/Tata_car/tata_punch_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_punch_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_punch_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_punch_body_image4.jpg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Tata Punch is a compact SUV from Tata Motors, designed for those who want a small, city-friendly SUV with the toughness and high ground clearance of a larger vehicle."
+                    "img2": "../Assests/images/Tata_car/tata_punch_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_punch_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_punch_body_image4.jpg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Tata Punch is a compact SUV from Tata Motors, designed for those who want a small, city-friendly SUV with the toughness and high ground clearance of a larger vehicle."
                 },
                 "Harrier": {
                     "Title": "TATA Harrier",
@@ -82,12 +87,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "TSHR02",
                     "img1": "../Assests/images/Tata_car/tata_harrier_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_harrier_body_image2.jpeg",
-                    "img3":"../Assests/images/Tata_car/tata_harrier_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_harrier_body_image4.jpg",
-                    "img5":"../Assests/images/Tata_car/tata_harrier_body_image5.jpg",
-                    "description":"The Tata Nexon is a popular compact SUV from Tata Motors, known for its stylish design, strong performance, and high safety standards."
+                    "img2": "../Assests/images/Tata_car/tata_harrier_body_image2.jpeg",
+                    "img3": "../Assests/images/Tata_car/tata_harrier_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_harrier_body_image4.jpg",
+                    "img5": "../Assests/images/Tata_car/tata_harrier_body_image5.jpg",
+                    "description": "The Tata Nexon is a popular compact SUV from Tata Motors, known for its stylish design, strong performance, and high safety standards."
                 },
                 "Curvv": {
                     "Title": "TATA CURVV",
@@ -98,12 +105,14 @@
                     "Fuel Type": "Diesel",
                     "Transimission": "Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "TSCV03",
                     "img1": "../Assests/images/Tata_car/tata_curvv_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_curvv_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_curvv_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_curvv_body_image4.jpg",
-                    "img5":"../Assests/images/Tata_car/tata_curvv_body_image5.jpg",
-                    "description":"The Tata Curvv is a futuristic electric SUV concept from Tata Motors, blending coupe-inspired design with SUV functionality. It showcases Tata’s vision for the next generation of electric vehicles (EVs) with a focus on sleek aesthetics, advanced technology, and sustainability."
+                    "img2": "../Assests/images/Tata_car/tata_curvv_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_curvv_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_curvv_body_image4.jpg",
+                    "img5": "../Assests/images/Tata_car/tata_curvv_body_image5.jpg",
+                    "description": "The Tata Curvv is a futuristic electric SUV concept from Tata Motors, blending coupe-inspired design with SUV functionality. It showcases Tata’s vision for the next generation of electric vehicles (EVs) with a focus on sleek aesthetics, advanced technology, and sustainability."
                 }
             },
             "Electric Cars": {
@@ -118,12 +127,14 @@
                     "Battery Capacity": "30kWh",
                     "Transimission": "Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "TENN01",
                     "img1": "../Assests/images/Tata_car/tata_nexonev_image1.jpeg",
-                    "img2":"../Assests/images/Tata_car/tata_nexonev_body_image2.jpeg",
-                    "img3":"../Assests/images/Tata_car/tata_nexonev_body_image3.jpeg",
-                    "img4":"../Assests/images/Tata_car/tata_nexonev_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_nexon_body_image5.jpg",
-                    "description":"The Tata Nexon EV is an electric version of the popular Nexon SUV, offering a stylish, eco-friendly option with modern features and excellent range, making it one of India’s top-selling electric vehicles."
+                    "img2": "../Assests/images/Tata_car/tata_nexonev_body_image2.jpeg",
+                    "img3": "../Assests/images/Tata_car/tata_nexonev_body_image3.jpeg",
+                    "img4": "../Assests/images/Tata_car/tata_nexonev_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_nexon_body_image5.jpg",
+                    "description": "The Tata Nexon EV is an electric version of the popular Nexon SUV, offering a stylish, eco-friendly option with modern features and excellent range, making it one of India’s top-selling electric vehicles."
                 },
                 "Punch Ev": {
                     "Title": "TATA PUNCH EV",
@@ -136,12 +147,14 @@
                     "Fuel& Performance": "90kw",
                     "Transimission": " Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "TEPH02",
                     "img1": "../Assests/images/Tata_car/tata_punch_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_punch_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_punch_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_punch_body_image4.jpg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Tata Punch EV is an electric variant of the compact Tata Punch SUV, designed to provide an eco-friendly, city-friendly driving experience with SUV appea"
+                    "img2": "../Assests/images/Tata_car/tata_punch_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_punch_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_punch_body_image4.jpg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Tata Punch EV is an electric variant of the compact Tata Punch SUV, designed to provide an eco-friendly, city-friendly driving experience with SUV appea"
                 },
                 "Tiago Ev": {
                     "Title": "TATA TIAGO EV",
@@ -154,12 +167,14 @@
                     "Safety": "4 Star(Global NCAP)",
                     "Transimission": "Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "TETO03",
                     "img1": "../Assests/images/Tata_car/tata_tiagoev_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_tiagoev_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiagoev_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tiagoev_body_image4.jpg",
-                    "img5":"../Assests/images/Tata_car/tata_tiagoev_body_image5.jpg",
-                    "description":"The Tata Tiago EV is the electric version of Tata's popular Tiago hatchback, offering an affordable and practical entry into the electric vehicle (EV) market."
+                    "img2": "../Assests/images/Tata_car/tata_tiagoev_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiagoev_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tiagoev_body_image4.jpg",
+                    "img5": "../Assests/images/Tata_car/tata_tiagoev_body_image5.jpg",
+                    "description": "The Tata Tiago EV is the electric version of Tata's popular Tiago hatchback, offering an affordable and practical entry into the electric vehicle (EV) market."
                 }
             }
         }
@@ -167,7 +182,6 @@
     {
         "MAHINDRA": {
             "Hatchback": {
-
                 "Mahindra KUV100": {
                     "Title": "MAHINDRA KUV100",
                     "Price": "Rs.6.50 Lakh onwards",
@@ -177,12 +191,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "MHKV01",
                     "img1": "../Assests/images/Mahindra_car/mahindra_kuv100_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Mahindra KUV100 is a compact, quirky crossover with a bold design, aimed at buyers seeking a small SUV-like vehicle. With its SUV styling cues like roof rails, wide grille, and plastic cladding, it stands out in the urban hatchback category. "
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Mahindra KUV100 is a compact, quirky crossover with a bold design, aimed at buyers seeking a small SUV-like vehicle. With its SUV styling cues like roof rails, wide grille, and plastic cladding, it stands out in the urban hatchback category. "
                 }
             },
             "Sedan": {
@@ -195,15 +211,15 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "MSVE01",
                     "img1": "../Assests/images/Mahindra_car/mahindra-verito-car.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Mahindra Verito Vibe was a compact, sub-4-meter hatchback, based on the Verito sedan, with a focus on affordability and practicality. It was equipped with a 1.5-liter diesel engine that produced 64.1 bhp, delivering a fuel-efficient performance with a mileage of around 20-21 kmpl​"
-
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Mahindra Verito Vibe was a compact, sub-4-meter hatchback, based on the Verito sedan, with a focus on affordability and practicality. It was equipped with a 1.5-liter diesel engine that produced 64.1 bhp, delivering a fuel-efficient performance with a mileage of around 20-21 kmpl​"
                 }
- 
             },
             "Suv": {
                 "Mahindra Thar": {
@@ -215,12 +231,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "MSTR01",
                     "img1": "../Assests/images/Mahindra_car/mahindra_thar_image1.png",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Mahindra Thar is a rugged and iconic off-road SUV that blends classic design with modern features. Known for its superior off-road capabilities, it offers a 4x4 drivetrain, making it ideal for adventurous drives on rough terrain. "
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Mahindra Thar is a rugged and iconic off-road SUV that blends classic design with modern features. Known for its superior off-road capabilities, it offers a 4x4 drivetrain, making it ideal for adventurous drives on rough terrain. "
                 },
                 " Mahindra XUV 3XO": {
                     "Title": "MAHINDRA XUV 3XO",
@@ -231,12 +249,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "MSXO02",
                     "img1": "../Assests/images/Mahindra_car/mahindra_xuv3xo_image1.png",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Mahindra XUV 3XO is a compact SUV that combines advanced technology, a modern design, and a spacious interior. It stands out with a polarizing front design, featuring a gloss black grille, LED DRLs, and projector headlamps."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Mahindra XUV 3XO is a compact SUV that combines advanced technology, a modern design, and a spacious interior. It stands out with a polarizing front design, featuring a gloss black grille, LED DRLs, and projector headlamps."
                 },
                 "Mahindra XUV700": {
                     "Title": "MAHINDRA XUV700",
@@ -247,16 +267,17 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "MSXV03",
                     "img1": "../Assests/images/Mahindra_car/mahindra_xuv700_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Mahindra XUV700 is a premium SUV that blends performance, comfort, and advanced technology. It is available with two engine options: a 2.0-liter turbocharged petrol engine that delivers 197 hp, and a 2.2-liter diesel engine, paired with either a manual or automatic transmission."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Mahindra XUV700 is a premium SUV that blends performance, comfort, and advanced technology. It is available with two engine options: a 2.0-liter turbocharged petrol engine that delivers 197 hp, and a 2.2-liter diesel engine, paired with either a manual or automatic transmission."
                 }
             },
             "Electric Cars": {
-               
                 "Mahindra Bolero Neo+": {
                     "Title": "MAHINDRA BOLERO NEO+",
                     "Price": "Rs.6.50 Lakh onwards",
@@ -265,17 +286,17 @@
                     "charging Time": "5H 7.2kw",
                     "Battery Capacity": "19.2 to 24kWh",
                     "Fuel Type": "Electric",
-                  
-                     "Safety": "5 Star(Global NCAP)",
-                  
+                    "Safety": "5 Star(Global NCAP)",
                     "Transimission": "Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "MEBO01",
                     "img1": "../Assests/images/Mahindra_car/mahindra_boleroneo+_electric_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":" The Mahindra Bolero Neo+ is a sturdy SUV variant in the Bolero lineup, developed to cater to those needing a spacious, reliable vehicle. It is based on the older TUV300 platform but has been extended in length to accommodate a 9-seat configuration, suitable for both urban and rural terrains."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": " The Mahindra Bolero Neo+ is a sturdy SUV variant in the Bolero lineup, developed to cater to those needing a spacious, reliable vehicle. It is based on the older TUV300 platform but has been extended in length to accommodate a 9-seat configuration, suitable for both urban and rural terrains."
                 },
                 "Mahindra XUV 3XO": {
                     "Title": "MAHINDRA XUV 3XO",
@@ -285,24 +306,21 @@
                     "charging Time": "5H 7.2kw",
                     "Battery Capacity": "19.2 to 24kWh",
                     "Fuel Type": "Electric",
-                    
                     "Safety": "5 Star(Global NCAP)",
-                  
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "MEXO02",
                     "img1": "../Assests/images/Mahindra_car/MahindraXUV3XO_electric_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Mahindra XUV 3XO EV is an upcoming electric SUV based on the XUV300, positioned below the XUV400 EV in Mahindra's lineup. Expected for release in late 2024, the XUV 3XO EV is likely to feature a 35kWh battery, offering competitive range and energy efficiency, though exact mileage details haven't been fully disclosed."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Mahindra XUV 3XO EV is an upcoming electric SUV based on the XUV300, positioned below the XUV400 EV in Mahindra's lineup. Expected for release in late 2024, the XUV 3XO EV is likely to feature a 35kWh battery, offering competitive range and energy efficiency, though exact mileage details haven't been fully disclosed."
                 }
             }
         }
     },
-
-
-
     {
         "SUZUKI": {
             "Hatchback": {
@@ -315,12 +333,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "SHSO01",
                     "img1": "../Assests/images/Suzuki_car/Maruti_suzuki S-Presso_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Maruti Suzuki S-Presso is a compact, entry-level hatchback designed with SUV-inspired styling. It has a high seating position, tall stance, and a bold front grille, giving it a unique presence among small cars. "
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Maruti Suzuki S-Presso is a compact, entry-level hatchback designed with SUV-inspired styling. It has a high seating position, tall stance, and a bold front grille, giving it a unique presence among small cars. "
                 },
                 "Maruti suzuki swift": {
                     "Title": "MARUTI SUZUKI SWIFT",
@@ -331,12 +351,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "SHST02",
                     "img1": "../Assests/images/Suzuki_car/Maruti_suzukiswift_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Maruti Suzuki Swift is a popular hatchback in India known for its sporty look, fuel efficiency, and enjoyable driving dynamics. Powered by a 1.2-liter petrol engine that delivers around 89 horsepower, it offers smooth and responsive performance, with a choice between manual and AMT (automatic) transmissions."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Maruti Suzuki Swift is a popular hatchback in India known for its sporty look, fuel efficiency, and enjoyable driving dynamics. Powered by a 1.2-liter petrol engine that delivers around 89 horsepower, it offers smooth and responsive performance, with a choice between manual and AMT (automatic) transmissions."
                 }
             },
             "Sedan": {
@@ -349,12 +371,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "SSDE01",
                     "img1": "../Assests/images/Suzuki_car/Maruti_suzukiDzire_image_1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Maruti Suzuki Dzire is a compact sedan known for its elegant design, fuel efficiency, and comfortable ride. Powered by a 1.2-liter petrol engine producing around 89 horsepower, the Dzire offers smooth performance with both 5-speed manual and AMT (automatic) transmission options."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Maruti Suzuki Dzire is a compact sedan known for its elegant design, fuel efficiency, and comfortable ride. Powered by a 1.2-liter petrol engine producing around 89 horsepower, the Dzire offers smooth performance with both 5-speed manual and AMT (automatic) transmission options."
                 },
                 "Maruti suzuki Ciaz": {
                     "Title": "MARUTI SUZUKI CIAZ",
@@ -365,12 +389,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "SSCZ02",
                     "img1": "../Assests/images/Suzuki_car/Maruti_suzukiCiaz_image1.png",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Maruti Suzuki Ciaz is a mid-sized sedan that combines style, comfort, and efficiency, appealing to buyers seeking a premium feel in an affordable package. It is powered by a 1.5-liter petrol engine that produces around 103 horsepower, paired with either a 5-speed manual or 4-speed automatic transmission."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Maruti Suzuki Ciaz is a mid-sized sedan that combines style, comfort, and efficiency, appealing to buyers seeking a premium feel in an affordable package. It is powered by a 1.5-liter petrol engine that produces around 103 horsepower, paired with either a 5-speed manual or 4-speed automatic transmission."
                 }
             },
             "Suv": {
@@ -383,12 +409,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "SSFX01",
                     "img1": "../Assests/images/Suzuki_car/Maruti _SuzukiFronx_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Maruti Suzuki Fronx is a compact SUV that combines a modern design with the brand's reputation for efficiency and reliability. Launched in 2023, the Fronx stands out for its bold coupe-inspired design, offering a sporty look with a sloping roofline that resembles a compact crossover."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Maruti Suzuki Fronx is a compact SUV that combines a modern design with the brand's reputation for efficiency and reliability. Launched in 2023, the Fronx stands out for its bold coupe-inspired design, offering a sporty look with a sloping roofline that resembles a compact crossover."
                 },
                 "Maruti suzuki Brezza": {
                     "Title": "MARUTI SUZUKI BREZZA",
@@ -399,12 +427,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "SSBA02",
                     "img1": "../Assests/images/Suzuki_car/Maruti_suzukiBrezza_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Maruti Suzuki Brezza is a popular compact SUV in India, known for its stylish look, robust build, and efficient performance. Powered by a 1.5-liter K-series petrol engine, it generates around 103 hp and comes with both manual and automatic transmission options."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Maruti Suzuki Brezza is a popular compact SUV in India, known for its stylish look, robust build, and efficient performance. Powered by a 1.5-liter K-series petrol engine, it generates around 103 hp and comes with both manual and automatic transmission options."
                 }
             },
             "Electric Cars": {
@@ -416,17 +446,17 @@
                     "charging Time": "5H 7.2kw",
                     "Battery Capacity": "19.2 to 24kWh",
                     "Fuel Type": "Electric",
-                   
                     "Safety": "5 Star(Global NCAP)",
-                  
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "SEBI01",
                     "img1": "../Assests/images/Suzuki_car/Maruti_SuzukiBrezzaZXI_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Maruti Suzuki Brezza EV is an upcoming electric version of the popular Brezza SUV, designed to meet growing demand for eco-friendly vehicles in India. This electric variant is expected to offer an impressive range of approximately 550 kilometers on a single charge, thanks to its powerful 60kWh lithium-ion battery pack."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Maruti Suzuki Brezza EV is an upcoming electric version of the popular Brezza SUV, designed to meet growing demand for eco-friendly vehicles in India. This electric variant is expected to offer an impressive range of approximately 550 kilometers on a single charge, thanks to its powerful 60kWh lithium-ion battery pack."
                 },
                 "Maruti suzuki Fronx Alpha": {
                     "Title": "MARUTI SUZUKI FRONX ALPHA",
@@ -436,28 +466,21 @@
                     "charging Time": "5H 7.2kw",
                     "Battery Capacity": "19.2 to 24kWh",
                     "Fuel Type": "Electric",
-                   
                     "Safety": "5 Star(Global NCAP)",
-                  
                     "Transimission": " Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "SEFA02",
                     "img1": "../Assests/images/Suzuki_car/Maruti_ suzukiFronx _Alpha_ev_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Maruti Suzuki Fronx Alpha variant is a feature-packed offering in the compact crossover segment. It includes a stylish exterior with LED projector headlamps, dual-tone color options, and premium alloy wheels."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Maruti Suzuki Fronx Alpha variant is a feature-packed offering in the compact crossover segment. It includes a stylish exterior with LED projector headlamps, dual-tone color options, and premium alloy wheels."
                 }
-                
             }
         }
-    
-
     },
-
-
-
-
     {
         "TOYOTA": {
             "Hatchback": {
@@ -470,12 +493,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "THGA01",
                     "img1": "../Assests/images/Toyoto/Toyota_Glanza_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Toyota Glanza is a premium hatchback offering with a 1.2-liter engine, delivering a peppy performance. It's available with both manual and AMT (Automated Manual Transmission) options. The car offers excellent ride quality, with a newly improved suspension, making it comfortable for city driving."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Toyota Glanza is a premium hatchback offering with a 1.2-liter engine, delivering a peppy performance. It's available with both manual and AMT (Automated Manual Transmission) options. The car offers excellent ride quality, with a newly improved suspension, making it comfortable for city driving."
                 },
                 "Toyota Camry": {
                     "Title": "TOYOTA CAMRY",
@@ -486,12 +511,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "THCY02",
                     "img1": "../Assests/images/Toyoto/Toyota_Camry_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Toyota Camry, soon to receive its ninth generation in early 2025, is a luxury hybrid sedan that builds on its longstanding legacy. The new model features a 227hp petrol-hybrid powertrain, offering improved efficiency with a claimed 25 km/l."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Toyota Camry, soon to receive its ninth generation in early 2025, is a luxury hybrid sedan that builds on its longstanding legacy. The new model features a 227hp petrol-hybrid powertrain, offering improved efficiency with a claimed 25 km/l."
                 }
             },
             "Sedan": {
@@ -504,12 +531,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "TSGA01",
                     "img1": "../Assests/images/Toyoto/Toyoto Glanza_sedan_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Toyota Glanza is a premium hatchback offering a sleek design, efficient 1.2L petrol engine, and a strong hybrid option. It is equipped with features like a 7-inch touchscreen infotainment system, automatic climate control, and safety features such as dual airbags and ABS."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Toyota Glanza is a premium hatchback offering a sleek design, efficient 1.2L petrol engine, and a strong hybrid option. It is equipped with features like a 7-inch touchscreen infotainment system, automatic climate control, and safety features such as dual airbags and ABS."
                 },
                 "Toyota Urban Cruiser Taisor": {
                     "Title": "TOYOTA URBAN CRUISER TAISOR",
@@ -520,12 +549,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "TSUR02",
                     "img1": "../Assests/images/Toyoto/Toyota_UrbanCruiser aisor_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Toyota Urban Cruiser Taisor is a compact SUV offering stylish design and practical features, making it a solid choice for urban commuting. It is available with two engine options: a 1.2-liter naturally aspirated petrol engine and a more powerful 1.0-liter turbo-petrol engine. "
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Toyota Urban Cruiser Taisor is a compact SUV offering stylish design and practical features, making it a solid choice for urban commuting. It is available with two engine options: a 1.2-liter naturally aspirated petrol engine and a more powerful 1.0-liter turbo-petrol engine. "
                 }
             },
             "Suv": {
@@ -538,12 +569,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "TSFR01",
                     "img1": "../Assests/images/Toyoto/Toyota_Fortuner_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Toyota Fortuner is a rugged, mid-size SUV with a strong off-road heritage, well-suited for both urban and tough terrain driving. It features a robust 2.8-liter turbo-diesel engine that delivers around 201 horsepower and 500 Nm of torque, coupled with a 6-speed automatic transmission and four-wheel drive capabilities."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Toyota Fortuner is a rugged, mid-size SUV with a strong off-road heritage, well-suited for both urban and tough terrain driving. It features a robust 2.8-liter turbo-diesel engine that delivers around 201 horsepower and 500 Nm of torque, coupled with a 6-speed automatic transmission and four-wheel drive capabilities."
                 },
                 "Toyota Taisor": {
                     "Title": "TOYOTA TAISOR",
@@ -554,16 +587,17 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "TSTR02",
                     "img1": "../Assests/images/Toyoto/Toyota_Taisor_image1.jpeg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Toyota Taisor is a compact SUV that offers a stylish design and modern features. It shares many similarities with the Maruti Suzuki Fronx but comes with distinct Toyota touches, including a unique grille, LED tail-lights, and a more premium feel in terms of cabin materials."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Toyota Taisor is a compact SUV that offers a stylish design and modern features. It shares many similarities with the Maruti Suzuki Fronx but comes with distinct Toyota touches, including a unique grille, LED tail-lights, and a more premium feel in terms of cabin materials."
                 }
             },
             "Electric Cars": {
-               
                 "Toyota Venza Ev": {
                     "Title": "TOYOTA VENZA EV",
                     "Price": "Rs.6.50 Lakh onwards",
@@ -573,15 +607,16 @@
                     "Battery Capacity": "19.2 to 24kWh",
                     "Fuel Type": "Electric",
                     "Safety": "5 Star(Global NCAP)",
-                   
                     "Transimission": "Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "TEVA01",
                     "img1": "../Assests/images/Toyoto/Toyota_VenzaEv_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Toyota Venza EV is anticipated to be an all-electric version of the Toyota Venza, a midsize SUV known for its comfortable ride and upscale design. Though official specs for the Venza EV haven’t been fully detailed, it’s expected to align with Toyota's latest innovations in electric vehicle technology."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Toyota Venza EV is anticipated to be an all-electric version of the Toyota Venza, a midsize SUV known for its comfortable ride and upscale design. Though official specs for the Venza EV haven’t been fully detailed, it’s expected to align with Toyota's latest innovations in electric vehicle technology."
                 },
                 "Toyota  Sienna Ev": {
                     "Title": "TOYOTA SIENNA EV",
@@ -592,25 +627,20 @@
                     "Battery Capacity": "19.2 to 24kWh",
                     "Fuel Type": "Electric",
                     "Safety": "5 Star(Global NCAP)",
-                   
                     "Transimission": "Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "TESA02",
                     "img1": "../Assests/images/Toyoto/Toyota_SiennaEv.png",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Toyota Sienna EV, if introduced, would be the all-electric version of Toyota's popular Sienna minivan, known for its spacious interior and family-friendly features. Although Toyota hasn’t officially released details, an electric Sienna would likely focus on providing a high-capacity battery with a practical driving range and fast-charging capabilities, designed for families needing a reliable, eco-friendly vehicle."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Toyota Sienna EV, if introduced, would be the all-electric version of Toyota's popular Sienna minivan, known for its spacious interior and family-friendly features. Although Toyota hasn’t officially released details, an electric Sienna would likely focus on providing a high-capacity battery with a practical driving range and fast-charging capabilities, designed for families needing a reliable, eco-friendly vehicle."
                 }
             }
         }
-    
-
     },
-
-
-
-
     {
         "AUDI": {
             "Hatchback": {
@@ -623,12 +653,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "AHSD01",
                     "img1": "../Assests/images/Audi/Audi_A3Sportbackrevealed_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The latest Audi A3 Sportback is a stylish and sporty hatchback, combining Audi's signature design elements with modern tech and performance. It offers an updated exterior with sleek lines, a wider stance, and a bold, redesigned grille, giving it an athletic and contemporary look. "
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The latest Audi A3 Sportback is a stylish and sporty hatchback, combining Audi's signature design elements with modern tech and performance. It offers an updated exterior with sleek lines, a wider stance, and a bold, redesigned grille, giving it an athletic and contemporary look. "
                 },
                 "Audi A3 40 TFSI Premium": {
                     "Title": "AUDI A3 40 TFSI PREMIUM",
@@ -639,12 +671,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "AHTM02",
                     "img1": "../Assests/images/Audi/AudiA440TFSIPremium_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Audi A3 40 TFSI Premium is a compact luxury sedan that combines performance, technology, and Audi’s elegant design. The “40 TFSI” badge indicates a turbocharged 2.0-liter engine that delivers strong performance with around 184 horsepower, providing a balanced mix of power and fuel efficiency. "
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Audi A3 40 TFSI Premium is a compact luxury sedan that combines performance, technology, and Audi’s elegant design. The “40 TFSI” badge indicates a turbocharged 2.0-liter engine that delivers strong performance with around 184 horsepower, providing a balanced mix of power and fuel efficiency. "
                 }
             },
             "Sedan": {
@@ -657,12 +691,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "ASA601",
                     "img1": "../Assests/images/Audi/AudiA6_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Audi A6 is a midsize luxury sedan known for its refined design, advanced technology, and balanced performance. With a sleek, sophisticated exterior, the A6 features Audi’s signature LED headlights, bold grille, and aerodynamic lines, giving it a modern and elegant look."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Audi A6 is a midsize luxury sedan known for its refined design, advanced technology, and balanced performance. With a sleek, sophisticated exterior, the A6 features Audi’s signature LED headlights, bold grille, and aerodynamic lines, giving it a modern and elegant look."
                 },
                 "Audi e-tron GT": {
                     "Title": "AUDI e-TRON GT",
@@ -673,12 +709,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "ASET02",
                     "img1": "../Assests/images/Audi/Audi e-tron GT.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Audi e-tron GT is a high-performance electric sedan that combines Audi luxury design with cutting-edge electric vehicle technology. It features a striking, aerodynamic exterior with sleek lines, a wide stance, and LED lighting, giving it a sporty and futuristic appearance."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Audi e-tron GT is a high-performance electric sedan that combines Audi luxury design with cutting-edge electric vehicle technology. It features a striking, aerodynamic exterior with sleek lines, a wide stance, and LED lighting, giving it a sporty and futuristic appearance."
                 }
             },
             "Suv": {
@@ -691,12 +729,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "ASQ301",
                     "img1": "../Assests/images/Audi/Audi_Q3_image1.png",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Audi Q3 is a compact luxury SUV that combines practicality, style, and Audi’s renowned technology. With a bold and sporty exterior, it features Audi’s signature Singleframe grille, sleek LED headlights, and sculpted lines, giving it a modern and premium look."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Audi Q3 is a compact luxury SUV that combines practicality, style, and Audi’s renowned technology. With a bold and sporty exterior, it features Audi’s signature Singleframe grille, sleek LED headlights, and sculpted lines, giving it a modern and premium look."
                 },
                 "Audi Q5": {
                     "Title": "AUDI Q5",
@@ -707,12 +747,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "ASQ502",
                     "img1": "../Assests/images/Audi/Audi_Q5_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Audi Q5 is a popular midsize luxury SUV known for its blend of style, technology, and performance. It features a refined and athletic exterior, with Audi's signature Singleframe grille, sleek LED headlights, and a modern, aerodynamic design."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Audi Q5 is a popular midsize luxury SUV known for its blend of style, technology, and performance. It features a refined and athletic exterior, with Audi's signature Singleframe grille, sleek LED headlights, and a modern, aerodynamic design."
                 }
             },
             "Electric Cars": {
@@ -725,17 +767,18 @@
                     "Battery Capacity": "19.2 to 24kWh",
                     "Fuel Type": "Electric",
                     "Safety": "5 Star(Global NCAP)",
-                   
                     "Transimission": "Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "AERT01",
                     "img1": "../Assests/images/Audi/Audi_RS-e-tron_GTEv_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Audi RS e-tron GT is the high-performance electric variant of Audi's e-tron GT, designed to offer thrilling driving dynamics alongside advanced electric technology. With an aggressive, sleek design, it features bold lines, a wide stance, and Audi's signature LED lighting, giving it a futuristic yet sporty appearance."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Audi RS e-tron GT is the high-performance electric variant of Audi's e-tron GT, designed to offer thrilling driving dynamics alongside advanced electric technology. With an aggressive, sleek design, it features bold lines, a wide stance, and Audi's signature LED lighting, giving it a futuristic yet sporty appearance."
                 },
-                      "Audi Q8 Sportback e-tron Ev": {
+                "Audi Q8 Sportback e-tron Ev": {
                     "Title": "AUDI Q8 SPORTBACK E-TRON EV",
                     "Price": "Rs.6.50 Lakh onwards",
                     "Fuel& Performance": "90kw",
@@ -744,25 +787,20 @@
                     "Battery Capacity": "19.2 to 24kWh",
                     "Fuel Type": "Electric",
                     "Safety": "5 Star(Global NCAP)",
-                   
                     "Transimission": "Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "AESN02",
                     "img1": "../Assests/images/Audi/AudiQ8Sportbacke-tronEv_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Audi Q8 Sportback e-tron is the sportier, coupe-style variant of Audi's flagship electric SUV, the Q8 e-tron. It combines the performance and luxury of the Q8 e-tron with a more dynamic and sleek design, featuring a sloping roofline and a more aggressive, athletic stance."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Audi Q8 Sportback e-tron is the sportier, coupe-style variant of Audi's flagship electric SUV, the Q8 e-tron. It combines the performance and luxury of the Q8 e-tron with a more dynamic and sleek design, featuring a sloping roofline and a more aggressive, athletic stance."
                 }
             }
         }
-    
-
     },
-
-
-
-
     {
         "RENAULT": {
             "Hatchback": {
@@ -775,12 +813,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "RHKD01",
                     "img1": "../Assests/images/Renault/RenaultKWID_image1.jpeg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Renault KWID is a compact hatchback that offers a blend of affordability, practicality, and modern design, making it a popular choice in the entry-level car segment. With its SUV-inspired design, the KWID features bold, angular lines, a high ground clearance, and a rugged front grille, giving it a strong road presence despite its small size."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Renault KWID is a compact hatchback that offers a blend of affordability, practicality, and modern design, making it a popular choice in the entry-level car segment. With its SUV-inspired design, the KWID features bold, angular lines, a high ground clearance, and a rugged front grille, giving it a strong road presence despite its small size."
                 },
                 "Renault Pulse Diesel RxL ABS": {
                     "Title": "RENAULT PULSE DIESEL RXL ABS",
@@ -791,12 +831,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "RHPS02",
                     "img1": "../Assests/images/Renault/RenaultPulseDieseRxLABS_image1.jpeg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Renault Pulse Diesel RXL ABS is a compact hatchback known for its fuel efficiency, practicality, and urban-friendly design. Powered by a 1.5-liter diesel engine, it offers a good balance of power and excellent fuel economy, making it ideal for both city commutes and longer drives. "
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Renault Pulse Diesel RXL ABS is a compact hatchback known for its fuel efficiency, practicality, and urban-friendly design. Powered by a 1.5-liter diesel engine, it offers a good balance of power and excellent fuel economy, making it ideal for both city commutes and longer drives. "
                 }
             },
             "Sedan": {
@@ -809,12 +851,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "RSSA01",
                     "img1": "../Assests/images/Renault/renault-scala_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Renault Scala is a compact sedan that offers a blend of stylish design, comfort, and practicality. It features a sleek, elegant exterior with a modern front grille, bold lines, and a well-defined silhouette, giving it a premium feel in the compact sedan segment."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Renault Scala is a compact sedan that offers a blend of stylish design, comfort, and practicality. It features a sleek, elegant exterior with a modern front grille, bold lines, and a well-defined silhouette, giving it a premium feel in the compact sedan segment."
                 },
                 "Renault Fluence": {
                     "Title": "RENAULT FLUENCE",
@@ -825,12 +869,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "RSFE02",
                     "img1": "../Assests/images/Renault/Renault Fluence_image1.jpeg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Renault Fluence is a midsize sedan that offers a comfortable and premium driving experience, focusing on efficiency, style, and practicality. Its elegant design features smooth lines, a sculpted front grille, and a refined profile, giving it a sophisticated and contemporary look."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Renault Fluence is a midsize sedan that offers a comfortable and premium driving experience, focusing on efficiency, style, and practicality. Its elegant design features smooth lines, a sculpted front grille, and a refined profile, giving it a sophisticated and contemporary look."
                 }
             },
             "Suv": {
@@ -843,12 +889,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "RSBV01",
                     "img1": "../Assests/images/Renault/Renault_bigster_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Renault Bigster SUV is an upcoming mid-size SUV designed to offer a combination of rugged capability, modern design, and spacious interiors. Positioned as a more premium offering in Renault’s SUV lineup, the Bigster features a bold, muscular design with sharp lines, a prominent front grille, and a higher ground clearance, making it suitable for both city driving and off-road adventures."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Renault Bigster SUV is an upcoming mid-size SUV designed to offer a combination of rugged capability, modern design, and spacious interiors. Positioned as a more premium offering in Renault’s SUV lineup, the Bigster features a bold, muscular design with sharp lines, a prominent front grille, and a higher ground clearance, making it suitable for both city driving and off-road adventures."
                 },
                 "Renault Duster ": {
                     "Title": "RENAULT DUSTER",
@@ -859,12 +907,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "RSDR02",
                     "img1": "../Assests/images/Renault/RenaultDuster_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Renault Duster is a compact SUV known for its rugged performance, practicality, and affordability. It features a bold, muscular design with high ground clearance, giving it an adventurous, off-road-ready look, while still being well-suited for urban driving."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Renault Duster is a compact SUV known for its rugged performance, practicality, and affordability. It features a bold, muscular design with high ground clearance, giving it an adventurous, off-road-ready look, while still being well-suited for urban driving."
                 }
             },
             "Electric Cars": {
@@ -877,15 +927,16 @@
                     "Battery Capacity": "19.2 to 24kWh",
                     "Fuel Type": "Electric",
                     "Safety": "5 Star(Global NCAP)",
-                    
+                    "BookingCount": 0,
                     "Transimission": "Automatic",
                     "Seating Capacity": "5 Seater",
+                    "id": "REZE01",
                     "img1": "../Assests/images/Renault/RenaultZoeEv_image1.png",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Renault Zoe EV is a compact, fully electric hatchback designed for urban driving, offering an eco-friendly and practical alternative to traditional combustion engine cars. Known for its compact size, the Zoe is ideal for city commutes, providing easy maneuverability and a zero-emissions driving experience."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Renault Zoe EV is a compact, fully electric hatchback designed for urban driving, offering an eco-friendly and practical alternative to traditional combustion engine cars. Known for its compact size, the Zoe is ideal for city commutes, providing easy maneuverability and a zero-emissions driving experience."
                 },
                 "Renault Arkana Ev": {
                     "Title": "RENAULT ARKANA EV",
@@ -896,25 +947,20 @@
                     "Battery Capacity": "19.2 to 24kWh",
                     "Fuel Type": "Electric",
                     "Safety": "5 Star(Global NCAP)",
-                   
+                    "id": "REAA02",
                     "Transimission": "Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
                     "img1": "../Assests/images/Renault/RenaultArkanaEv_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Renault Arkana EV is an electric version of the stylish Renault Arkana, a coupe-SUV that blends sportiness with practicality. Known for its sleek, coupe-inspired design, the Arkana features a sloping roofline, a bold front grille, and sharp lines, giving it a dynamic and modern appearance."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Renault Arkana EV is an electric version of the stylish Renault Arkana, a coupe-SUV that blends sportiness with practicality. Known for its sleek, coupe-inspired design, the Arkana features a sloping roofline, a bold front grille, and sharp lines, giving it a dynamic and modern appearance."
                 }
             }
         }
-    
-
     },
-
-
-
-
     {
         "HONDA": {
             "Hatchback": {
@@ -927,12 +973,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "HHJX01",
                     "img1": "../Assests/images/Honda/HondaJazzZx_image1.png",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                    "description":"The Honda Jazz ZX is a premium variant of the popular Honda Jazz, a compact hatchback known for its practicality, reliability, and efficient performance. The Jazz ZX features a modern, stylish design with sharp lines, a bold front grille, and a compact yet spacious profile, making it an ideal choice for urban driving. "
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Honda Jazz ZX is a premium variant of the popular Honda Jazz, a compact hatchback known for its practicality, reliability, and efficient performance. The Jazz ZX features a modern, stylish design with sharp lines, a bold front grille, and a compact yet spacious profile, making it an ideal choice for urban driving. "
                 },
                 "Honda Jazz Active": {
                     "Title": "HONDA JAZZ ACTIVE",
@@ -943,12 +991,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "HHJE02",
                     "img1": "../Assests/images/Honda/HondaJazzActive_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                     "description":" The Honda Jazz Active is an entry-level variant of the popular Honda Jazz, designed to offer great value for money with a combination of practicality and efficient performance. It features a compact yet stylish design, with smooth lines and a functional, urban-friendly look."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": " The Honda Jazz Active is an entry-level variant of the popular Honda Jazz, designed to offer great value for money with a combination of practicality and efficient performance. It features a compact yet stylish design, with smooth lines and a functional, urban-friendly look."
                 }
             },
             "Sedan": {
@@ -961,12 +1011,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "HSCY01",
                     "img1": "../Assests/images/Honda/HondaCityZX_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                     "description":"The Honda City ZX is the top variant of the popular Honda City sedan, known for its premium features, stylish design, and refined performance. The City ZX boasts a sleek and modern exterior with sharp lines, a bold front grille, and a well-sculpted profile, giving it an upscale, executive sedan look. "
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Honda City ZX is the top variant of the popular Honda City sedan, known for its premium features, stylish design, and refined performance. The City ZX boasts a sleek and modern exterior with sharp lines, a bold front grille, and a well-sculpted profile, giving it an upscale, executive sedan look. "
                 },
                 "Honda Amaze Diesel Zx": {
                     "Title": "HONDA AMAZE DIESEL ZX",
@@ -977,12 +1029,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "HSDX02",
                     "img1": "../Assests/images/Honda/HondaAmazeDieselZx_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                     "description":"The Honda Amaze Diesel ZX is the top variant of the popular Honda Amaze compact sedan, known for its fuel efficiency, comfortable ride, and reliable performance. The Amaze Diesel ZX features a sleek and modern design with clean lines, a sculpted front grille, and a compact yet spacious profile, making it suitable for both city commutes and highway drives. "
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Honda Amaze Diesel ZX is the top variant of the popular Honda Amaze compact sedan, known for its fuel efficiency, comfortable ride, and reliable performance. The Amaze Diesel ZX features a sleek and modern design with clean lines, a sculpted front grille, and a compact yet spacious profile, making it suitable for both city commutes and highway drives. "
                 }
             },
             "Suv": {
@@ -995,12 +1049,14 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "HSEE01",
                     "img1": "../Assests/images/Honda/HondaElevate_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                     "description":" The Honda Elevate is a compact SUV that marks Honda's entry into the highly competitive SUV segment in several markets. With a bold and modern design, the Elevate features a strong front grille, sharp LED headlights, and a robust profile, giving it a dynamic and premium look suited for urban and off-road driving."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": " The Honda Elevate is a compact SUV that marks Honda's entry into the highly competitive SUV segment in several markets. With a bold and modern design, the Elevate features a strong front grille, sharp LED headlights, and a robust profile, giving it a dynamic and premium look suited for urban and off-road driving."
                 },
                 "Honda WR-v": {
                     "Title": "HONDA WR-V",
@@ -1011,16 +1067,17 @@
                     "Fuel Type": "Petrol,CNG & Diesel",
                     "Transimission": "Manual & Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "HSMV02",
                     "img1": "../Assests/images/Honda/HondaWR-v_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                     "description":"The Honda WR-V is a compact crossover that blends the practicality of a hatchback with the versatility of an SUV. Known for its elevated stance and bold, modern design, the WR-V features a sleek front grille, sharp headlights, and a robust profile, making it a great option for urban and light off-road driving. "
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": "The Honda WR-V is a compact crossover that blends the practicality of a hatchback with the versatility of an SUV. Known for its elevated stance and bold, modern design, the WR-V features a sleek front grille, sharp headlights, and a robust profile, making it a great option for urban and light off-road driving. "
                 }
             },
             "Electric Cars": {
-                
                 "Honda Elevate Ev": {
                     "Title": "HONDA ELEVATE EV",
                     "Price": "Rs.6.50 Lakh onwards",
@@ -1030,15 +1087,16 @@
                     "Battery Capacity": "19.2 to 24kWh",
                     "Fuel Type": "Electric",
                     "Safety": "5 Star(Global NCAP)",
-                    
                     "Transimission": "Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "HEEE01",
                     "img1": "../Assests/images/Honda/HondaElevateEv_image1.png",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                     "description":" The Honda City EV is the electric version of the popular Honda City sedan, combining the iconic City design with eco-friendly electric power. This electric variant brings a modern twist to the well-known sedan, offering zero-emissions driving while maintaining the City’s reputation for comfort, style, and reliability."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": " The Honda City EV is the electric version of the popular Honda City sedan, combining the iconic City design with eco-friendly electric power. This electric variant brings a modern twist to the well-known sedan, offering zero-emissions driving while maintaining the City’s reputation for comfort, style, and reliability."
                 },
                 "Honda Prologue Ev": {
                     "Title": "HONDA PROLOGUE EV",
@@ -1049,28 +1107,18 @@
                     "Battery Capacity": "19.2 to 24kWh",
                     "Fuel Type": "Electric",
                     "Safety": "5 Star(Global NCAP)",
-                    
                     "Transimission": "Automatic",
                     "Seating Capacity": "5 Seater",
+                    "BookingCount": 0,
+                    "id": "HEPE02",
                     "img1": "../Assests/images/Honda/HondaPrologueEv_image1.jpg",
-                    "img2":"../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3":"../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4":"../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5":"../Assests/images/Tata_car/tata_punch_body_image5.jpg",
-                     "description":" The Honda Prologue EV is Honda's flagship all-electric SUV, designed to combine advanced technology, a spacious interior, and a bold, modern design. As part of Honda’s commitment to a sustainable future, the Prologue EV is aimed at delivering an eco-friendly driving experience without compromising on performance or comfort."
+                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "description": " The Honda Prologue EV is Honda's flagship all-electric SUV, designed to combine advanced technology, a spacious interior, and a bold, modern design. As part of Honda’s commitment to a sustainable future, the Prologue EV is aimed at delivering an eco-friendly driving experience without compromising on performance or comfort."
                 }
             }
         }
-    
-
     }
-
-
-
-
-
-
-
-
-
 ]

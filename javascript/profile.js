@@ -75,12 +75,4 @@ saveChangesButton.addEventListener("click", async () => {
   }
 });
 
-// Logout functionality
-logoutButton.addEventListener("click", async () => {
-  try {
-    await signOut(auth);
-    window.location.href = "./login.html"; // Redirect to login page
-  } catch (error) {
-    console.error("Error during logout:", error);
-  }
-});
+

@@ -17,7 +17,6 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 // Fetch accessory details based on ID
-// Fetch accessory details based on ID
 async function fetchAccessoryDetails() {
   const urlParams = new URLSearchParams(window.location.search);
   const accessId = urlParams.get("accessId");
@@ -43,7 +42,6 @@ async function fetchAccessoryDetails() {
 }
 
 // Display accessory details in the HTML
-// Display accessory details in the HTML
 function displayAccessoryDetails(accessory) {
   const detailsDiv = document.getElementById("accessory-details");
 
@@ -60,10 +58,7 @@ function displayAccessoryDetails(accessory) {
             <button class="dropdown_btn">Select Brand</button>
             <div class="dropdown_list">
               ${Object.keys(accessory.price)
-                .map(
-                  (brand) =>
-                    `<a href="#" class="brand-option" data-brand="${brand}">${brand}</a>`
-                )
+                .map((brand) => `<a href="#" class="brand-option" data-brand="${brand}">${brand}</a>`)
                 .join("")}
             </div>
           </div>
@@ -81,49 +76,94 @@ function displayAccessoryDetails(accessory) {
     </div>
   `;
 
-  // Add event listeners to update price on brand selection
+  selectedBrandListeners(accessory);
+  AddToCartListener(accessory);
+  OrderNowListener(accessory);
+}
+
+// Attach brand selection listeners
+// Attach brand selection listeners
+function selectedBrandListeners(accessory) {
   const brandOptions = document.querySelectorAll(".brand-option");
+
   brandOptions.forEach((option) => {
     option.addEventListener("click", function (e) {
       e.preventDefault();
-      const selectedBrand = this.dataset.brand;
-      // Mark the brand as selected
+      
+      // Deselect all options
       document.querySelectorAll(".brand-option").forEach(opt => opt.classList.remove('selected'));
-      this.classList.add('selected'); // Add selected class
+      
+      // Highlight the selected brand
+      this.classList.add('selected');
+
+      // Update the price for the selected brand
+      const selectedBrand = this.dataset.brand;
       document.getElementById("price").textContent = accessory.price[selectedBrand];
+
+      // Close the dropdown popup after selection
+      const dropdownList = this.closest(".dropdown_list");
+      dropdownList.style.display = "none";
     });
   });
 
-  // Event listener for "Add to Cart" button
-  document.getElementById("addCartButton").onclick = function () {
-    addToCart(accessory); // Pass the accessory object when clicking "Add to Cart"
-  };
+  // Add event listener to the dropdown button to toggle visibility
+  const dropdownButton = document.querySelector(".dropdown_btn");
+  const dropdownList = document.querySelector(".dropdown_list");
 
-  // Event listener for "Order Now" button
+  dropdownButton.addEventListener("click", function () {
+    // Toggle dropdown visibility
+    dropdownList.style.display = dropdownList.style.display === "block" ? "none" : "block";
+  });
+
+  // Close the dropdown if clicked outside
+  document.addEventListener("click", function (event) {
+    if (!dropdownButton.contains(event.target) && !dropdownList.contains(event.target)) {
+      dropdownList.style.display = "none";
+    }
+  });
+}
+
+
+// Attach "Add to Cart" button listener
+function AddToCartListener(accessory) {
+  document.getElementById("addCartButton").onclick = function () {
+    addToCart(accessory);
+  };
+}
+
+// Attach "Order Now" button listener
+function  OrderNowListener(accessory) {
+  const userDetails = JSON.parse(localStorage.getItem('DriveLuxeUserDetails'));
+
   document.getElementById("orderButton").onclick = function () {
     const selectedBrand = document.querySelector('.brand-option.selected')?.dataset.brand;
+
+    if (!userDetails) {
+      alert("Please login");
+      window.location.href = "/pages/login.html";
+      return;
+    }
+
     if (!selectedBrand) {
       alert("Please select a brand first.");
       return;
     }
-    showOrderPopup(accessory, selectedBrand); // Pass selected brand to the popup
+
+    showOrderPopup(accessory, selectedBrand);
   };
 }
-
 
 // Function to show the order popup
 function showOrderPopup(accessory, selectedBrand) {
   const popup = document.getElementById("orderPopup");
-  popup.style.display = "block"; // Show the popup
+  popup.style.display = "block";
 
-  // Preselect the brand in the popup if passed
-  document.querySelectorAll(".brand-option").forEach(option => {
-    if (option.dataset.brand === selectedBrand) {
-      option.classList.add("selected"); // Mark the brand as selected in the popup
-    }
-  });
+  const userDetails = JSON.parse(localStorage.getItem("DriveLuxeUserDetails"));
+  if (userDetails) {
+    document.getElementById("name").value = userDetails.name || "";
+    document.getElementById("email").value = userDetails.email || "";
+  }
 
-  // Add event listener for confirm order button
   document.getElementById("confirmOrderButton").onclick = async function () {
     const name = document.getElementById("name").value;
     const phone = document.getElementById("phone").value;
@@ -131,69 +171,60 @@ function showOrderPopup(accessory, selectedBrand) {
     const address = document.getElementById("address").value;
     const quantity = document.getElementById("popupQuantity").value;
 
-    // Check if all fields are filled and brand is selected
     if (!name || !phone || !address || !quantity || !email || !selectedBrand) {
       alert("Please fill in all fields and select a brand.");
       return;
     }
 
-    // Create the order object and save it to Firestore
     const orderDetails = {
-      name: name,
-      phone: phone,
-      email: email,
-      address: address,
+      name, phone, email, address,
       accessoryName: accessory.name,
-      selectedBrand: selectedBrand, // Include selected brand in the order
-      quantity: quantity,
-      timestamp: new Date(), // Add timestamp for the order
+      selectedBrand,
+      accessoryImage: accessory.img,
+      quantity,
+      price: accessory.price[selectedBrand],
+      timestamp: new Date(),
     };
 
     try {
-      // Save the order details to Firestore
       const ordersCollection = collection(db, "orders");
       await addDoc(ordersCollection, orderDetails);
 
-      // Clear the popup fields after saving the order details
-      document.getElementById("name").value = "";
-      document.getElementById("phone").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("address").value = "";
-      document.getElementById("popupQuantity").value = 1; // Reset quantity to 1
+      let orders = JSON.parse(localStorage.getItem("orders")) || [];
+      orders.push(orderDetails);
+      localStorage.setItem("orders", JSON.stringify(orders));
 
-      // Close the popup after saving
       closePopup();
-      alert("Order saved successfully to Firestore!");
+      alert("Order saved successfully. Check the orders page.");
     } catch (error) {
-      console.error("Error saving order to Firestore:", error);
-      alert("An error occurred while saving the order. Please try again.");
+      console.error("Error saving order:", error);
+      alert("An error occurred while saving the order.");
     }
   };
 
-  // Add event listener for close button
-  document.getElementById("closePopupButton").onclick = function () {
-    closePopup();
-  };
+  document.getElementById("closePopupButton").onclick = closePopup;
 }
 
 // Function to close the popup
 function closePopup() {
   const popup = document.getElementById("orderPopup");
-  popup.style.display = "none"; // Hide the popup
+  popup.style.display = "none";
 }
 
-// Initialize the details page
-fetchAccessoryDetails();
-
-
-// Function to add item to the cart
-// Function to add item to the cart
 function addToCart(accessory) {
+  // Check if a brand is selected
+  const selectedBrand = document.querySelector('.brand-option.selected')?.dataset.brand;
+
+  if (!selectedBrand) {
+    alert("Please select a brand before adding to the cart.");
+    return;
+  }
+
   // Get existing cart items from localStorage
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
   // Check if the item already exists in the cart
-  const existingItem = cart.find((item) => item.name === accessory.name);
+  const existingItem = cart.find(item => item.name === accessory.name && item.brand === selectedBrand);
 
   if (existingItem) {
     // If item exists, increase quantity
@@ -202,8 +233,9 @@ function addToCart(accessory) {
     // If item doesn't exist, add it with quantity 1
     cart.push({
       name: accessory.name,
-      price: accessory.price.Tata, // Default brand price
-      img: accessory.img,
+      price: accessory.price[selectedBrand], // Use the selected brand's price
+      accessoryImage: accessory.img,        // Fixed typo from 'accesseryImage'
+      brand: selectedBrand,                 // Store the selected brand in the cart
       quantity: 1,
     });
   }
@@ -211,14 +243,17 @@ function addToCart(accessory) {
   // Save updated cart back to localStorage
   localStorage.setItem("cart", JSON.stringify(cart));
 
+  alert(`${accessory.name} (${selectedBrand}) has been added to your cart!`);
+
   // Update the "Add to Cart" button to "Go to Cart"
   const addCartButton = document.getElementById("addCartButton");
   addCartButton.textContent = "Go to Cart";
-
-  // Change button action to redirect to the cart page
-  addCartButton.onclick = function () {
-    window.location.href = "/pages/cart.html"; // Redirect to cart page
+  addCartButton.onclick = () => {
+    window.location.href = "/pages/cart.html"; // Redirect to the cart page
   };
-
-  alert(`${accessory.name} has been added to your cart!`);
 }
+
+
+
+// Initialize the details page
+fetchAccessoryDetails();

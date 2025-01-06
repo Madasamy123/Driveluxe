@@ -10,9 +10,12 @@ body {
 }
 
 header {
-    background-color: #007bff;
+    background-color: #343a40;
     color: #fff;
     padding: 20px;
+    text-align: center;
+}
+header p{
     text-align: center;
 }
 
@@ -38,6 +41,7 @@ h2 {
 p {
     margin: 10px 0;
     text-align: justify;
+
 }
 
 ul {
@@ -57,4 +61,8 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+   
+}
+footer p{
+    text-align: center;
 }
