@@ -16,8 +16,8 @@
                     "img1": "../Assests/images/Tata_car/tata_hatchback_altroz1.webp",
                     "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
                     "img3": "../Assests/images/Tata_car/tata_altroz_body_image3.jpg",
-                    "img4": "../Assests/images/Tata_car/tata_altroz_body_image4.jpg",
-                    "img5": "../Assests/images/Tata_car/tata_altroz_body_image5.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_altroz4.png",
+                    "img5": "../Assests/images/Tata_car/tata_altroz5.png",
                     "description": "Tata Altroz is a premium hatchback known for its stylish design, spacious interior, and strong safety features. With both petrol and diesel engine options, it offers good performance and fuel efficiency, ideal for city and highway drives. Rated 5 stars in safety by Global NCAP, it stands out in its segment with advanced safety features. Competing with models like the Maruti Baleno and Hyundai i20, Altroz is a popular choice among Indian buyers looking for a balanced, feature-rich, and safe hatchback."
                 },
                 "Tiago": {
@@ -35,7 +35,7 @@
                     "img2": "../Assests/images/Tata_car/tata_tiago_body_image2.webp",
                     "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
                     "img4": "../Assests/images/Tata_car/tata_tiago_body_image4.webp",
-                    "img5": "../Assests/images/Tata_car/tata_tiago_body_image5.webp",
+                    "img5": "../Assests/images/Tata_car/tata_tiago5.jpg",
                     "description": "Tata Tiago is a compact, budget-friendly hatchback with stylish looks, a comfortable interior, and reliable performance. Known for its fuel efficiency and ease of driving in city traffic, it also has a 4-star safety rating from Global NCAP, making it a safe choice in its segment. With features like a touchscreen infotainment system and good build quality, Tiago is a popular option among small families and first-time buyers looking for an affordable yet stylish and safe car."
                 }
             },
@@ -54,7 +54,7 @@
                     "img1": "../Assests/images/Tata_car/tata_tigor_image1.webp",
                     "img2": "../Assests/images/Tata_car/tata_tigor_body_image2.jpg",
                     "img3": "../Assests/images/Tata_car/tata_tigor_body_image3.jpg",
-                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
+                    "img4": "../Assests/images/Tata_car/tata_tigor3.jpg",
                     "img5": "../Assests/images/Tata_car/tata_tigor_body_image5.jpg",
                     "description": "The Tata Tiago NRG is a rugged, crossover-inspired version of the Tata Tiago, designed for those looking for a hatchback with a sporty and adventurous edge."
                 }
@@ -75,7 +75,7 @@
                     "img2": "../Assests/images/Tata_car/tata_punch_body_image2.jpg",
                     "img3": "../Assests/images/Tata_car/tata_punch_body_image3.jpg",
                     "img4": "../Assests/images/Tata_car/tata_punch_body_image4.jpg",
-                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "img5": "../Assests/images/Tata_car/tata_punch4.jpg",
                     "description": "The Tata Punch is a compact SUV from Tata Motors, designed for those who want a small, city-friendly SUV with the toughness and high ground clearance of a larger vehicle."
                 },
                 "Harrier": {
@@ -90,10 +90,10 @@
                     "BookingCount": 0,
                     "id": "TSHR02",
                     "img1": "../Assests/images/Tata_car/tata_harrier_image1.jpg",
-                    "img2": "../Assests/images/Tata_car/tata_harrier_body_image2.jpeg",
+                    "img2": "../Assests/images/Tata_car/tata_harrier2.jpg",
                     "img3": "../Assests/images/Tata_car/tata_harrier_body_image3.jpg",
-                    "img4": "../Assests/images/Tata_car/tata_harrier_body_image4.jpg",
-                    "img5": "../Assests/images/Tata_car/tata_harrier_body_image5.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_harrier4.JPG",
+                    "img5": "../Assests/images/Tata_car/tata_harrier5.jpg",
                     "description": "The Tata Nexon is a popular compact SUV from Tata Motors, known for its stylish design, strong performance, and high safety standards."
                 },
                 "Curvv": {
@@ -109,16 +109,16 @@
                     "id": "TSCV03",
                     "img1": "../Assests/images/Tata_car/tata_curvv_image1.jpg",
                     "img2": "../Assests/images/Tata_car/tata_curvv_body_image2.jpg",
-                    "img3": "../Assests/images/Tata_car/tata_curvv_body_image3.jpg",
-                    "img4": "../Assests/images/Tata_car/tata_curvv_body_image4.jpg",
-                    "img5": "../Assests/images/Tata_car/tata_curvv_body_image5.jpg",
+                    "img3": "../Assests/images/Tata_car/tata_curvv3.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_curvv4.jpg",
+                    "img5": "../Assests/images/Tata_car/tata_curvv5.jpeg",
                     "description": "The Tata Curvv is a futuristic electric SUV concept from Tata Motors, blending coupe-inspired design with SUV functionality. It showcases Tata’s vision for the next generation of electric vehicles (EVs) with a focus on sleek aesthetics, advanced technology, and sustainability."
                 }
             },
             "Electric Cars": {
                 "Nexon Ev": {
                     "Title": "TATA Nexon EV",
-                    "Price": "Rs.12.50 Lakh onwards",
+                    "Price": "Rs.14.50 Lakh onwards",
                     "charging Time": "5H 7.2kw",
                     "Driving Range": "240 to 315 km",
                     "Engine": "The Tata Nexon EV has one electric engine and an automatic transmission.",
@@ -133,12 +133,12 @@
                     "img2": "../Assests/images/Tata_car/tata_nexonev_body_image2.jpeg",
                     "img3": "../Assests/images/Tata_car/tata_nexonev_body_image3.jpeg",
                     "img4": "../Assests/images/Tata_car/tata_nexonev_body_image4.jpeg",
-                    "img5": "../Assests/images/Tata_car/tata_nexon_body_image5.jpg",
+                    "img5": "../Assests/images/Tata_car/tata_nexonev5.jpg",
                     "description": "The Tata Nexon EV is an electric version of the popular Nexon SUV, offering a stylish, eco-friendly option with modern features and excellent range, making it one of India’s top-selling electric vehicles."
                 },
                 "Punch Ev": {
                     "Title": "TATA PUNCH EV",
-                    "Price": "Rs.11.20 Lakh onwards",
+                    "Price": "Rs.15.20 Lakh onwards",
                     "Fuel Type": "Electric",
                     "charging Time": "5H 7.2kw",
                     "Driving Range": "270 to 330 km",
@@ -153,12 +153,12 @@
                     "img2": "../Assests/images/Tata_car/tata_punch_body_image2.jpg",
                     "img3": "../Assests/images/Tata_car/tata_punch_body_image3.jpg",
                     "img4": "../Assests/images/Tata_car/tata_punch_body_image4.jpg",
-                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "img5": "../Assests/images/Tata_car/tata_punchev5.jpg",
                     "description": "The Tata Punch EV is an electric variant of the compact Tata Punch SUV, designed to provide an eco-friendly, city-friendly driving experience with SUV appea"
                 },
                 "Tiago Ev": {
                     "Title": "TATA TIAGO EV",
-                    "Price": "Rs.9.50 Lakh onwards",
+                    "Price": "Rs.10.50 Lakh onwards",
                     "Fuel& Performance": "90kw",
                     "Driving Range": "250 to 315 km",
                     "charging Time": "5H 7.2kw",
@@ -172,7 +172,7 @@
                     "img1": "../Assests/images/Tata_car/tata_tiagoev_image1.jpg",
                     "img2": "../Assests/images/Tata_car/tata_tiagoev_body_image2.jpg",
                     "img3": "../Assests/images/Tata_car/tata_tiagoev_body_image3.jpg",
-                    "img4": "../Assests/images/Tata_car/tata_tiagoev_body_image4.jpg",
+                    "img4": "../Assests/images/Tata_car/tata_tiagoev4.jpg",
                     "img5": "../Assests/images/Tata_car/tata_tiagoev_body_image5.jpg",
                     "description": "The Tata Tiago EV is the electric version of Tata's popular Tiago hatchback, offering an affordable and practical entry into the electric vehicle (EV) market."
                 }
@@ -184,7 +184,7 @@
             "Hatchback": {
                 "Mahindra KUV100": {
                     "Title": "MAHINDRA KUV100",
-                    "Price": "Rs.6.50 Lakh onwards",
+                    "Price": "Rs.16.50 Lakh onwards",
                     "Mileage": "19.17 to 26.2 kmpl",
                     "Engine": "1199cc & 1497cc",
                     "Safety": "5 Star(Global NCAP)",
@@ -194,17 +194,17 @@
                     "BookingCount": 0,
                     "id": "MHKV01",
                     "img1": "../Assests/images/Mahindra_car/mahindra_kuv100_image1.jpg",
-                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "img2": "../Assests/images/Mahindra_car/Mahindra_KUV_100_2.jpg",
+                    "img3": "../Assests/images/Mahindra_car/mahindra_kuv_100_3.jpg",
+                    "img4": "../Assests/images/Mahindra_car/Mahindra_KUV_100-04.jpg",
+                    "img5": "../Assests/images/Mahindra_car/mahindra_kuv_100-05.jpg",
                     "description": "The Mahindra KUV100 is a compact, quirky crossover with a bold design, aimed at buyers seeking a small SUV-like vehicle. With its SUV styling cues like roof rails, wide grille, and plastic cladding, it stands out in the urban hatchback category. "
                 }
             },
             "Sedan": {
                 "Verito Vibe": {
                     "Title": "MAHINDRA VERITO VIBE",
-                    "Price": "Rs.6.50 Lakh onwards",
+                    "Price": "Rs.15.50 Lakh onwards",
                     "Mileage": "19.17 to 26.2 kmpl",
                     "Engine": "1199cc & 1497cc",
                     "Safety": "5 Star(Global NCAP)",
@@ -214,17 +214,17 @@
                     "BookingCount": 0,
                     "id": "MSVE01",
                     "img1": "../Assests/images/Mahindra_car/mahindra-verito-car.jpg",
-                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "img2": "../Assests/images/Mahindra_car/mahindra_Verito-Vibe-02.jpg",
+                    "img3": "../Assests/images/Mahindra_car/mahindra-verito-vibe-03.jpg",
+                    "img4": "../Assests/images/Mahindra_car/mahindra-verito-vibe-04.jpg",
+                    "img5": "../Assests/images/Mahindra_car/mahindra-verito-vibe-05.jpg",
                     "description": "The Mahindra Verito Vibe was a compact, sub-4-meter hatchback, based on the Verito sedan, with a focus on affordability and practicality. It was equipped with a 1.5-liter diesel engine that produced 64.1 bhp, delivering a fuel-efficient performance with a mileage of around 20-21 kmpl​"
                 }
             },
             "Suv": {
                 "Mahindra Thar": {
                     "Title": "MAHINDRA THAR",
-                    "Price": "Rs.6.50 Lakh onwards",
+                    "Price": "Rs.26.50 Lakh onwards",
                     "Mileage": "19.17 to 26.2 kmpl",
                     "Engine": "1199cc & 1497cc",
                     "Safety": "5 Star(Global NCAP)",
@@ -234,15 +234,15 @@
                     "BookingCount": 0,
                     "id": "MSTR01",
                     "img1": "../Assests/images/Mahindra_car/mahindra_thar_image1.png",
-                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "img2": "../Assests/images/Mahindra_car/mahindra_thar2.jpg",
+                    "img3": "../Assests/images/Mahindra_car/mahindra_thar3.jpg",
+                    "img4": "../Assests/images/Mahindra_car/mahindra_thar4.jpg",
+                    "img5": "../Assests/images/Mahindra_car/mahindra_thar5.jpg",
                     "description": "The Mahindra Thar is a rugged and iconic off-road SUV that blends classic design with modern features. Known for its superior off-road capabilities, it offers a 4x4 drivetrain, making it ideal for adventurous drives on rough terrain. "
                 },
                 " Mahindra XUV 3XO": {
                     "Title": "MAHINDRA XUV 3XO",
-                    "Price": "Rs.6.50 Lakh onwards",
+                    "Price": "Rs.17.50 Lakh onwards",
                     "Mileage": "19.17 to 26.2 kmpl",
                     "Engine": "1199cc & 1497cc",
                     "Safety": "5 Star(Global NCAP)",
@@ -252,15 +252,15 @@
                     "BookingCount": 0,
                     "id": "MSXO02",
                     "img1": "../Assests/images/Mahindra_car/mahindra_xuv3xo_image1.png",
-                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "img2": "../Assests/images/Mahindra_car/mahindra-xuv-3xo_2.jpg",
+                    "img3": "../Assests/images/Mahindra_car/mahindra-xuv-3xo-3.jpg",
+                    "img4": "../Assests/images/Mahindra_car/mahindra-xuv-3x0-4.jpg",
+                    "img5": "../Assests/images/Mahindra_car/mahindra-xuv-3x0-5.jpg",
                     "description": "The Mahindra XUV 3XO is a compact SUV that combines advanced technology, a modern design, and a spacious interior. It stands out with a polarizing front design, featuring a gloss black grille, LED DRLs, and projector headlamps."
                 },
                 "Mahindra XUV700": {
                     "Title": "MAHINDRA XUV700",
-                    "Price": "Rs.6.50 Lakh onwards",
+                    "Price": "Rs.14.50 Lakh onwards",
                     "Mileage": "19.17 to 26.2 kmpl",
                     "Engine": "1199cc & 1497cc",
                     "Safety": "5 Star(Global NCAP)",
@@ -270,17 +270,17 @@
                     "BookingCount": 0,
                     "id": "MSXV03",
                     "img1": "../Assests/images/Mahindra_car/mahindra_xuv700_image1.jpg",
-                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "img2": "../Assests/images/Mahindra_car/mahindra-xuv700-02.jpg",
+                    "img3": "../Assests/images/Mahindra_car/mahindra_xuv700_03.jpg",
+                    "img4": "../Assests/images/Mahindra_car/mahindra_xuv700_04.jpg",
+                    "img5": "../Assests/images/Mahindra_car/Mahindra-XUV700-05.jpg",
                     "description": "The Mahindra XUV700 is a premium SUV that blends performance, comfort, and advanced technology. It is available with two engine options: a 2.0-liter turbocharged petrol engine that delivers 197 hp, and a 2.2-liter diesel engine, paired with either a manual or automatic transmission."
                 }
             },
             "Electric Cars": {
                 "Mahindra Bolero Neo+": {
                     "Title": "MAHINDRA BOLERO NEO+",
-                    "Price": "Rs.6.50 Lakh onwards",
+                    "Price": "Rs.16.50 Lakh onwards",
                     "Fuel& Performance": "90kw",
                     "Driving Range": "250 to 315 km",
                     "charging Time": "5H 7.2kw",
@@ -292,15 +292,15 @@
                     "BookingCount": 0,
                     "id": "MEBO01",
                     "img1": "../Assests/images/Mahindra_car/mahindra_boleroneo+_electric_image1.jpg",
-                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "img2": "../Assests/images/Mahindra_car/mahindra-bolero-neo-02.jpg",
+                    "img3": "../Assests/images/Mahindra_car/mahindra-bolero-neo-03.jpg",
+                    "img4": "../Assests/images/Mahindra_car/mahindra-verito-vibe-04.jpg",
+                    "img5": "../Assests/images/Mahindra_car/mahindra-verito-vibe-05.jpg",
                     "description": " The Mahindra Bolero Neo+ is a sturdy SUV variant in the Bolero lineup, developed to cater to those needing a spacious, reliable vehicle. It is based on the older TUV300 platform but has been extended in length to accommodate a 9-seat configuration, suitable for both urban and rural terrains."
                 },
                 "Mahindra XUV 3XO": {
                     "Title": "MAHINDRA XUV 3XO",
-                    "Price": "Rs.6.50 Lakh onwards",
+                    "Price": "Rs.15.50 Lakh onwards",
                     "Fuel& Performance": "90kw",
                     "Driving Range": "250 to 315 km",
                     "charging Time": "5H 7.2kw",
@@ -312,10 +312,10 @@
                     "BookingCount": 0,
                     "id": "MEXO02",
                     "img1": "../Assests/images/Mahindra_car/MahindraXUV3XO_electric_image1.jpg",
-                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "img2": "../Assests/images/Mahindra_car/mahindra-xuv-3xo_2.jpg",
+                    "img3": "../Assests/images/Mahindra_car/mahindra-xuv-3xo-3.jpg",
+                    "img4": "../Assests/images/Mahindra_car/mahindra-xuv-3x0-4.jpg",
+                    "img5": "../Assests/images/Mahindra_car/mahindra-xuv-3x0-5.jpg",
                     "description": "The Mahindra XUV 3XO EV is an upcoming electric SUV based on the XUV300, positioned below the XUV400 EV in Mahindra's lineup. Expected for release in late 2024, the XUV 3XO EV is likely to feature a 35kWh battery, offering competitive range and energy efficiency, though exact mileage details haven't been fully disclosed."
                 }
             }
@@ -326,7 +326,7 @@
             "Hatchback": {
                 "Maruti suzuki S-Presso": {
                     "Title": "MARUTI SUZUKI S-PRESSO",
-                    "Price": "Rs.6.50 Lakh onwards",
+                    "Price": "Rs.13.50 Lakh onwards",
                     "Mileage": "19.17 to 26.2 kmpl",
                     "Engine": "1199cc & 1497cc",
                     "Safety": "5 Star(Global NCAP)",
@@ -336,15 +336,15 @@
                     "BookingCount": 0,
                     "id": "SHSO01",
                     "img1": "../Assests/images/Suzuki_car/Maruti_suzuki S-Presso_image1.jpg",
-                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "img2": "../Assests/images/Suzuki_car/Maruti-S-Presso-image-02.jpg",
+                    "img3": "../Assests/images/Suzuki_car/Maruti-Suzuki-S-Presso_03.jpg",
+                    "img4": "../Assests/images/Suzuki_car/maruti-s-presso-04.jpg",
+                    "img5": "../Assests/images/Suzuki_car/Maruti-Suzuki-S-Presso-05.jpeg",
                     "description": "The Maruti Suzuki S-Presso is a compact, entry-level hatchback designed with SUV-inspired styling. It has a high seating position, tall stance, and a bold front grille, giving it a unique presence among small cars. "
                 },
                 "Maruti suzuki swift": {
                     "Title": "MARUTI SUZUKI SWIFT",
-                    "Price": "Rs.6.50 Lakh onwards",
+                    "Price": "Rs.16.50 Lakh onwards",
                     "Mileage": "19.17 to 26.2 kmpl",
                     "Engine": "1199cc & 1497cc",
                     "Safety": "5 Star(Global NCAP)",
@@ -354,17 +354,17 @@
                     "BookingCount": 0,
                     "id": "SHST02",
                     "img1": "../Assests/images/Suzuki_car/Maruti_suzukiswift_image1.jpg",
-                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "img2": "../Assests/images/Suzuki_car/maruti_suzuki_02.jpg",
+                    "img3": "../Assests/images/Suzuki_car/maruti_suzuki_swift_03.jpeg",
+                    "img4": "../Assests/images/Suzuki_car/Maruti-Suzuki-Swift-03.jpg",
+                    "img5": "../Assests/images/Suzuki_car/Maruti_Suzuki_Swift_-05.jpg",
                     "description": "The Maruti Suzuki Swift is a popular hatchback in India known for its sporty look, fuel efficiency, and enjoyable driving dynamics. Powered by a 1.2-liter petrol engine that delivers around 89 horsepower, it offers smooth and responsive performance, with a choice between manual and AMT (automatic) transmissions."
                 }
             },
             "Sedan": {
                 "Maruti suzuki Dzire": {
                     "Title": "MARUTI SUZUKI DZIRE",
-                    "Price": "Rs.6.50 Lakh onwards",
+                    "Price": "Rs.13.50 Lakh onwards",
                     "Mileage": "19.17 to 26.2 kmpl",
                     "Engine": "1199cc & 1497cc",
                     "Safety": "5 Star(Global NCAP)",
@@ -374,15 +374,15 @@
                     "BookingCount": 0,
                     "id": "SSDE01",
                     "img1": "../Assests/images/Suzuki_car/Maruti_suzukiDzire_image_1.jpg",
-                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "img2": "../Assests/images/Suzuki_car/Maruti-Suzuki-Dzire-02.jpg",
+                    "img3": "../Assests/images/Suzuki_car/Maruti-Suzuki-Dzire-03.jpg",
+                    "img4": "../Assests/images/Suzuki_car/Maruti-Suzuki-Dzire-04.jpg",
+                    "img5": "../Assests/images/Suzuki_car/Maruti-Suzuki-Dzire-05.jpg",
                     "description": "The Maruti Suzuki Dzire is a compact sedan known for its elegant design, fuel efficiency, and comfortable ride. Powered by a 1.2-liter petrol engine producing around 89 horsepower, the Dzire offers smooth performance with both 5-speed manual and AMT (automatic) transmission options."
                 },
                 "Maruti suzuki Ciaz": {
                     "Title": "MARUTI SUZUKI CIAZ",
-                    "Price": "Rs.6.50 Lakh onwards",
+                    "Price": "Rs.15.50 Lakh onwards",
                     "Mileage": "19.17 to 26.2 kmpl",
                     "Engine": "1199cc & 1497cc",
                     "Safety": "5 Star(Global NCAP)",
@@ -392,17 +392,17 @@
                     "BookingCount": 0,
                     "id": "SSCZ02",
                     "img1": "../Assests/images/Suzuki_car/Maruti_suzukiCiaz_image1.png",
-                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "img2": "../Assests/images/Suzuki_car/Maruti-Suzuki Ciaz-02.jpg",
+                    "img3": "../Assests/images/Suzuki_car/Maruti-Suzuki Ciaz-03.jpg",
+                    "img4": "../Assests/images/Suzuki_car/Maruti-Suzuki Ciaz-04.jpg",
+                    "img5": "../Assests/images/Suzuki_car/Maruti-Suzuki Ciaz-05.jpg",
                     "description": "The Maruti Suzuki Ciaz is a mid-sized sedan that combines style, comfort, and efficiency, appealing to buyers seeking a premium feel in an affordable package. It is powered by a 1.5-liter petrol engine that produces around 103 horsepower, paired with either a 5-speed manual or 4-speed automatic transmission."
                 }
             },
             "Suv": {
                 "Maruti Suzuki Fronx": {
                     "Title": "MARUTI SUZUKI FRONX",
-                    "Price": "Rs.6.50 Lakh onwards",
+                    "Price": "Rs.14.50 Lakh onwards",
                     "Mileage": "19.17 to 26.2 kmpl",
                     "Engine": "1199cc & 1497cc",
                     "Safety": "5 Star(Global NCAP)",
@@ -412,15 +412,15 @@
                     "BookingCount": 0,
                     "id": "SSFX01",
                     "img1": "../Assests/images/Suzuki_car/Maruti _SuzukiFronx_image1.jpg",
-                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "img2": "../Assests/images/Suzuki_car/maruti_suzuki_fronx_02.jpg",
+                    "img3": "../Assests/images/Suzuki_car/maruti_suzuki_fronx_03.png",
+                    "img4": "../Assests/images/Suzuki_car/maruti_suzuki_fronx_04.jpg",
+                    "img5": "../Assests/images/Suzuki_car/maruti_suzuki_fronx_05.jpg",
                     "description": "The Maruti Suzuki Fronx is a compact SUV that combines a modern design with the brand's reputation for efficiency and reliability. Launched in 2023, the Fronx stands out for its bold coupe-inspired design, offering a sporty look with a sloping roofline that resembles a compact crossover."
                 },
                 "Maruti suzuki Brezza": {
                     "Title": "MARUTI SUZUKI BREZZA",
-                    "Price": "Rs.6.50 Lakh onwards",
+                    "Price": "Rs.24.50 Lakh onwards",
                     "Mileage": "19.17 to 26.2 kmpl",
                     "Engine": "1199cc & 1497cc",
                     "Safety": "5 Star(Global NCAP)",
@@ -430,17 +430,17 @@
                     "BookingCount": 0,
                     "id": "SSBA02",
                     "img1": "../Assests/images/Suzuki_car/Maruti_suzukiBrezza_image1.jpg",
-                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "img2": "../Assests/images/Suzuki_car/Maruti_Suzuki_Brezza_02.png",
+                    "img3": "../Assests/images/Suzuki_car/Maruti_Suzuki_Brezza_03.jpeg",
+                    "img4": "../Assests/images/Suzuki_car/Maruti_Suzuki_Brezza_04.jpg",
+                    "img5": "../Assests/images/Suzuki_car/Maruti_Suzuki_Brezza_05.jpg",
                     "description": "The Maruti Suzuki Brezza is a popular compact SUV in India, known for its stylish look, robust build, and efficient performance. Powered by a 1.5-liter K-series petrol engine, it generates around 103 hp and comes with both manual and automatic transmission options."
                 }
             },
             "Electric Cars": {
                 "Maruti Suzuki Brezza ZXI": {
                     "Title": "MARUTI SUZUKI BREZZA ZXI",
-                    "Price": "Rs.6.50 Lakh onwards",
+                    "Price": "Rs.16.50 Lakh onwards",
                     "Fuel& Performance": "90kw",
                     "Driving Range": "250 to 315 km",
                     "charging Time": "5H 7.2kw",
@@ -452,17 +452,17 @@
                     "BookingCount": 0,
                     "id": "SEBI01",
                     "img1": "../Assests/images/Suzuki_car/Maruti_SuzukiBrezzaZXI_image1.jpg",
-                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "img2": "../Assests/images/Suzuki_car/marutisuzuki-brezza_zxi_02.jpg",
+                    "img3": "../Assests/images/Suzuki_car/marutisuzuki-brezza_zxi_03.jpg",
+                    "img4": "../Assests/images/Suzuki_car/marutisuzuki-brezza_zxi_04.jpg",
+                    "img5": "../Assests/images/Suzuki_car/marutisuzuki-brezza_zxi_05.jpg",
                     "description": "The Maruti Suzuki Brezza EV is an upcoming electric version of the popular Brezza SUV, designed to meet growing demand for eco-friendly vehicles in India. This electric variant is expected to offer an impressive range of approximately 550 kilometers on a single charge, thanks to its powerful 60kWh lithium-ion battery pack."
                 },
                 "Maruti suzuki Fronx Alpha": {
                     "Title": "MARUTI SUZUKI FRONX ALPHA",
-                    "Price": "Rs.6.50 Lakh onwards",
+                    "Price": "Rs.17.50 Lakh onwards",
                     "Fuel& Performance": "90kw",
-                    "Driving Range": "250 to 315 km",
+                    "Driving Range": "200 to 215 km",
                     "charging Time": "5H 7.2kw",
                     "Battery Capacity": "19.2 to 24kWh",
                     "Fuel Type": "Electric",
@@ -472,10 +472,10 @@
                     "BookingCount": 0,
                     "id": "SEFA02",
                     "img1": "../Assests/images/Suzuki_car/Maruti_ suzukiFronx _Alpha_ev_image1.jpg",
-                    "img2": "../Assests/images/Tata_car/tata_altroz_body_image2.jpg",
-                    "img3": "../Assests/images/Tata_car/tata_tiago_body_image3.jpg",
-                    "img4": "../Assests/images/Tata_car/tata_tigor_body_image4.jpeg",
-                    "img5": "../Assests/images/Tata_car/tata_punch_body_image5.jpg",
+                    "img2": "../Assests/images/Suzuki_car/maruti_suzuki_fronx_02.jpg",
+                    "img3": "../Assests/images/Suzuki_car/maruti_suzuki_fronx_03.png",
+                    "img4": "../Assests/images/Suzuki_car/maruti_suzuki_fronx_04.jpg",
+                    "img5": "../Assests/images/Suzuki_car/maruti_suzuki_fronx_05.jpg",
                     "description": "The Maruti Suzuki Fronx Alpha variant is a feature-packed offering in the compact crossover segment. It includes a stylish exterior with LED projector headlamps, dual-tone color options, and premium alloy wheels."
                 }
             }
