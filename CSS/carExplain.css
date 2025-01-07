@@ -32,6 +32,7 @@ body {
 .car-images {
     /* flex: 1; */
     padding: 20px;
+    margin-left: 50px;
 }
 
 .car-image-main {
@@ -42,8 +43,9 @@ body {
 }
 
 .car-images img {
-    width: 90%;
-    height: 60%;
+    width: 75%;
+    height: 50%;
+    margin-top: 30px;
 
 
 } 

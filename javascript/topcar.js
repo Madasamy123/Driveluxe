@@ -18,56 +18,140 @@ const shownCars = new Set(); // Track displayed car IDs
 
 // Function to fetch cars
 async function fetchCars() {
-    const carsCollection = collection(db, "customerbook");
-    const q = query(carsCollection, limit(8)); // Fetch first 8 cars
+    const CardetailsQuerySnapshot = await getDocs(collection(db, "Cardetails"));
+    
+    
+            const uniqueCars = [];
+            CardetailsQuerySnapshot.forEach((doc) => {
+                const data = doc.data();
+    
+                const car = JSON.stringify(data, null, 2);
+                const jsonobj = JSON.parse(car);
+                if (jsonobj) uniqueCars.push(jsonobj);
+            });
 
-    try {
-        const querySnapshot = await getDocs(q);
-        const carDetails = [];
+            const carDetails = extractCarDetails(uniqueCars);
+            console.log(carDetails);
 
-        querySnapshot.forEach((doc) => {
-            if (!shownCars.has(doc.id)) {
-                shownCars.add(doc.id); // Add car ID to the set
-                const carData = doc.data();
-                const car = {
-                    id: doc.id, // Include car ID for tracking
-                    carImage: carData.carImage || 'default-image.jpg',
-                    carName: carData.carName || 'Unknown Car',
-                    carPrice: carData.carPrice || 'Price Not Available'
-                };
 
-                carDetails.push(car);
-            }
-        });
 
-        if (carDetails.length > 0) {
-            displayCars(carDetails);
-        } else {
-            console.log("No new cars found in the database.");
-        }
-    } catch (error) {
-        console.error("Error fetching cars:", error);
-    }
+            const BookingCountListQuerySnapshot = await getDocs(collection(db, "countBookingList"));
+    
+            const countList = [];
+    
+            BookingCountListQuerySnapshot.forEach((doc) => {
+                const data = doc.data();
+    
+                const count = JSON.stringify(data, null, 2);
+                const jsonobj = JSON.parse(count);
+
+
+                const sortedDescending = Object.entries(jsonobj)
+                    .sort(([, valueA], [, valueB]) => valueB - valueA)
+                    .reduce((acc, [key, value]) => {
+                        acc[key] = value;
+                        countList.push({[key]: value})
+                        return acc;
+                    }, {});
+
+                console.log("Sorted Descending:", sortedDescending);
+                // countList.push(sortedDescending)
+                // if (jsonobj) uniqueCars.push(jsonobj);
+            });
+
+
+
+
+
+            const displayCarsList = [];
+
+                // Ensure flattenedData is an array
+                const flattenedArray = Array.isArray(carDetails) ? carDetails : Object.values(carDetails);
+
+                // Loop through flattenedList and match IDs with flattenedArray
+                countList.forEach((item) => {
+                    flattenedArray.forEach((dataObj) => {
+                        if (dataObj.id === Object.keys(item)[0]) {
+                            displayCarsList.push(dataObj); // Push matching object into displayCarsList
+                        }
+                    });
+                });
+
+                console.log(displayCarsList);
+
+
+                function extractCarDetails(data) {
+                    const cars = [];
+                
+                    function traverse(obj) {
+                        for (const key in obj) {
+                            if (obj[key] && typeof obj[key] === 'object') {
+                                // Check if this object represents a car
+                                if (obj[key].Title && obj[key].Price) {
+                                    // Add car details to the cars array
+                                    cars.push({
+                                        
+                                            "Battery Capacity": obj[key]["Battery Capacity"] || "N/A",
+                                            BookingCount: obj[key].BookingCount || 0,
+                                            "Driving Range": obj[key]["Driving Range"] || "N/A",
+                                            "Fuel Type": obj[key]["Fuel Type"] || "N/A",
+                                            "Fuel& Performance": obj[key]["Fuel& Performance"] || "N/A",
+                                            Price: obj[key].Price || "N/A",
+                                            Safety: obj[key].Safety || "N/A",
+                                            "Seating Capacity": obj[key]["Seating Capacity"] || "N/A",
+                                            Title: obj[key].Title || "N/A",
+                                            Transimission: obj[key].Transimission || "N/A",
+                                            "charging Time": obj[key]["charging Time"] || "N/A",
+                                            description: obj[key].description || "N/A",
+                                            id: obj[key].id || "N/A",
+                                            img1: obj[key].img1 || "N/A",
+                                        },
+                                    );
+                                } else {
+                                    // Recursively traverse nested objects
+                                    traverse(obj[key]);
+                                }
+                            }
+                        }
+                    }
+                
+                    // Start traversing the dataset
+                    data.forEach((item) => traverse(item));
+                
+                    return cars;
+                }
+                
+               
+                displayCars(displayCarsList)
+               
+                
+                
+
+
+
+
 }
 
 // Function to display cars on the page
 function displayCars(cars) {
     const carSection = document.getElementById("car-detail-section");
-    cars.forEach((car) => {
+    for (let index = 0; index < cars.length; index++) {
+        const car = cars[index];
+         if(index > 7) break;
         const carCard = document.createElement("div");
         carCard.classList.add("car-card");
 
         carCard.innerHTML = `
-            <img src="${car.carImage}" alt="${car.carName}">
-            <h4>${car.carName}</h4>
-            <p>Price: ₹${car.carPrice}</p>
+            <img src="${car.img1}" alt="${car.Title}">
+            <h4>${car.Title}</h4>
+            <p>Price: ₹${car.Price}</p>
             <div class="ls_icon">
-                <i class="fa-regular fa-thumbs-up like-icon" data-id="${car.id}" data-image="${car.carImage}" data-name="${car.carName}" data-price="${car.carPrice}"></i>
+                <i class="fa-regular fa-thumbs-up like-icon" data-id="${car.id}" data-image="${car.img1}" data-name="${car.Title}" data-price="${car.Price}"></i>
                 <i class="fa-solid fa-share"></i>
             </div>
         `;
         carSection.appendChild(carCard);
-    });
+    };
 
     // Add event listeners to the like icons
     const likeIcons = document.querySelectorAll(".like-icon");
