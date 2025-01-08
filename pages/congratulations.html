@@ -52,7 +52,7 @@
 
 <body>
     <div class="message">
-        <h1>Congratulations!</h1>
+        <h1>Congratulations! <span></span></h1>
         <img id="carImage" style="height: 400px; width: 600px;" alt="Car Image">
         <p>Your car booking is confirmed!</p>
         <button onclick="goBack()">Go Back to Home</button>
@@ -74,6 +74,20 @@
         function goBack() {
             window.location.href = "/index.html"; // Replace with your homepage
         }
+
+
+        /////////////////
+
+    document.addEventListener("DOMContentLoaded", () => {
+    const userDetails = JSON.parse(localStorage.getItem('DriveLuxeUserDetails'));
+    const userName = document.querySelector(".message h1 span");
+
+    if (userDetails && userDetails.userName) {
+        userName.textContent = userDetails.userName;
+    } else {
+        userName.textContent = "Customer happy with Drive";
+    }
+});
 
         // try {
         //     await addDoc(collection(db, "customerbook"), {

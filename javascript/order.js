@@ -39,7 +39,7 @@ if (userDetails) {
   const orderTypeRadios = document.querySelectorAll('input[name="orderType"]');
 
   async function fetchAndDisplayOrders(orderType = "cars") {
-    ordersListDiv.innerHTML = "<p>Loading orders...</p>";
+    // ordersListDiv.innerHTML = "<p>Loading orders...</p>";
 
     try {
       let ordersHTML = "";
@@ -49,6 +49,7 @@ if (userDetails) {
         const carQuery = query(collection(db, "customerbook"), where("email", "==", userEmail));
         const carSnapshot = await getDocs(carQuery);
 
+showload();
         console.log("Car orders fetched:", carSnapshot.docs);
 
         // Add Car Orders
@@ -66,36 +67,59 @@ if (userDetails) {
                 : "N/A"}</p>
             </div>
           `;
+          hideload();
         });
       } else if (orderType === "accessories") {
         // Query the "orders" (accessories) collection
         const accessoriesQuery = query(collection(db, "orders"), where("email", "==", userEmail));
         const accessoriesSnapshot = await getDocs(accessoriesQuery);
-
+      
         console.log("Accessory orders fetched:", accessoriesSnapshot.docs);
-
-        // Add Accessories Orders
+        showload();
+      
         accessoriesSnapshot.forEach((doc) => {
           const accessoryData = doc.data();
           console.log("Accessory Data:", accessoryData);
-          ordersHTML += `
-            <div class="order-item">
-              <h3>Accessory Order</h3>
-               <img src="${accessoryData.accessoryImage || 'default-car-image.jpg'}" alt="Car Image" style="width:200px;height:auto;"/>
-              <p><strong>Accessory:</strong> ${accessoryData.accessoryName || "N/A"}</p>
-              <p><strong>Brand:</strong> ${accessoryData.selectedBrand || "N/A"}</p>
-              <p><strong>Quantity:</strong> ${accessoryData.quantity || 1}</p>
-              
-              <p><strong>Order Date:</strong> ${accessoryData.timestamp 
-                ? new Date(accessoryData.timestamp.seconds * 1000).toLocaleDateString() 
-                : "N/A"}</p>
-            </div>
-          `;
+      
+          // Handle Single Order
+          if (accessoryData.items === undefined) {
+            ordersHTML += `
+              <div class="order-item">
+                <h3>Accessory Order</h3>
+                <img src="${accessoryData.accessoryImage || 'default-car-image.jpg'}" alt="Accessory Image" style="width:200px;height:auto;"/>
+                <p><strong>Accessory:</strong> ${accessoryData.accessoryName || "N/A"}</p>
+                <p><strong>Brand:</strong> ${accessoryData.selectedBrand || "N/A"}</p>
+                <p><strong>Quantity:</strong> ${accessoryData.quantity || 1}</p>
+                <p><strong>Price:</strong> ₹${accessoryData.price || "N/A"}</p>
+              </div>
+            `;
+          } else {
+            // Handle Multiple Orders
+            accessoryData.items.forEach((item) => {
+              ordersHTML += `
+                <div class="order-item">
+                  <h3>Accessory Order</h3>
+                  <img src="${item.accessoryImage || 'default-car-image.jpg'}" alt="Accessory Image" style="width:200px;height:auto;"/>
+                  <p><strong>Accessory:</strong> ${item.name || "N/A"}</p>
+                  <p><strong>Brand:</strong> ${item.brand || "N/A"}</p>
+                  <p><strong>Quantity:</strong> ${item.quantity || 1}</p>
+                  <p><strong>Price:</strong> ₹${item.price || "N/A"}</p>
+                </div>
+              `;
+            });
+          }
+      
+       
         });
+      
+        hideload();
       }
+      
+      
 
       // Display Orders or a No Orders Message
       ordersListDiv.innerHTML = ordersHTML || `<p>No ${orderType === "cars" ? "car bookings" : "accessories orders"} found.</p>`;
+      hideload();
     } catch (error) {
       console.error("Error fetching orders:", error);
       ordersListDiv.innerHTML = "<p>Error loading orders. Please try again later.</p>";
@@ -114,4 +138,17 @@ if (userDetails) {
 } else {
   alert("Please log in to view your orders.");
   window.location.href = "/pages/login.html"; // Redirect to login if not logged in
+}
+
+
+
+// loader
+
+function showload(){
+  let loader=document.querySelector(".loader");
+loader.style.display="block";
+}
+function hideload(){
+  let loader=document.querySelector(".loader");
+  loader.style.display="none";
 }

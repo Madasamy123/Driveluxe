@@ -17,13 +17,16 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 // Function to display the cart
-// Function to display the cart
 function displayCart() {
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
   const cartContainer = document.getElementById("cart-container");
+  const clearCartButton=document.getElementById("clearCart");
+const buyNowButton=document.getElementById("buyNowBtn")
 
   if (cart.length === 0) {
     cartContainer.innerHTML = "<p>Your cart is empty!</p>";
+    clearCartButton.style.display="none";
+    buyNowButton.style.display="none";
     return;
   }
 
@@ -58,7 +61,6 @@ function displayCart() {
     </div>
   `;
 
-  // Add event listeners for quantity inputs and remove buttons
   document.querySelectorAll(".quantity-input").forEach((input) => {
     input.addEventListener("change", function () {
       const index = this.id.replace("quantity", "");
@@ -73,7 +75,6 @@ function displayCart() {
     });
   });
 }
-
 
 // Function to update the quantity of an item
 function updateQuantity(index, quantity) {
@@ -96,29 +97,26 @@ function removeFromCart(index) {
   alert("Item removed from the cart!");
 }
 
-// Clear cart
-document.getElementById("clearCart").addEventListener("click", function () {
-  localStorage.removeItem("cart");
-  displayCart();
-  alert("Cart cleared!");
-});
+
 
 // Buy Now button click
+
 document.getElementById("buyNowBtn").addEventListener("click", function () {
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
   if (cart.length === 0) {
+
     alert("Your cart is empty!");
+
     return;
   }
 
   const modal = document.getElementById("orderModal");
   modal.style.display = "block";
 
-  const userDetails = JSON.parse(localStorage.getItem("DriveLuxeUserDetails"));
-  if (userDetails) {
-    document.getElementById("name").value = userDetails.name || "";
-    document.getElementById("email").value = userDetails.email || "";
-  }
+  const userDetails = JSON.parse(localStorage.getItem("DriveLuxeUserDetails")) || {};
+
+  document.getElementById("name").value = userDetails.name || "";
+  document.getElementById("email").value = userDetails.email || "";
 });
 
 // Close modal

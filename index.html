@@ -33,7 +33,7 @@
             <div id="user-info">
                 <a href="/pages/login.html">
                     <i class="fa-solid fa-circle-user"> <span id="welcome-message">Login</span></i>
-                   
+
                 </a>
             </div>
 
@@ -47,29 +47,29 @@
 
     </div>
 
- 
 
-  <!-- Trigger Button -->
-<div>
-    <a href="#" onclick="openPopup()"><i class="fa-solid fa-bars"></i></a>
-</div>
 
-<!-- Popup Modal -->
-<div id="home_popup" class="home_popup">
-    <div class="homePopup_content">
-      <span class="close-btn" onclick="closePopup()">&times;</span>
-      <ul>
-        <li><i class="fa-solid fa-user"></i><a href="/pages/profile.html">Profile</a></li>
-        <li><i class="fa-solid fa-thumbs-up"></i><a href="/pages/liked_cars.html">Liked Cars</a></li>
-        <div id="logout-link" style="display: none;">
-         <li><i class="fa-solid fa-sign-out-alt"></i><a href="#"></a>Logout</a></li>
-        </div>
-      </ul>
+    <!-- Trigger Button -->
+    <div>
+        <a href="#" onclick="openPopup()"><i class="fa-solid fa-bars"></i></a>
     </div>
-  </div>
-  
 
-          
+    <!-- Popup Modal -->
+    <div id="home_popup" class="home_popup">
+        <div class="homePopup_content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <ul>
+                <li><i class="fa-solid fa-user"></i><a href="/pages/profile.html">Profile</a></li>
+                <li><i class="fa-solid fa-thumbs-up"></i><a href="/pages/liked_cars.html">Liked Cars</a></li>
+                <div id="logout-link" style="display: none;">
+                    <li><i class="fa-solid fa-sign-out-alt"></i><a href="#"></a>Logout</a></li>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+
+
 
 
 
@@ -78,329 +78,335 @@
     <!------------------------------------------ car model ------------------------------------>
 
     <div class="main">
-        <div id="car-container">
-            
+        <div id="car-container"></div>
+
     </div>
     <!----------------------------------- car adversement ------------------------------------>
 
 
-        <div class="advrtment">
-            <div class="on_icon">
-                <img src="./Assests/images/mahindracar_adversement.jpg" alt="Advertisement 1">
-                <img src="./Assests/images/toyoto adversement img.jpg" alt="Advertisement 2">
-                <img src="./Assests/images/We-Buy-Cars-Honda-Only.V2.jpg" alt="Advertisement 3">
-               
+    <div class="advrtment">
+        <div class="on_icon">
+            <img src="./Assests/images/mahindracar_adversement.jpg" alt="Advertisement 1">
+            <img src="./Assests/images/toyoto adversement img.jpg" alt="Advertisement 2">
+            <img src="./Assests/images/We-Buy-Cars-Honda-Only.V2.jpg" alt="Advertisement 3">
 
-            </div>
+
+        </div>
+    </div>
+
+
+    <!---------------------------- car Accessories ------------------------------------------>
+
+
+    <div class="car_access">
+        <h3>Car Accessories</h3>
+        <div id="access">
+
         </div>
 
+    </div>
+    <script src="/javascript/accessories.js" type="module"></script>
 
-        <!---------------------------- car Accessories ------------------------------------------>
-
-
-        <div class="car_access">
-            <h3>Car Accessories</h3>
-            <div id="access">
-                
-            </div>
-           
-        </div>
-          <script src="/javascript/accessories.js" type="module"></script>
-
-        <!--------------------------------- Upcoming cars ------------------------------------->
+    <!--------------------------------- Upcoming cars ------------------------------------->
 
 
-        <div class="upcoming_head">
+    <div class="upcoming_head">
 
-            <h3 class="upcoming">Upcoming Cars</h3>
+        <h3 class="upcoming">Upcoming Cars</h3>
 
-            <div id="slideshow-container">
-               <div class="slide_icon">
+        <div id="slideshow-container">
+            <div class="slide_icon">
                 <i class="fa-solid fa-circle-chevron-left" id="prev-btn" onclick="updateCarIndex(-1)"></i>
                 <i class="fa-solid fa-circle-chevron-right" id="next-btn" onclick="updateCarIndex(1)"></i>
 
-               </div>
-              
-            
-                   
-                    <div id="upcoming_car">
+            </div>
 
 
-                    </div>
-                   
-             
+
+            <div id="upcoming_car">
+
 
             </div>
+
+
 
         </div>
 
+    </div>
 
 
-<!-- --------------------------------top selleing cars-------------------------------------------- -->
-           
+
+    <!-- --------------------------------top selleing cars-------------------------------------------- -->
 
 
- 
-<div id="top_head">
-    <h3>Top Selling Cars</h3>
-    <section id="car-detail-section">
-      
-       
-       <!-- Car Cards will be dynamically added here -->
-   </section>
-
-</div>
 
 
-<!-- -------------------------------------offers page---------------------------------------- -->
+    <div id="top_head">
+        <h3>Top Selling Cars</h3>
+        <section id="car-detail-section">
 
 
-            <div class="offer_title">
-                <h3>OFFER ZONE</h3>
+            <!-- Car Cards will be dynamically added here -->
+        </section>
+
+    </div>
+
+
+    <!-- -------------------------------------offers page---------------------------------------- -->
+
+
+    <div class="offer_title">
+        <h3>OFFER ZONE</h3>
+    </div>
+
+    <div class="offer-container">
+        <!-- Header Section -->
+        <div class="offer-header">
+            <h1>Exclusive Pongal Car Offers</h1>
+            <p>Drive Your Dream Car This Festive Season</p>
+        </div>
+
+        <!-- Content Section -->
+        <div class="offer-content">
+            <div class="offer-image">
+                <img src="/Assests/images/Audi/AudiQ8Sportbacke-tronEv_image1.jpg" alt="Car Offer">
             </div>
-        
-            <div class="offer-container">
-                <!-- Header Section -->
-                <div class="offer-header">
-                    <h1>Exclusive Pongal Car Offers</h1>
-                    <p>Drive Your Dream Car This Festive Season</p>
-                </div>
-        
-                <!-- Content Section -->
-                <div class="offer-content">
-                    <div class="offer-image">
-                        <img src="/Assests/images/Audi/AudiQ8Sportbacke-tronEv_image1.jpg" alt="Car Offer">
-                    </div>
-        
-                    <div class="offer-details">
-                        <h2>Special Festive Deals</h2>
-                        <p>Starting from <span class="highlight">₹15.49 Lakh*</span></p>
-                        <p><span class="highlight">Benefits up to ₹1,80,000</span></p>
-                        <p>Limited stocks available! Book now to avail:</p>
-                        <ul>
-                            <li>Zero Down Payment</li>
-                            <li>100% On-road Funding</li>
-                            <li>Best Exchange Offers</li>
-                            <li>Loan Tenure up to 8 Years</li>
-                        </ul>
-                     
-                    </div>
-                </div>
-                    <!-- Call to Action -->
-                    <div class="cta">
-                        <a href="http://127.0.0.1:3002/pages/carExplain.html?car=%7B%22Fuel%20Type%22%3A%22Electric%22%2C%22Price%22%3A%22Rs.6.50%20Lakh%20onwards%22%2C%22Transimission%22%3A%22Automatic%22%2C%22Safety%22%3A%225%20Star(Global%20NCAP)%22%2C%22Fuel%26%20Performance%22%3A%2290kw%22%2C%22charging%20Time%22%3A%225H%207.2kw%22%2C%22Battery%20Capacity%22%3A%2219.2%20to%2024kWh%22%2C%22description%22%3A%22The%20Audi%20Q8%20Sportback%20e-tron%20is%20the%20sportier%2C%20coupe-style%20variant%20of%20Audi%27s%20flagship%20electric%20SUV%2C%20the%20Q8%20e-tron.%20It%20combines%20the%20performance%20and%20luxury%20of%20the%20Q8%20e-tron%20with%20a%20more%20dynamic%20and%20sleek%20design%2C%20featuring%20a%20sloping%20roofline%20and%20a%20more%20aggressive%2C%20athletic%20stance.%22%2C%22Seating%20Capacity%22%3A%225%20Seater%22%2C%22img5%22%3A%22..%2FAssests%2Fimages%2FTata_car%2Ftata_punch_body_image5.jpg%22%2C%22Title%22%3A%22AUDI%20Q8%20SPORTBACK%20E-TRON%20EV%22%2C%22img2%22%3A%22..%2FAssests%2Fimages%2FTata_car%2Ftata_altroz_body_image2.jpg%22%2C%22img3%22%3A%22..%2FAssests%2Fimages%2FTata_car%2Ftata_tiago_body_image3.jpg%22%2C%22Driving%20Range%22%3A%22250%20to%20315%20km%22%2C%22BookingCount%22%3A0%2C%22img4%22%3A%22..%2FAssests%2Fimages%2FTata_car%2Ftata_tigor_body_image4.jpeg%22%2C%22img1%22%3A%22..%2FAssests%2Fimages%2FAudi%2FAudiQ8Sportbacke-tronEv_image1.jpg%22%2C%22id%22%3A%22AESN02%22%2C%22index%22%3A0%7D"><button>View Car</button></a>
-                    </div>
-        
-                <!-- Benefits Section -->
-                <div class="offer-benefits">
-                    <div class="benefit-card">
-                        <p>ZERO</p>
-                        <h3>Down Payment</h3>
-                    </div>
-                    <div class="benefit-card">
-                        <p>BENEFITS UPTO</p>
-                        <h3>₹1,80,000</h3>
-                    </div>
-                    <div class="benefit-card">
-                        <p>100% On-Road</p>
-                        <h3>Funding</h3>
-                    </div>
-                    <div class="benefit-card">
-                        <p>LOAN TENURE</p>
-                        <h3>Up to 8 Years</h3>
-                    </div>
-                </div>
-        
-               
-            </div>
-        
 
+            <div class="offer-details">
+                <h2>Special Festive Deals</h2>
+                <p>Starting from <span class="highlight">₹15.49 Lakh*</span></p>
+                <p><span class="highlight">Benefits up to ₹1,80,000</span></p>
+                <p>Limited stocks available! Book now to avail:</p>
+                <ul>
+                    <li>Zero Down Payment</li>
+                    <li>100% On-road Funding</li>
+                    <li>Best Exchange Offers</li>
+                    <li>Loan Tenure up to 8 Years</li>
+                </ul>
 
-
-
-      
-
-
-
-
-        <!----------------------------------------- footer-------------------------------------------- -->
-
-
-
-        <div id="footer">
-            <div class="footer_first">
-                <div class="footer_head">
-                    <h3>Driveluxe Cars</h3>
-                    <a href="/pages/car_modelspage.html?carId=TATA">
-                        <p>Tata Cars</p>
-                    </a>
-                    <a href="/pages/car_modelspage.html?carId=MAHINDRA">
-                        <p>Mahindra Cars</p>
-                    </a>
-                    <a href="/pages/car_modelspage.html?carId=SUZUKI">
-                        <p>Suzuki Cars</p>
-                    </a>
-                    <a href="/pages/car_modelspage.html?carId=TOYOTA">
-                        <p>Toyota Cars</p>
-                    </a>
-                    <a href="/pages/car_modelspage.html?carId=AUDI">
-                        <p>Audi Cars</p>
-                    </a>
-                    <a href="/pages/car_modelspage.html?carId=RENAULT">
-                        <p>Renault Cars</p>
-                    </a>
-                    <a href="/pages/car_modelspage.html?carId=HONDA">
-                        <p>Honda Cars</p>
-                    </a>
-                </div>
-                <div class="footer_head">
-                    <h3>Support</h3>
-                    <a href="/pages/driveluxe.html">
-                        <p>Driveluxe Team</p>
-                    </a>
-                    <a href="/pages/terms&condition.html">
-                        <p>Terms & Conditions</p>
-                    </a>
-                    <a href="/pages/service.html">
-                        <p>Services</p>
-                    </a>
-                </div>
-                <div class="footer_head">
-                    <h3>Contact Us</h3>
-                    
-                 
-                      <div class="footer_head2">
-                        <div class="footerOne">
-                            <i class="fa-solid fa-phone"></i>
-                            <p>+91 9827493982</p>
-
-                        </div>
-                        <div class="footerOne">
-                            <i class="fa-solid fa-envelope"></i>
-                            <p>Driveluxe@gmail.com</p>
-
-                        </div>
-                        <div class="footerOne">
-                            <i class="fa-brands fa-instagram"></i>
-                            <p>Driveluxe_Cars</p>
-
-                        </div>
-                      </div>
-                   
-                  
-        
-                </div>
-            </div>
-            <div class="footer_last">
-                <p>Copyrights &copy; Driveluxe Motors. All Rights Reserved </p>
             </div>
         </div>
-        
+        <!-- Call to Action -->
+        <div class="cta">
+            <a
+                href="http://127.0.0.1:3000/pages/carExplain.html?car=%7B%22Driving%20Range%22%3A%22250%20to%20315%20km%22%2C%22charging%20Time%22%3A%225H%207.2kw%22%2C%22BookingCount%22%3A0%2C%22Safety%22%3A%225%20Star(Global%20NCAP)%22%2C%22id%22%3A%22AESN02%22%2C%22img2%22%3A%22..%2FAssests%2Fimages%2FTata_car%2Ftata_altroz_body_image2.jpg%22%2C%22Title%22%3A%22AUDI%20Q8%20SPORTBACK%20E-TRON%20EV%22%2C%22Fuel%26%20Performance%22%3A%2290kw%22%2C%22img5%22%3A%22..%2FAssests%2Fimages%2FTata_car%2Ftata_punch_body_image5.jpg%22%2C%22Seating%20Capacity%22%3A%225%20Seater%22%2C%22img4%22%3A%22..%2FAssests%2Fimages%2FTata_car%2Ftata_tigor_body_image4.jpeg%22%2C%22img3%22%3A%22..%2FAssests%2Fimages%2FTata_car%2Ftata_tiago_body_image3.jpg%22%2C%22Battery%20Capacity%22%3A%2219.2%20to%2024kWh%22%2C%22Price%22%3A%22Rs.6.50%20Lakh%20onwards%22%2C%22description%22%3A%22The%20Audi%20Q8%20Sportback%20e-tron%20is%20the%20sportier%2C%20coupe-style%20variant%20of%20Audi%27s%20flagship%20electric%20SUV%2C%20the%20Q8%20e-tron.%20It%20combines%20the%20performance%20and%20luxury%20of%20the%20Q8%20e-tron%20with%20a%20more%20dynamic%20and%20sleek%20design%2C%20featuring%20a%20sloping%20roofline%20and%20a%20more%20aggressive%2C%20athletic%20stance.%22%2C%22img1%22%3A%22..%2FAssests%2Fimages%2FAudi%2FAudiQ8Sportbacke-tronEv_image1.jpg%22%2C%22Fuel%20Type%22%3A%22Electric%22%2C%22Transimission%22%3A%22Automatic%22%2C%22index%22%3A1%7D">
+                <button>View Car</button></a>
+        </div>
+
+        <!-- Benefits Section -->
+        <div class="offer-benefits">
+            <div class="benefit-card">
+                <p>ZERO</p>
+                <h3>Down Payment</h3>
+            </div>
+            <div class="benefit-card">
+                <p>BENEFITS UPTO</p>
+                <h3>₹1,80,000</h3>
+            </div>
+            <div class="benefit-card">
+                <p>100% On-Road</p>
+                <h3>Funding</h3>
+            </div>
+            <div class="benefit-card">
+                <p>LOAN TENURE</p>
+                <h3>Up to 8 Years</h3>
+            </div>
+        </div>
 
 
-        <!-- -------------------script---------------------------------- -->
+    </div>
 
-        
 
-        <!-- <script type="module" src="./detailcar.js"> -->
 
-        </script>
 
-        <script>
+
+
+
+
+
+
+    <!----------------------------------------- footer-------------------------------------------- -->
+
+
+
+    <div id="footer">
+        <div class="footer_first">
+            <div class="footer_head">
+                <h3>Driveluxe Cars</h3>
+                <a href="/pages/car_modelspage.html?carId=TATA">
+                    <p>Tata Cars</p>
+                </a>
+                <a href="/pages/car_modelspage.html?carId=MAHINDRA">
+                    <p>Mahindra Cars</p>
+                </a>
+                <a href="/pages/car_modelspage.html?carId=SUZUKI">
+                    <p>Suzuki Cars</p>
+                </a>
+                <a href="/pages/car_modelspage.html?carId=TOYOTA">
+                    <p>Toyota Cars</p>
+                </a>
+                <a href="/pages/car_modelspage.html?carId=AUDI">
+                    <p>Audi Cars</p>
+                </a>
+                <a href="/pages/car_modelspage.html?carId=RENAULT">
+                    <p>Renault Cars</p>
+                </a>
+                <a href="/pages/car_modelspage.html?carId=HONDA">
+                    <p>Honda Cars</p>
+                </a>
+            </div>
+            <div class="footer_head">
+                <h3>Support</h3>
+                <a href="/pages/driveluxe.html">
+                    <p>Driveluxe Team</p>
+                </a>
+                <a href="/pages/terms&condition.html">
+                    <p>Terms & Conditions</p>
+                </a>
+                <a href="/pages/service.html">
+                    <p>Services</p>
+                </a>
+            </div>
+            <div class="footer_head">
+                <h3>Contact Us</h3>
+
+
+                <div class="footer_head2">
+                    <div class="footerOne">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+91 9827493982</p>
+
+                    </div>
+                    <div class="footerOne">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>Driveluxe@gmail.com</p>
+
+                    </div>
+                    <div class="footerOne">
+                        <i class="fa-brands fa-instagram"></i>
+                        <p>Driveluxe_Cars</p>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="footer_last">
+            <p>Copyrights &copy; Driveluxe Motors. All Rights Reserved </p>
+        </div>
+    </div>
+
+
+
+    <!-- -------------------script---------------------------------- -->
+
+
+
+    <!-- <script type="module" src="./detailcar.js"> -->
+
+    </script>
+
+    <script>
+
+        // car brand
+
+
+
+
+        fetch('./json/carbrand.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('car-container');
+                data.forEach(car => {
+                    const carDiv = document.createElement('div');
+                    carDiv.className = 'car-head';
+
+                    const anchor = document.createElement('a');
+
+                    const img = document.createElement('img');
+                    img.src = car.IMG;
+                    img.alt = car.ID;
+
+                    img.onclick = () => navigateToCarPage(car.ID);
+
+
+                    anchor.appendChild(img);
+                    carDiv.appendChild(anchor);
+                    container.appendChild(carDiv);
+                });
+            })
+            .catch(error => console.error('Error loading JSON:', error));
+
 
             function navigateToCarPage(carId) {
-                window.location.href = `./pages/car_modelspage.html?carId=${carId}`;
+            window.location.href = `./pages/car_modelspage.html?carId=${carId}`;
+        }
+
+
+        // adversement add
+
+        const slides = document.querySelector('.on_icon');
+        let currentIndex = 0;
+
+        function showNextSlide() {
+            currentIndex++;
+            if (currentIndex >= 3) { // Adjust based on the number of images
+                currentIndex = 0;
+            }
+            const offset = currentIndex * -100; // Shift to the next image
+            slides.style.transform = `translateX(${offset}%)`;
+        }
+
+        setInterval(showNextSlide, 5000); // Slide every 3 seconds
+
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const userDetails = localStorage.getItem("DriveLuxeUserDetails");
+            const welcomeMessage = document.getElementById("welcome-message");
+            const logoutLink = document.getElementById("logout-link");
+
+            if (userDetails) {
+                const user = JSON.parse(userDetails);
+                // Display the user's name if available, otherwise fallback to email
+                welcomeMessage.textContent = user.userName || user.email;
+                logoutLink.style.display = "block";
+            } else {
+                welcomeMessage.textContent = "Login";
+                logoutLink.style.display = "none";
             }
 
-
-            fetch('./json/carbrand.json')
-                .then(response => response.json())
-                .then(data => {
-                    const container = document.getElementById('car-container');
-                    data.forEach(car => {
-                        const carDiv = document.createElement('div');
-                        carDiv.className = 'car-head';
-
-                        const anchor = document.createElement('a');
-
-                        const img = document.createElement('img');
-                        img.src = car.IMG;
-                        img.alt = car.ID;
-
-                        img.onclick = () => navigateToCarPage(car.ID);
-
-
-                        anchor.appendChild(img);
-                        carDiv.appendChild(anchor);
-                        container.appendChild(carDiv);
-                    });
-                })
-                .catch(error => console.error('Error loading JSON:', error));
-
-
-            // adversement add
-
-            const slides = document.querySelector('.on_icon');
-            let currentIndex = 0;
-
-            function showNextSlide() {
-                currentIndex++;
-                if (currentIndex >= 3) { // Adjust based on the number of images
-                    currentIndex = 0;
-                }
-                const offset = currentIndex * -100; // Shift to the next image
-                slides.style.transform = `translateX(${offset}%)`;
-            }
-
-            setInterval(showNextSlide, 5000); // Slide every 3 seconds
+            // Logout functionality
+            logoutLink.addEventListener("click", () => {
+                localStorage.removeItem("DriveLuxeUserDetails");
+                window.location.reload();
+            });
+        });
 
 
 
-            document.addEventListener("DOMContentLoaded", () => {
-  const userDetails = localStorage.getItem("DriveLuxeUserDetails");
-  const welcomeMessage = document.getElementById("welcome-message");
-  const logoutLink = document.getElementById("logout-link");
+        // ............ home popup.......................
 
-  if (userDetails) {
-    const user = JSON.parse(userDetails);
-    // Display the user's name if available, otherwise fallback to email
-    welcomeMessage.textContent = user.userName || user.email;
-    logoutLink.style.display = "block";
-  } else {
-    welcomeMessage.textContent = "Login";
-    logoutLink.style.display = "none";
-  }
+        function openPopup() {
+            document.getElementById('home_popup').style.display = 'flex'; // Show popup
+        }
 
-  // Logout functionality
-  logoutLink.addEventListener("click", () => {
-    localStorage.removeItem("DriveLuxeUserDetails");
-    window.location.reload();
-  });
-});
+        function closePopup() {
+            document.getElementById('home_popup').style.display = 'none'; // Hide popup
+        }
 
 
 
-// ............ home popup.......................
-
-function openPopup() {
-    document.getElementById('home_popup').style.display = 'flex'; // Show popup
-}
-
-function closePopup() {
-    document.getElementById('home_popup').style.display = 'none'; // Hide popup
-}
+    </script>
 
 
 
-        </script>
+    <script src="/javascript/upcomingcar.js" type="module"></script>
+    <script src="/javascript/topcar.js" type="module"></script>
 
-
-
-        <script src="/javascript/upcomingcar.js" type="module"></script>
-        <script src="/javascript/topcar.js" type="module"></script>
-      
 
 
 
 </body>
-
