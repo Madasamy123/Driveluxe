@@ -93,3 +93,28 @@ h1 {
 #logout:hover {
   background: #0056b3;
 }
+
+
+/* loader */
+.loader{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 7px solid #333;
+  border-top:7px solid #0056b3;
+  animation: spin  linear 1s  infinite;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+/* transform: translate(-50%,-50%); */
+
+}
+@keyframes spin{
+0%{
+  transform: rotate(0deg);
+}
+100%{
+  transform: rotate(360deg);
+}
+
+}

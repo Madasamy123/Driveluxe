@@ -3,90 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Service Page</title>
+    <title>Driveluxe Services</title>
     <link rel="stylesheet" href="/css/service.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <h1>Car Service Center</h1>
-            <p>Quality service you can trust!</p>
-        </div>
+    <header class="header">
+        <h1>Driveluxe Services</h1>
     </header>
 
-    <section class="service-options">
-        <h2>Our Services</h2>
-        <div class="services-container">
-            <div class="service-box">
-                <i class="fas fa-tools"></i>
-                <h3>General Maintenance</h3>
-                <p>Regular check-ups and maintenance for your car.</p>
+    <main class="content">
+        <section class="services">
+            <h2>Our Services</h2>
+            <p>At <strong>Driveluxe</strong>, we provide a wide range of services to enhance your car ownership experience. From vehicle sales to premium accessories, we ensure you get the best for your driving needs.</p>
+            <div class="service-list">
+                <div class="service-item">
+                    <h3>Car Sales</h3>
+                    <p>Explore our vast collection of high-quality vehicles, ranging from budget-friendly models to luxury cars.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Accessories</h3>
+                    <p>Enhance your car with top-notch accessories, including seat covers, GPS systems, and more.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Customer Support</h3>
+                    <p>Our dedicated support team is here to help you with any questions, maintenance, or upgrades.</p>
+                </div>
             </div>
-            <div class="service-box">
-                <i class="fas fa-car-battery"></i>
-                <h3>Battery Service</h3>
-                <p>Battery testing, replacement, and charging services.</p>
-            </div>
-            <div class="service-box">
-                <i class="fas fa-oil-can"></i>
-                <h3>Oil Change</h3>
-                <p>High-quality oil for your car to keep it running smoothly.</p>
-            </div>
-            <div class="service-box">
-                <i class="fas fa-car-crash"></i>
-                <h3>Body Repair</h3>
-                <p>Accident repairs and paint restoration services.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="faq-section">
-        <h2>Questions & Answers</h2>
-        <div class="faq-container">
-            <div class="faq-item">
-                <button class="faq-question">
-                    <span>What is included in a general maintenance service?</span>
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="faq-answer">
-                    <p>Our general maintenance service includes oil changes, fluid level checks, tire inspections, brake inspections, and more to ensure your car is in top condition.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">
-                    <span>How long does a typical service take?</span>
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="faq-answer">
-                    <p>Most services take between 1 to 2 hours, but it may vary depending on the type of service required.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">
-                    <span>Do you offer a warranty for your services?</span>
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="faq-answer">
-                    <p>Yes, we provide a 6-month warranty on all parts and services.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">
-                    <span>Can I book a service online?</span>
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="faq-answer">
-                    <p>Absolutely! Use our online booking system to schedule a service appointment at your convenience.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section class="customer-tips">
+            <h2>Customer Tips</h2>
+            <p>Here are some valuable tips for maintaining your car and making the most of your accessories:</p>
+            <ul>
+                <li><strong>Regular Maintenance:</strong> Schedule routine servicing to keep your car running smoothly.</li>
+                <li><strong>Check Tire Pressure:</strong> Properly inflated tires improve fuel efficiency and safety.</li>
+                <li><strong>Use Genuine Accessories:</strong> Invest in quality accessories to ensure durability and performance.</li>
+                <li><strong>Keep It Clean:</strong> Regularly clean your car to maintain its look and protect the paint.</li>
+                <li><strong>Drive Safely:</strong> Follow traffic rules and avoid aggressive driving to prolong your car's life.</li>
+                <li><strong>Plan Your Purchases:</strong> Before buying accessories, consider your needs and compatibility with your car.</li>
+            </ul>
+        </section>
 
-    <footer>
-        <p>&copy; 2024 Driveluxe Car Services. All rights reserved.</p>
+        <section class="contact">
+            <h2>Need Help?</h2>
+            <p>If you have questions or need assistance, feel free to reach out to our support team. We’re here to ensure you have a seamless experience with <strong>Driveluxe</strong>.</p>
+            <button class="contact-button" onclick="contactSupport()">Contact Support</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Driveluxe. All rights reserved.</p>
     </footer>
 
-    <script src="/javascript/service.js"></script>
+    <script>
+        function contactSupport() {
+            alert("Thank you for reaching out! Our support team will contact you shortly.");
+        }
+    </script>
 </body>
 </html>
