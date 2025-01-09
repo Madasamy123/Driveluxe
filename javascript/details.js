@@ -82,7 +82,6 @@ function displayAccessoryDetails(accessory) {
 }
 
 // Attach brand selection listeners
-// Attach brand selection listeners
 function selectedBrandListeners(accessory) {
   const brandOptions = document.querySelectorAll(".brand-option");
 
