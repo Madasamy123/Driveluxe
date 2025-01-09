@@ -6,10 +6,10 @@ function displayLikedCars() {
     likedCarSection.innerHTML = ""; // Clear existing content
 
     // If no user is logged in, show a message and exit
-    if (!userDetails) {
-        likedCarSection.innerHTML = "<p>Please log in to view your liked cars.</p>";
-        return;
-    }
+    // if (!userDetails) {
+    //     likedCarSection.innerHTML = "<p>Please log in to view your liked cars.</p>";
+    //     return;
+    // }
 
     // Filter the liked cars by the logged-in user's email
     const userLikedCars = likedCars.filter(car => car.likedBy === userDetails.email);

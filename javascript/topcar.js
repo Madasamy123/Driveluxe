@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
-import { getFirestore, collection, getDocs, query, limit } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
 
 
 const firebaseConfig = {
@@ -14,7 +14,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-const shownCars = new Set(); // Track displayed car IDs
+// const shownCars = new Set(); // Track displayed car IDs
 
 // Function to fetch cars
 async function fetchCars() {
@@ -147,7 +147,7 @@ function displayCars(cars) {
             <p>Price: ₹${car.Price}</p>
             <div class="ls_icon">
                 <i class="fa-regular fa-thumbs-up like-icon" data-id="${car.id}" data-image="${car.img1}" data-name="${car.Title}" data-price="${car.Price}"></i>
-                <i class="fa-solid fa-share"></i>
+                <i class="fa-solid fa-share" id="shareIcon"></i>
             </div>
         `;
         carSection.appendChild(carCard);
@@ -205,6 +205,10 @@ function displayCars(cars) {
 
 // Fetch cars on page load
 fetchCars();
+
+
+
+
 
 
 // //  share car details

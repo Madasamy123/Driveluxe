@@ -1,6 +1,6 @@
 // Import necessary functions from Firebase SDK
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
-import { getFirestore, collection, addDoc, getDocs, query, where } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+import { getFirestore, collection, addDoc, getDocs, query } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
 
 // Firebase configuration
 const firebaseConfig = {
@@ -16,6 +16,20 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
+
+// Upload each item to Firestore
+async function uploadToFirestore(data) {
+  try {
+    const collectionRef = collection(db, 'accessories');
+    for (const item of data) {
+      await addDoc(collectionRef, item);
+      console.log('Document added:', item);
+    }
+  } catch (error) {
+    console.error('Error adding document:', error);
+  }
+}
+
 // Load JSON and upload data to Firestore
 async function loadJsonData() {
   try {
@@ -24,7 +38,7 @@ async function loadJsonData() {
 
     // Flatten nested JSON structure
     const flattenedData = Object.values(data[0]); // Convert nested objects to array
-    console.log("Flattened JSON Data Loaded:", flattenedData);
+    // console.log("Flattened JSON Data Loaded:", flattenedData);
 
     // Check if data already exists in Firestore
     const accessoriesQuery = query(collection(db, 'accessories'));
@@ -39,18 +53,7 @@ async function loadJsonData() {
   }
 }
 
-// Upload each item to Firestore
-async function uploadToFirestore(data) {
-  try {
-    const collectionRef = collection(db, 'accessories');
-    for (const item of data) {
-      await addDoc(collectionRef, item);
-      console.log('Document added:', item);
-    }
-  } catch (error) {
-    console.error('Error adding document:', error);
-  }
-}
+
 
 // Fetch and display data from Firestore
 async function displayUsers() {
