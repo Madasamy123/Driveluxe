@@ -35,6 +35,17 @@
 
 }
 
+/* Highlighting style */
+.highlight {
+  /* border: 2px solid #4CAF50; Green border for highlight */
+  background-color:#39435a ; /* Light green background */
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  color: white;
+
+}
+
+
 
 /* #access img::-webkit-scrollbar{
   display: none;

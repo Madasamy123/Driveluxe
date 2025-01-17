@@ -29,14 +29,14 @@
 
             <div class="signup">
                 <form class="form">
-                    <label for="lab" aria-hidden="true" id="signup_head">Sign up</label>
+                    <label for="lab" aria-hidden="true" id="signup_head" >Sign up</label>
                     <p id="errormsgSign"></p>
-                    <input type="text" name="txt" placeholder="User name" id="reg-username" required>
+                    <input type="text" name="txt" placeholder="Name" id="reg-username" required autocomplete="off">
                     <p id="errorusername"></p>
-                    <input type="email" name="email" placeholder="Email" id="reg-email" required>
+                    <input type="email" name="email" placeholder="Email" id="reg-email" required autocomplete="off">
                     <p id="erroremail"></p>
                     <span class="form-pass">
-                        <input type="password" name="password" placeholder="Password" id="reg-pswd" required>
+                        <input type="password" name="password" placeholder="Password" id="reg-pswd" required autocomplete="off">
                         <i class="fa-solid fa-eye" id="showpswd"></i>
                     </span>
                     <p id="errorpassword"></p>
@@ -50,9 +50,9 @@
             <div class="login">
                 <form class="form">
                     <label for="lab" aria-hidden="true">Login</label>
-                    <input type="email" name="email" placeholder="Email" id="loginEmail" required>
+                    <input type="email" name="email" placeholder="Email" id="loginEmail" required autocomplete="off">
                     <span class="form-pass">
-                        <input type="password" name="password" placeholder="Password" id="login-pswd" required>
+                        <input type="password" name="password" placeholder="Password" id="login-pswd" required autocomplete="off">
                    
                         <i class="fa-solid fa-eye" id="showpswdlogin"></i>
                     </span>

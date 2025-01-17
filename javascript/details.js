@@ -16,7 +16,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-// Fetch accessory details based on ID
+/// Fetch accessory details based on ID and display them
 async function fetchAccessoryDetails() {
   const urlParams = new URLSearchParams(window.location.search);
   const accessId = urlParams.get("accessId");
@@ -33,6 +33,7 @@ async function fetchAccessoryDetails() {
     if (docSnap.exists()) {
       const accessory = docSnap.data();
       displayAccessoryDetails(accessory);
+      highlightAccessoryOnDetailsPage(accessId); // Highlight the clicked accessory on the details page
     } else {
       console.error("No document found with the provided ID.");
     }
@@ -40,7 +41,6 @@ async function fetchAccessoryDetails() {
     console.error("Error fetching accessory details:", error);
   }
 }
-
 // Display accessory details in the HTML
 function displayAccessoryDetails(accessory) {
   const detailsDiv = document.getElementById("accessory-details");
@@ -252,7 +252,19 @@ function addToCart(accessory) {
   };
 }
 
+function highlightAccessoryOnDetailsPage(accessId) {
+  // Fetch all accessories on the details page
+  const accessoriesDiv = document.getElementById("access");
+  const accessories = accessoriesDiv.querySelectorAll(".accessCss");
 
+  // Highlight the selected accessory
+  accessories.forEach((item) => {
+    if (item.id === `accessory_${accessId}`) {
+      item.classList.add("highlight");
+    }
+  });
+}
 
 // Initialize the details page
 fetchAccessoryDetails();
+

@@ -167,6 +167,9 @@ font-size: 18px;
 
 
 
+
+
+
 /* ............ */
 
 
@@ -374,55 +377,6 @@ margin: auto;
 
 
 
-/* .topcar_images {
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-
-  margin: 15px;
-  gap: 30px;
- 
-
-}
-
-.topcar_images a {
-  box-sizing: border-box;
-
-  box-shadow: 1px 3px 3px 3px black;
- 
-  width: 330px;
-  border-radius: 10px;
-  text-decoration: none;
-  color: black;
-
-
-}
-.topcar_images p{
-  margin-left: 20px;
-  font-size: 20px;
-}
-.topcar_i{
-  display: flex;
-  justify-content: space-between;
-  font-size: 28px;
-  padding: 10px;
-}
-
-
-.topcar_images img {
-  padding: 15px;
-  height: 200px;
-  width: 300px;
-
-
-}
-
-.top_head h3 {
-  margin: 80px 0px 0px 20px;
-  height: 60px;
-  font-size: 25px;
-} */
-
 
 #top_head h3{
 margin: 30px;
@@ -430,10 +384,13 @@ font-size: 25px;
 }
 /* Container to display the car cards in a grid */
 #car-detail-section {
-display: grid;
-grid-template-columns: repeat(4, 1fr);  /* 4 items per row */
+/* display: grid; */
+/* grid-template-columns: repeat(4, 1fr);   */
+display: flex;
+flex-wrap: wrap;
 gap: 20px;  /* Space between items */
 padding: 20px;
+
 }
 
 /* Individual car card styles */
@@ -444,6 +401,8 @@ border-radius: 8px;
 text-align: center;
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 transition: transform 0.3s ease-in-out;
+width: 300px;
+margin-left: 30px;
 }
 
 .car-card:hover {
