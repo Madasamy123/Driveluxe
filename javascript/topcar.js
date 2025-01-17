@@ -146,7 +146,10 @@ function displayCars(cars) {
             <h4>${car.Title}</h4>
             <p>Price: ₹${car.Price}</p>
             <div class="ls_icon">
-                <i class="fa-regular fa-thumbs-up like-icon" data-id="${car.id}" data-image="${car.img1}" data-name="${car.Title}" data-price="${car.Price}"></i>
+                <i class="fa-regular fa-thumbs-up like-icon" data-id="${car.id}" 
+                data-image="${car.img1}" 
+                data-name="${car.Title}" 
+                data-price="${car.Price}"></i>
                 <i class="fa-solid fa-share" id="shareIcon"></i>
             </div>
         `;
@@ -187,12 +190,14 @@ function displayCars(cars) {
         localStorage.setItem("likedCars", JSON.stringify(likedCars));
         icon.classList.remove("fa-regular");
         icon.classList.add("fa-solid");
+        icon.style.color="red"
     } else {
         // Unlike the car
         likedCars.splice(carIndex, 1);
         localStorage.setItem("likedCars", JSON.stringify(likedCars));
         icon.classList.remove("fa-solid");
         icon.classList.add("fa-regular");
+        icon.style.color="";
     }
 
     // Display status alert
@@ -211,7 +216,11 @@ fetchCars();
 
 
 
-// //  share car details
+//  share car details
+
+
+
+
 // document.querySelector(".fa-share").addEventListener("click",async ()=> {
 
 //     const shareData={

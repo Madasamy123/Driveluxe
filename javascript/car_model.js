@@ -27,32 +27,32 @@ const db = getFirestore(app);
 
 
 // Call the loadJsonData function to start the upload
-// const querySnapshot = await getDocs(collection(db, "Cardetails"));
-// if (querySnapshot.empty) {
-//     // Load JSON and upload data
-//     async function loadJsonData() {
-//         const response = await fetch('/json/detailCars.json');
-//         const data = await response.json();
-//         await uploadToFirestore(data);
-//     }
+const querySnapshot = await getDocs(collection(db, "Cardetails"));
+if (querySnapshot.empty) {
+    // Load JSON and upload data
+    async function loadJsonData() {
+        const response = await fetch('/json/detailCars.json');
+        const data = await response.json();
+        await uploadToFirestore(data);
+    }
 
-//     // Upload each item to Firestore
-//     async function uploadToFirestore(data) {
-//         const collectionRef = collection(db, 'Cardetails');
-//         for (const item of data) {
-//             try {
-//                 await addDoc(collectionRef, item);
-//                 console.log('Document added:', item);
-//             } catch (error) {
-//                 console.error('Error adding document:', error);
-//             }
-//         }
-//     }
-//     loadJsonData();
+    // Upload each item to Firestore
+    async function uploadToFirestore(data) {
+        const collectionRef = collection(db, 'Cardetails');
+        for (const item of data) {
+            try {
+                await addDoc(collectionRef, item);
+                console.log('Document added:', item);
+            } catch (error) {
+                console.error('Error adding document:', error);
+            }
+        }
+    }
+    loadJsonData();
 
-// }
+}
 
-// fetchAllCarDetails();
+fetchAllCarDetails();
 
 let selectedCarModel = "Hatchback";
 

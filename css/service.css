@@ -38,6 +38,7 @@ body {
 
 .content p {
     margin: 1rem 0;
+    margin-left: 30px;
 }
 
 .service-list {

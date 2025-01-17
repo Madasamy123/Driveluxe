@@ -55,26 +55,24 @@ async function loadJsonData() {
 
 
 
-// Fetch and display data from Firestore
+// Fetch accessories from Firestore and display them
 async function displayUsers() {
   try {
-
-    // const urlParams = new URLSearchParams(window.location.search);
-    // const accessId = urlParams.get("accessId");
     const usersDiv = document.getElementById("access");
     const querySnapshot = await getDocs(collection(db, "accessories"));
     console.log("Fetched documents count:", querySnapshot.size);
 
     querySnapshot.forEach((doc) => {
       const access = doc.data();
-      const accessId = doc.id; // Get Firestore document ID
+      const accessId = doc.id;
 
       // Create HTML elements for each accessory
       const userElement = document.createElement("div");
       userElement.classList.add("accessCss");
+      userElement.id = `accessory_${accessId}`; // Unique ID for the accessory
       userElement.innerHTML = `
         <div class="showaccessories">
-          <img src="${access.img}" id="below_accessImg" alt="${access.name}" onclick="redirectToDetails('${accessId}')" />
+          <img src="${access.img}" id="below_accessImg" alt="${access.name}" onclick="highlightAndRedirect('${accessId}')" />
           <p>${access.name}</p>
         </div>
       `;
@@ -85,13 +83,23 @@ async function displayUsers() {
   }
 }
 
-// Make the redirectToDetails function globally accessible
-window.redirectToDetails = function (accessId) {
-  window.location.href = `/pages/accessory-details.html?accessId=${accessId}`;
-};
+// Function to highlight the clicked accessory and redirect to details page
+window.highlightAndRedirect = function(accessId) {
+  // Remove highlight from all accessories
+  document.querySelectorAll(".accessCss").forEach(item => item.classList.remove("highlight"));
 
-// Initialize the page
-(async function initialize() {
-  await loadJsonData(); // Load JSON and upload to Firestore
-  displayUsers(); // Display the uploaded data
-})();
+  // Highlight the clicked accessory
+  const clickedItem = document.getElementById(`accessory_${accessId}`);
+  clickedItem.classList.add("highlight");
+
+  // Redirect to details page after highlighting
+  setTimeout(() => {
+    window.location.href = `/pages/accessory-details.html?accessId=${accessId}`;
+  }, 300); // Slight delay to show the highlight before redirecting
+}
+
+// Initialize page by displaying all accessories
+displayUsers();  
+
+
+
