@@ -26,13 +26,21 @@
   font-size: 20px;
   
 }
-.model_types a{
-    text-decoration: none;
-    margin: 30px;
+.model_types a:hover{
+   background-color:#151b2f ;
+   color: white;
+   border-radius: 5px;
   
    
 }
 
+.model_types a{
+    text-decoration: none;
+    margin: 30px;
+    color: brown;
+  
+   
+}
 .car_img h5{
     text-align: center;
     font-size: 25px;
@@ -165,7 +173,13 @@
     margin: 50px;
     margin-right: 400px;
     font-size: 30px;
+    color: #151b2f;
    
+}
+
+.backicon a>i:hover{
+    color: blueviolet;
+
 }
 
 .model_image img{

@@ -24,14 +24,33 @@
 align-content: center;
 }
 
-.nav a {
+/* .nav a {
 
   margin-right: 50px;
   text-decoration: none;
   color: black;
   font-weight: bolder;
 
+} */
+
+
+.nav-link{
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+  padding: 5px 10px;
+  margin-right: 50px;
+  transition: background-color 0.3s, color 0.3s;
+
 }
+
+.nav-link.active, .nav-link:hover {
+  background-color: #2f8fc9; /* Highlight background color */
+  color: white; /* Highlight text color */
+  border-radius: 5px; /* Optional rounded corners */
+}
+
+
 
 #user-info span{
 color:#2f8fc9;
@@ -54,6 +73,25 @@ color:#2f8fc9;
   font-size: 17px;
   color: black;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .car-head {
   display: flex;
@@ -111,7 +149,7 @@ text-align: center;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 width: 200px;
 position: relative;
-height: 200px;
+height: 150px;
 }
 
 /* Close button styling */
@@ -156,12 +194,12 @@ color: #0056b3;
 }
 
 
-#logout-link li{
+/* #logout-link li{
 cursor: pointer;
 color: #0056b3;
 font-size: 18px;
 
-}
+} */
 
 
 
@@ -606,12 +644,20 @@ background: #6a1b9a;
   flex-direction: row;
   justify-content: space-around;
   margin-top: 30px;
+  
 
 }
+
+.footer_first p:hover{
+  color: #6a1b9a;
+
+  
+  }
 
 .footer_head h3 {
   margin-top: 30px;
   font-size: 30px;
+  text-decoration: underline;
 }
 
 .footer_head p {
@@ -644,6 +690,11 @@ flex-direction: row;
 margin-top: 22px;
 padding-right: 10px;
 }
+
+
+
+
+
 
 
 

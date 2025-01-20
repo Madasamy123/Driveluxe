@@ -79,7 +79,28 @@
                     <input type="text" id="tdaddress" autocomplete="off"><br>
 
                     <label for="tdcity">City:</label><br>
-                    <input type="text" id="tdcity" autocomplete="off"><br>
+                    <input list="cities"        id="tdcity" autocomplete="off" placeholder="Select or type your city"><br>
+                    <datalist id="cities">
+                        <option value="Tirunelveli"></option>
+                        <option value="Chennai"></option>
+                        <option value="Madurai"></option>
+                        <option value="Thenkasi"></option>
+                        <option value="Tirupur"></option>
+                        <option value="Erode"></option>
+                        <option value="Kanchipuram"></option>
+                        <option value="Tuticorn"></option>
+                        <option value="Ramanadhapuram"></option>
+                        <option value="Vilupuram"></option>
+                        <option value="Dindigul"></option>
+                        <option value="Thanjavur"></option>
+                        <option value="Coimbatore"></option>
+                        <option value="Salem"></option>
+                        <option value="Ariyalur"></option>
+                        <option value="Cudalore"></option>
+
+                    
+                    </datalist>
+
 
                     <label for="tdemail">Enter your Email:</label><br>
                     <input type="text" id="tdemail" autocomplete="off"><br>
@@ -139,6 +160,8 @@
             window.location.href = "/pages/login.html";  // Redirect to login if not logged in
         }
 
+
+
         // Add event listener for "Confirm" button (Booking)
         document.getElementById("addbook").addEventListener("click", async () => {
             const customerName = document.getElementById("cname").value;
@@ -157,6 +180,33 @@
                 alert("Please fill in all required fields!");
                 return;
             }
+            const emailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+            if (!emailRegex.test(email)) {
+            alert( "Email must end with '@gmail.com'.");
+            return;
+            }
+
+            const phoneRegex = /^\d{10}$/; // Matches exactly 10 digits
+    if (!phoneRegex.test(phone1)) {
+        alert("Phone number 1 must be exactly 10 digits.");
+        return;
+    }
+    if (phone2 && !phoneRegex.test(phone2)) { // Phone 2 is optional
+        alert("Phone number 2 must be exactly 10 digits if provided.");
+        return;
+    }
+
+
+     // Address validation
+     if (currentAddress.length < 10) {
+        alert("Current address must be at least 10 characters long.");
+        return;
+    }
+    if (permanentAddress && permanentAddress.length < 10) { // Permanent address is optional
+        alert("Permanent address must be at least 10 characters long if provided.");
+        return;
+    }
+         
 
             // Convert Aadhaar file to Base64
             const convertToBase64 = (file) => new Promise((resolve, reject) => {
@@ -256,6 +306,60 @@
                 alert("Please fill all the fields and upload the required documents.");
                 return;
             }
+           
+
+            if(address.length < 8){
+                alert("Address must be at least 8 characters long.");
+                return;
+            }
+            
+               // City Validation: Minimum 3 characters, no numbers
+    if (!/^[a-zA-Z\s]{3,}$/.test(city)) {
+        alert("City name must be at least 3 characters long and contain only letters.");
+        return;
+    }
+
+      // Email Validation: Standard email format
+      if (!/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/.test(email)) {
+        alert("Please enter a valid email address.");
+        return;
+    }
+
+     // Phone Number Validation: 10 digits
+     if (!/^\d{10}$/.test(phone1)) {
+        alert("Phone 1 must be a valid 10-digit number.");
+        return;
+    }
+    if (phone2 && !/^\d{10}$/.test(phone2)) {
+        alert("Phone 2 must be a valid 10-digit number (if entered).");
+        return;
+    }
+
+        // Date Validation: Ensure it's not a past date
+        const selectedDate = new Date(testDriveDate);
+    const currentDate = new Date();
+    currentDate.setHours(0, 0, 0, 0); // Normalize to start of day
+    if (selectedDate < currentDate) {
+        alert("Test drive date cannot be in the past.");
+        return;
+    }
+
+    // Aadhar File Validation: Ensure a file is uploaded
+    if (!adharFile) {
+        alert("Please upload your Aadhaar file.");
+        return;
+    }
+
+    // License File Validation: Ensure a file is uploaded
+    if (!licenseFile) {
+        alert("Please upload your License file.");
+        return;
+    }
+
+          
+
+
+
 
             const convertToBase64 = (file) => new Promise((resolve, reject) => {
                 const reader = new FileReader();

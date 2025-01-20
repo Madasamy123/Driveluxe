@@ -169,6 +169,9 @@ function flattenCarData(data, type) {
 
 
 
+
+
+
 // Call the fetchAllCarDetails function on window load
 window.onload = fetchAllCarDetails;
 
