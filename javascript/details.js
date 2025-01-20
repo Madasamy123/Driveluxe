@@ -175,6 +175,21 @@ function showOrderPopup(accessory, selectedBrand) {
       return;
     }
 
+    if(address.length<10){
+      alert("Address must be at least 8 characters long.");
+      return;
+    }
+
+    if(!/^\d{10}$/.test(phone)){
+      alert("Phone must be a valid 10-digit number.");
+      return;
+    }
+
+    if (!/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/.test(email)) {
+      alert("Please enter a valid email address.");
+      return;
+  }
+
     const orderDetails = {
       name, phone, email, address,
       accessoryName: accessory.name,

@@ -27,7 +27,7 @@ const profilePhone = document.getElementById("profilePhone");
 const saveChangesButton = document.getElementById("saveChanges");
 const logoutButton = document.getElementById("logout");
 
-// Fetch and display user data
+// Fetch and display user data from Firestore or localStorage
 onAuthStateChanged(auth, async (user) => {
   if (user) {
     const userId = user.uid;
@@ -37,6 +37,8 @@ onAuthStateChanged(auth, async (user) => {
       const userDoc = await getDoc(doc(db, "users", userId));
       if (userDoc.exists()) {
         const userData = userDoc.data();
+        // Store data in localStorage
+        localStorage.setItem("DriveLuxeUserDetails", JSON.stringify(userData));
         profileName.textContent = userData.userName || "Unknown";
         profileEmail.textContent = userData.email || "Unknown";
         profileAddress.value = userData.address || "";
@@ -49,18 +51,19 @@ onAuthStateChanged(auth, async (user) => {
     }
   } else {
     // Redirect to login page if not logged in
+    localStorage.removeItem("DriveLuxeUserDetails");
     window.location.href = "./login.html";
   }
 });
 
-// Save updated address and phone number
+// Save updated address and phone number to Firestore and localStorage
 saveChangesButton.addEventListener("click", async () => {
   const user = auth.currentUser;
 
   if (user) {
     const userId = user.uid;
-    const updatedAddress = profileAddress.value;
-    const updatedPhone = profilePhone.value;
+    const updatedAddress = profileAddress.value.trim();
+    const updatedPhone = profilePhone.value.trim();
 
     try {
       // Update Firestore document
@@ -68,6 +71,13 @@ saveChangesButton.addEventListener("click", async () => {
         address: updatedAddress,
         phone: updatedPhone
       });
+
+      // Update localStorage with new details
+      const updatedUserData = JSON.parse(localStorage.getItem("DriveLuxeUserDetails")) || {};
+      updatedUserData.address = updatedAddress;
+      updatedUserData.phone = updatedPhone;
+      localStorage.setItem("DriveLuxeUserDetails", JSON.stringify(updatedUserData));
+
       alert("Profile updated successfully!");
     } catch (error) {
       console.error("Error updating profile:", error);
@@ -75,4 +85,17 @@ saveChangesButton.addEventListener("click", async () => {
   }
 });
 
-
+// Logout functionality
+logoutButton.addEventListener("click", async () => {
+  try {
+    // Sign out from Firebase
+    await signOut(auth);
+    // Clear localStorage
+    localStorage.removeItem("DriveLuxeUserDetails");
+    // Redirect to the login page
+    alert("Logged out successfully!");
+    window.location.href = "/index.html";
+  } catch (error) {
+    console.error("Error during logout:", error);
+  }
+});
