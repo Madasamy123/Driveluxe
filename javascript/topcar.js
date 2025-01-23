@@ -216,31 +216,4 @@ fetchCars();
 
 
 
-//  share car details
 
-
-
-
-// document.querySelector(".fa-share").addEventListener("click",async ()=> {
-
-//     const shareData={
-//        carImage: carData.carImage,
-//        carName: carData.carName ,
-//         carPrice: carData.carPrice 
-        
-// };
-// try{
-//     if(navigator.share){
-//         await navigator.share(shareData);
-//         alert("Shared successfully!");
-//     }
-//     else{
-//         const link=shareData.url;
-//         navigator.clipboard.writeText(link).then(()=>{
-//             alert("Sharing not supported.  Link copied to clipboard!")
-//         });
-//     }
-// }
-// catch(error){
-//     console.log("Error while sharing:",error);}
-// });
