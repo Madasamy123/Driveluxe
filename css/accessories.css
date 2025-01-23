@@ -236,3 +236,38 @@ label {
 }
 
 
+
+
+/* media query */
+
+@media screen and (max-width: 800px){
+
+
+
+  
+#access img{
+  height: 70px;
+  width: 100px;
+}
+
+.showaccessories{
+  width: 150px;
+  margin: 5px;
+
+
+}
+
+.showaccessories p {
+  font-size: 13px;
+  color: black;
+}
+
+
+
+
+
+
+
+}
+
+

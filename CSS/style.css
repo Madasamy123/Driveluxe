@@ -705,6 +705,8 @@ padding-right: 10px;
 
 @media screen and (max-width: 800px){
 
+
+
   #nav_media{
     display: none;
   
@@ -733,6 +735,13 @@ padding-right: 10px;
     display: block; /* Show My Orders inside popup */
 }
 
+
+.homePopup_content{
+         width: 150px;
+        padding: 10px 10px;
+        margin-right: 45px;
+}
+
 .image1 img{
   margin-top: 10px;
   height: 70px;
@@ -740,9 +749,26 @@ padding-right: 10px;
 
 }
 
+.header{
+  display: flex;
+  justify-content: space-around;
+}
 
-  
- 
-  
+.cart_div a{
+  margin-left: 20px;
+}
+
+.cart_i{
+  display: none;
+}
+
+.car-head img{
+  height: 50px;
+  width: 50px;
+}
+
+
+
+
   
 }
