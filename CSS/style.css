@@ -105,6 +105,8 @@ color:#2f8fc9;
   display: grid;
   grid-auto-flow: column;
   height: 150px;
+  cursor: pointer;
+
 }
 
 .car-head img {
@@ -702,6 +704,44 @@ padding-right: 10px;
 
 
 @media screen and (max-width: 800px){
+
+  #nav_media{
+    display: none;
+  
+  }
+
+  .nav-link{
+    margin: 0px;
+  }
+
+  #user-info{
+    display: none;
+  }
+  .cart_head{
+    display: none;
+  }
+
+  .homePopup_content ul {
+    display: block; /* Ensures list items stack properly */
+}
+
+.homePopup_content ul li {
+    margin: 10px 0; /* Adds spacing between items */
+}
+
+.homePopup_content ul li.cart_head {
+    display: block; /* Show My Orders inside popup */
+}
+
+.image1 img{
+  margin-top: 10px;
+  height: 70px;
+  width: 70px;
+
+}
+
+
+  
  
   
   

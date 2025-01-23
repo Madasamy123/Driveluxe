@@ -57,7 +57,7 @@
                     <label for="phoneno2">Phone No:2</label><br>
                     <input type="text" id="phoneno2" autocomplete="off"><br>
 
-                    <label for="adhar">Upload your Adhar:</label><br>
+                    <label for="adhar">Upload your Aadhaar:</label><br>
                     <input type="file" id="adhar" autocomplete="off"><br>
                 </div>
             </div>
@@ -130,6 +130,8 @@
         </div>
     </div>
 
+    
+
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
         import { getFirestore, collection, addDoc, updateDoc, getDocs, doc } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
@@ -187,28 +189,31 @@
             }
 
             const phoneRegex = /^\d{10}$/; // Matches exactly 10 digits
-    if (!phoneRegex.test(phone1)) {
-        alert("Phone number 1 must be exactly 10 digits.");
-        return;
-    }
-    if (phone2 && !phoneRegex.test(phone2)) { // Phone 2 is optional
-        alert("Phone number 2 must be exactly 10 digits if provided.");
-        return;
-    }
+            if (!phoneRegex.test(phone1)) {
+            alert("Phone number 1 must be exactly 10 digits.");
+            return;
+            }
+            if (phone2 && !phoneRegex.test(phone2)) { // Phone 2 is optional
+            alert("Phone number 2 must be exactly 10 digits if provided.");
+             return;
+            }
 
 
      // Address validation
-     if (currentAddress.length < 10) {
-        alert("Current address must be at least 10 characters long.");
-        return;
-    }
-    if (permanentAddress && permanentAddress.length < 10) { // Permanent address is optional
-        alert("Permanent address must be at least 10 characters long if provided.");
-        return;
-    }
+
+             if (currentAddress.length < 10) {
+             alert("Current address must be at least 10 characters long.");
+              return;
+            }
+            if (permanentAddress && permanentAddress.length < 10) { // Permanent address is optional
+             alert("Permanent address must be at least 10 characters long if provided.");
+            return;
+             }
          
 
             // Convert Aadhaar file to Base64
+
+
             const convertToBase64 = (file) => new Promise((resolve, reject) => {
                 const reader = new FileReader();
                 reader.onload = () => resolve(reader.result);
@@ -223,6 +228,9 @@
                 alert("Error reading Aadhaar file!");
                 return;
             }
+
+
+            //car booking count
 
             const querySnapshot = await getDocs(collection(db, "countBookingList"));
 
@@ -288,6 +296,8 @@
         });
 
 
+
+        //  test drive
 
         document.getElementById("testDriveSubmit").addEventListener("click", async () => {
             const name = document.getElementById("tdname").value;

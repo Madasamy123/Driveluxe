@@ -196,19 +196,6 @@ document.querySelectorAll(".close-popup").forEach((icon) => {
 
 
 
-// function showPopup(popupNumber) {
-//     // Show the overlay and selected popup
-//     document.getElementById("overlay").style.display = "block";
-//     document.getElementById("popup" + popupNumber).style.display = "block";
-// }
 
-// function closePopup() {
-//     // Hide the overlay and all popups
-//     document.getElementById("overlay").style.display = "none";
-//     var popups = document.getElementsByClassName("popup");
-//     for (var i = 0; i < popups.length; i++) {
-//         popups[i].style.display = "none";
-//     }
-// }
 
 
